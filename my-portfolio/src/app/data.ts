@@ -27,6 +27,8 @@ import meduxa from './../../public/assets/logoTecnologias/meduxa.png';
 /* import anime from 'animejs/lib/anime.es.js'; */
 import primhero from './../../public/assets/img/primhero.png';
 import paranacomex from './../../public/assets/img/paranacomex.png';
+import renthouse from './../../public/assets/img/renthouse.png';
+import interchange from './../../public/assets/img/interchange.png';
 //a
 export const arrayTech = [
   {
@@ -245,6 +247,22 @@ export const proyects = [
     descripcion:
       'MEDUXA FEST es una encantadora página web que he creado con amor y dedicación para invitar seres queridos a cumpleaños con temática de disfraces proponiendo una identidad algo definida, brindando ideas para disfraces y algo de información del eveneto, junto con un formulario totalmente validado para confirmar la asistencia de los invitados. La aplicación está desarrollada utilizando tecnologías modernas como Typescript), React y NextJs, lo que garantiza una experiencia de usuario fluida y agradable. ',
     url: 'https://birthday-ruddy.vercel.app/',
+  },
+  {
+    name: 'Rent House',
+    img: renthouse,
+    description:
+      'MEDUXA FEST is a delightful website that I have created with love and dedication to invite loved ones to costume-themed birthdays. It proposes a somewhat defined identity, offers costume ideas, and provides event information, all accompanied by a fully validated form to confirm guest attendance. The application is developed using modern technologies such as Typescript, React, and Next.js, ensuring a smooth and enjoyable user experience.',
+    descripcion:
+      'Rent House es un sitio de alquiler temporal para propiedades enfocada en eventos y despedidas, web con formularios de contacto, ubicacion de propiedades y sistema de fast-booking',
+    url: 'https://www.renthouse.com.ar/',
+  },
+  {
+    name: 'Interchange institute',
+    img: interchange,
+    descripcion:
+      'El proyecto consiste en el desarrollo de un sitio web institucional con un campus virtual diseñado específicamente para estudiantes, que les permite realizar diversas actividades educativas y administrativas de manera online. A través del campus, los alumnos pueden tomar exámenes en línea, completar tareas asignadas por sus profesores, consultar sus notas en tiempo real y acceder a contenido educativo organizado por curso, como videos, artículos, materiales de estudio y otros recursos pedagógicos. Esta plataforma no solo mejora la experiencia de aprendizaje, sino que también facilita la interacción entre estudiantes y docentes al centralizar todas las herramientas necesarias en un solo lugar. Además del campus virtual, el proyecto incluye una plataforma de administración destinada a la gerencia del instituto. Esta herramienta ofrece un dashboard centralizado desde el cual es posible gestionar diversos aspectos operativos y académicos de la institución. Entre las principales funcionalidades de la plataforma, se destaca la administración financiera, que permite llevar un control detallado de las cuotas de los alumnos, emitir notificaciones automáticas sobre vencimientos y realizar un seguimiento eficiente de los pagos. Asimismo, la plataforma permite la asignación de cursos a los estudiantes, la gestión de roles para los profesores, la administración de notas y la generación de documentación académica. También incluye opciones para optimizar la comunicación interna y externa mediante el envío de notificaciones y recordatorios personalizados. En conjunto, este proyecto combina la gestión educativa y administrativa en un entorno digital integrado, ofreciendo soluciones modernas tanto para estudiantes como para el equipo de gestión del instituto. Su diseño intuitivo y funcionalidad avanzada lo convierten en una herramienta clave para mejorar la eficiencia operativa y la calidad del aprendizaje en la institución.',
+    url: 'https://www.interchange.com.ar/',
   },
 ];
 
