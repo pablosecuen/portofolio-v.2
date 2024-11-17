@@ -10,14 +10,9 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Twitter,
-  ChevronDown,
-  Phone,
-} from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, ChevronDown } from 'lucide-react';
+import emailjs from 'emailjs-com';
+import Modal from 'react-modal';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef, useState, useEffect } from 'react';
@@ -31,19 +26,7 @@ import {
 import { useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { arrayTech, proyects } from '@/app/data';
-
-const TechIcon = ({ tech }: { tech: { logo: string; title: string } }) => (
-  <div className='flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg dark:bg-gray-800'>
-    <Image
-      src={tech.logo}
-      alt={tech.title}
-      width={32}
-      height={32}
-      className='mb-2'
-    />
-    <span className='text-sm font-medium'>{tech.title}</span>
-  </div>
-);
+import Script from 'next/script';
 
 const languages = [
   { code: 'es', name: 'Español', flag: '🇪🇸' },
@@ -58,6 +41,55 @@ export default function PortfolioLanding() {
   const pathname = usePathname();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const eyesRef = useRef<HTMLDivElement | null>(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen1, setIsModalOpen1] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let nameRegex = /^[a-zA-Z\s]*$/;
+    let messageRegex = /^(?!.*(http|https)).*$/;
+    if (!formData.name.match(nameRegex)) {
+      setIsModalOpen1(true);
+    } else if (!formData.email.match(emailRegex)) {
+      setIsModalOpen1(true);
+    } else if (!formData.message.match(messageRegex)) {
+      setIsModalOpen1(true);
+    } else {
+      emailjs
+        .send(
+          'service_k1dn49a',
+          'template_rjj68l7',
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          },
+          'v8HZ6Sk79OJKu27jg'
+        )
+        .then(
+          (result: { text: any }) => {
+            console.log(result.text);
+            setIsModalOpen(true); // open modal if email is sent successfully
+          },
+          (error: { text: any }) => {
+            console.log(error.text);
+            setIsModalOpen1(true);
+          }
+        );
+    }
+  };
 
   const currentLanguage =
     languages.find((lang) => pathname.startsWith(`/${lang.code}`)) ||
@@ -276,16 +308,100 @@ export default function PortfolioLanding() {
             </h2>
             <div className='max-w-2xl mx-auto'>
               <form className='space-y-4'>
-                <Input placeholder={t('name')} />
-                <Input type='email' placeholder={t('email')} />
-                <Textarea placeholder={t('message')} />
-                <Button type='submit' className='w-full'>
+                <Input placeholder={t('name')} onChange={handleChange} />
+                <Input
+                  type='email'
+                  placeholder={t('email')}
+                  onChange={handleChange}
+                />
+                <Textarea placeholder={t('message')} onChange={handleChange} />
+                <Button type='submit' className='w-full' onClick={handleSubmit}>
                   {t('sendMessage')}
                 </Button>
               </form>
             </div>
           </div>
         </section>
+        <Modal
+          isOpen={isModalOpen}
+          onRequestClose={() => setIsModalOpen(false)}
+          style={{
+            overlay: {
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            },
+            content: {
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              maxWidth: '500px',
+              width: '80%',
+              height: 'auto',
+              padding: '40px',
+              borderRadius: '40px',
+              backgroundColor: 'transparent',
+              border: 'none',
+            },
+          }}
+        >
+          <iframe
+            src='https://giphy.com/embed/NsPTjaNFdMx8ZPe9Qh'
+            width='400'
+            height='320'
+            frameBorder='0'
+            className='giphy-embed'
+            allowFullScreen
+          ></iframe>
+          <p>
+            <a href='https://giphy.com/gifs/playmobil-post-letter-mail-NsPTjaNFdMx8ZPe9Qh'>
+              via GIPHY
+            </a>
+          </p>
+        </Modal>
+        <Modal
+          isOpen={isModalOpen1}
+          onRequestClose={() => setIsModalOpen1(false)}
+          style={{
+            overlay: {
+              backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            },
+            content: {
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              maxWidth: '500px',
+              width: '80%',
+              height: 'auto',
+              padding: '40px',
+              borderRadius: '40px',
+              backgroundColor: 'transparent',
+              border: 'none',
+            },
+          }}
+        >
+          <iframe
+            src='https://giphy.com/embed/ljtfkyTD3PIUZaKWRi'
+            width='400'
+            height='290'
+            frameBorder='0'
+            className='giphy-embed'
+            allowFullScreen
+          ></iframe>
+
+          <p>
+            <a href='https://giphy.com/gifs/theoffice-ljtfkyTD3PIUZaKWRi'>
+              via GIPHY
+            </a>
+          </p>
+          <p>
+            <a href='https://giphy.com/gifs/playmobil-post-letter-mail-NsPTjaNFdMx8ZPe9Qh'>
+              via GIPHY
+            </a>
+          </p>
+        </Modal>
+        <Script
+          type='text/javascript'
+          src='https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'
+        ></Script>
       </main>
       <footer className='flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t'>
         <p className='text-xs text-gray-500 dark:text-gray-400'>

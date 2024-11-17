@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { redirect } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
+
 export default async function LocaleLayout({
   children,
   params,
@@ -26,6 +27,8 @@ export default async function LocaleLayout({
     console.error(`Error al cargar mensajes para el idioma ${locale}:`, error);
     redirect(`/${routing.defaultLocale}/404`);
   }
+
+
 
   return (
     <html lang={locale}>
