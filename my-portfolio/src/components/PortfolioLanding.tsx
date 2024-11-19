@@ -81,11 +81,9 @@ export default function PortfolioLanding() {
         )
         .then(
           (result: { text: any }) => {
-            console.log(result.text);
-            setIsModalOpen(true); // open modal if email is sent successfully
+            setIsModalOpen(true);
           },
           (error: { text: any }) => {
-            console.log(error.text);
             setIsModalOpen1(true);
           }
         );
