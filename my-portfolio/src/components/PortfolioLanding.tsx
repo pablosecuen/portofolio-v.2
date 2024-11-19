@@ -48,6 +48,7 @@ export default function PortfolioLanding() {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen1, setIsModalOpen1] = useState(false);
+  const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -108,6 +109,22 @@ export default function PortfolioLanding() {
   }, []);
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsScrollTopVisible(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
     if (eyesRef.current) {
       const rect = eyesRef.current.getBoundingClientRect();
       const eyeCenterX = rect.left + rect.width / 2;
@@ -126,6 +143,17 @@ export default function PortfolioLanding() {
     const newPathname = `/${lang}${pathname.replace(/^\/[a-z]{2}/, '')}`;
     router.push(newPathname);
   };
+
+  const footerElement = document.getElementById('copyright');
+
+  const currentYear = new Date().getFullYear();
+
+  if (footerElement) {
+    footerElement.innerHTML = footerElement.innerHTML.replace(
+      /\d{4}/,
+      currentYear.toString()
+    );
+  }
 
   return (
     <div className='flex flex-col min-h-screen'>
@@ -266,6 +294,15 @@ export default function PortfolioLanding() {
                         height={200}
                         className='rounded-lg object-cover w-full'
                       />
+                      <Link
+                        href={project.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <Button variant={'outline'} className='mx-auto mt-4'>
+                          Visitar Sitio
+                        </Button>
+                      </Link>
                     </CardContent>
                   </Card>
                 );
@@ -307,21 +344,38 @@ export default function PortfolioLanding() {
               {t('contact')}
             </h2>
             <div className='max-w-2xl mx-auto'>
-              <form className='space-y-4'>
-                <Input placeholder={t('name')} onChange={handleChange} />
+              <form className='space-y-4' onSubmit={handleSubmit}>
                 <Input
+                  name='name'
+                  placeholder={t('name')}
+                  onChange={handleChange}
+                />
+                <Input
+                  name='email'
                   type='email'
                   placeholder={t('email')}
                   onChange={handleChange}
                 />
-                <Textarea placeholder={t('message')} onChange={handleChange} />
-                <Button type='submit' className='w-full' onClick={handleSubmit}>
+                <Textarea
+                  placeholder={t('message')}
+                  name='message'
+                  onChange={handleChange}
+                />
+                <Button type='submit' className='w-full'>
                   {t('sendMessage')}
                 </Button>
               </form>
             </div>
           </div>
         </section>
+
+        <button
+          onClick={scrollToTop}
+          className='fixed bottom-20 right-6 bg-blue-600 text-white py-3 px-5 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75'
+        >
+          ↑
+        </button>
+
         <Modal
           isOpen={isModalOpen}
           onRequestClose={() => setIsModalOpen(false)}
@@ -404,7 +458,7 @@ export default function PortfolioLanding() {
         ></Script>
       </main>
       <footer className='flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t'>
-        <p className='text-xs text-gray-500 dark:text-gray-400'>
+        <p id='copyright' className='text-xs text-gray-500 dark:text-gray-400'>
           {t('copyright')}
         </p>
         <nav className='sm:ml-auto flex gap-4 sm:gap-6'>

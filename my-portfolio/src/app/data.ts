@@ -19,6 +19,7 @@ import ts from './../../public/assets/logoTecnologias/ts-logo-128.png';
 import next from './../../public/assets/logoTecnologias/next.svg';
 import postgres from './../../public/assets/logoTecnologias/postgres.svg';
 import mongo from './../../public/assets/logoTecnologias/mongo.svg';
+import wordpress from './../../public/assets/logoTecnologias/wordpress.svg';
 import movihome from './../../public/assets/img/movihome.png';
 import pet from './../../public/assets/img/petfriendly.webp';
 import aythenHome from './../../public/assets/img/aythenHome.png';
@@ -29,6 +30,12 @@ import primhero from './../../public/assets/img/primhero.png';
 import paranacomex from './../../public/assets/img/paranacomex.png';
 import renthouse from './../../public/assets/img/renthouse.png';
 import interchange from './../../public/assets/img/interchange.png';
+import carbon from './../../public/assets/img/carbon.png';
+import kaffeto from './../../public/assets/img/kaffeto.png';
+import vichino from './../../public/assets/img/vichino.png';
+import kamado from './../../public/assets/img/kamado.png';
+import conference from './../../public/assets/img/conference.png';
+import raffle from './../../public/assets/img/raffle.png';
 //a
 export const arrayTech = [
   {
@@ -180,6 +187,13 @@ export const arrayTech = [
     shadowColor: 'limegreen',
     url: 'https://github.com/',
   },
+  {
+    name: 'wordpress',
+    logo: wordpress,
+    title: 'Wordpress',
+    shadowColor: 'blue',
+    url: 'https://wordpress.org/',
+  },
 ];
 
 export const proyects = [
@@ -263,6 +277,48 @@ export const proyects = [
     descripcion:
       'El proyecto consiste en el desarrollo de un sitio web institucional con un campus virtual diseñado específicamente para estudiantes, que les permite realizar diversas actividades educativas y administrativas de manera online. A través del campus, los alumnos pueden tomar exámenes en línea, completar tareas asignadas por sus profesores, consultar sus notas en tiempo real y acceder a contenido educativo organizado por curso, como videos, artículos, materiales de estudio y otros recursos pedagógicos. Esta plataforma no solo mejora la experiencia de aprendizaje, sino que también facilita la interacción entre estudiantes y docentes al centralizar todas las herramientas necesarias en un solo lugar. Además del campus virtual, el proyecto incluye una plataforma de administración destinada a la gerencia del instituto. Esta herramienta ofrece un dashboard centralizado desde el cual es posible gestionar diversos aspectos operativos y académicos de la institución. Entre las principales funcionalidades de la plataforma, se destaca la administración financiera, que permite llevar un control detallado de las cuotas de los alumnos, emitir notificaciones automáticas sobre vencimientos y realizar un seguimiento eficiente de los pagos. Asimismo, la plataforma permite la asignación de cursos a los estudiantes, la gestión de roles para los profesores, la administración de notas y la generación de documentación académica. También incluye opciones para optimizar la comunicación interna y externa mediante el envío de notificaciones y recordatorios personalizados. En conjunto, este proyecto combina la gestión educativa y administrativa en un entorno digital integrado, ofreciendo soluciones modernas tanto para estudiantes como para el equipo de gestión del instituto. Su diseño intuitivo y funcionalidad avanzada lo convierten en una herramienta clave para mejorar la eficiencia operativa y la calidad del aprendizaje en la institución.',
     url: 'https://www.interchange.com.ar/',
+  },
+  {
+    name: 'Carbon Los leños',
+    img: carbon,
+    descripcion:
+      'El sitio web de "Carbón Los Leños" es la plataforma oficial de una empresa argentina dedicada a la producción y distribución de carbón vegetal de alta calidad. La página ofrece información detallada sobre sus productos, incluyendo carbón, leña, accesorios, iniciadores, briquetas y sales, todos diseñados para satisfacer las necesidades de los amantes de la parrilla. Además, el sitio destaca el compromiso de la empresa con la excelencia, resaltando la cuidadosa selección de maderas de primera calidad que aportan un sabor único a los alimentos. También se proporciona información sobre la historia de la empresa, su red de distribución a nivel nacional y opciones de contacto para clientes y revendedores interesados en sus productos.',
+    url: 'https://www.carbonloslenos.com/',
+  },
+  {
+    name: 'Kaffeto',
+    img: kaffeto,
+    descripcion:
+      'Kaffetto es un proyecto web innovador enfocado en proporcionar una experiencia interactiva para los amantes del café. Garantizando un rendimiento óptimo y una navegación fluida. El sitio incluye un diseño responsivo cuidadosamente elaborado, optimizado para dispositivos móviles y de escritorio. Implementé características avanzadas, como un sistema de filtrado dinámico para explorar diferentes tipos de café, integración de pasarelas de pago para compras seguras, y un blog informativo sobre el mundo del café. Además, Kaffetto utiliza técnicas de SEO avanzadas para maximizar su visibilidad en buscadores y está preparado para escalabilidad, lo que lo hace ideal para crecer junto con la marca. Este proyecto refleja mi capacidad para combinar diseño intuitivo, funcionalidad técnica y las mejores prácticas de desarrollo web moderno.',
+    url: 'https://www.carbonloslenos.com/',
+  },
+  {
+    name: 'Vichino Shoes',
+    img: vichino,
+    descripcion:
+      'Vichino es una tienda en línea especializada en calzado para hombres y mujeres, ofreciendo una variedad de productos como zapatillas y zapatos de cuero. El sitio web presenta una estructura clara y funcional, con secciones dedicadas a categorías específicas de productos, como "Hombre" y "Mujer", facilitando la navegación para los usuarios. Además, cuenta con una sección de ofertas destacadas, proporcionando información sobre descuentos y promociones actuales. La tienda también ofrece opciones de pago en cuotas sin interés y envíos gratuitos para compras que superen un monto específico, mejorando la experiencia de compra en línea para sus clientes.',
+    url: 'https://vichino.com.ar/',
+  },
+  {
+    name: 'Kamado Argentino',
+    img: kamado,
+    descripcion:
+      'Kamado Argentino es una empresa argentina especializada en la fabricación y distribución de kamados, dispositivos de cocción de origen japonés que permiten asar, ahumar, hornear y grillar alimentos. Ofrecen una amplia gama de modelos adaptados a diferentes necesidades, desde el Kamado Asador Criollo, ideal para reuniones familiares de hasta 15 personas, hasta el Kamado Gran Asador Patagónico, diseñado para eventos de mayor envergadura. Además, proporcionan accesorios y consumibles para complementar la experiencia culinaria. La empresa destaca por su compromiso con la calidad, ofreciendo garantías de hasta 10 años en sus productos. También promueven una comunidad activa, brindando recetas, consejos y clases para maximizar el uso de sus kamados.',
+    url: 'https://kamadoargentino.com.ar/',
+  },
+  {
+    name: 'Conference App',
+    img: conference,
+    descripcion:
+      'Conference appes una plataforma de videoconferencias que permite a los usuarios crear y unirse a reuniones en línea. Ofrece funcionalidades como videollamadas, audiollamadas, uso compartido de pantalla y mensajería instantánea, facilitando la colaboración en tiempo real. Además, la aplicación es instalable como una aplicación web progresiva (PWA), lo que permite a los usuarios agregarla a sus dispositivos para un acceso más rápido y una experiencia similar a la de una aplicación nativa. Esta característica mejora la accesibilidad y la conveniencia para quienes buscan una solución de videoconferencia eficiente y fácil de usar.',
+    url: 'https://conference-app-meet.vercel.app/',
+  },
+  {
+    name: 'Raffle App',
+    img: raffle,
+    descripcion:
+      'La aplicación Raffle es una herramienta diseñada para facilitar la realización de sorteos de manera sencilla y eficiente. Permite a los usuarios cargar listas de participantes desde archivos de texto, seleccionar ganadores aleatorios y mantener un registro de los ganadores anteriores. La interfaz es intuitiva, ofreciendo una experiencia de usuario amigable para gestionar sorteos en diversos contextos, como eventos, promociones o actividades recreativas. Además, la aplicación está construida con tecnologías modernas, asegurando un rendimiento óptimo y una fácil accesibilidad desde diferentes dispositivos.',
+    url: 'https://raffle-app-public.vercel.app/',
   },
 ];
 
