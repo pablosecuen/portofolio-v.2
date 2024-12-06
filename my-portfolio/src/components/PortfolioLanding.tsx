@@ -212,26 +212,6 @@ export default function PortfolioLanding() {
       <main className='flex-1'>
         <section className='w-full h-screen relative overflow-hidden flex items-center justify-center'>
           <div className='text-center'>
-            <div className='relative w-64 h-64 mx-auto mb-8'>
-              <Image
-                src='/placeholder.svg'
-                alt={t('name')}
-                width={256}
-                height={256}
-                className='rounded-full'
-              />
-              <div
-                ref={eyesRef}
-                className='absolute top-1/4 left-1/2 transform -translate-x-1/2 flex gap-8'
-              >
-                <div className='w-8 h-8 bg-white rounded-full flex items-center justify-center'>
-                  <div className='w-4 h-4 bg-black rounded-full' />
-                </div>
-                <div className='w-8 h-8 bg-white rounded-full flex items-center justify-center'>
-                  <div className='w-4 h-4 bg-black rounded-full' />
-                </div>
-              </div>
-            </div>
             <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl'>
               {t('name')}
             </h1>
