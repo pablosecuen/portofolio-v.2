@@ -212,7 +212,7 @@ export default function PortfolioLanding() {
       <main className='flex-1'>
         <section className='w-full h-screen relative overflow-hidden flex items-center justify-center'>
           <div className='text-center'>
-            <div className='relative w-64 h-64 mx-auto mb-8'>
+            {/*      <div className='relative w-64 h-64 mx-auto mb-8'>
               <Image
                 src='/placeholder.svg'
                 alt={t('name')}
@@ -231,7 +231,7 @@ export default function PortfolioLanding() {
                   <div className='w-4 h-4 bg-black rounded-full' />
                 </div>
               </div>
-            </div>
+            </div> */}
             <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl'>
               {t('name')}
             </h1>
