@@ -5,11 +5,12 @@ import './globals.css';
 
 export default async function RootLayout({
   children,
-  params,
+  params: rawParams,
 }: {
   children: React.ReactNode;
   params: { locale?: string };
 }) {
+  const params = await rawParams;
   const locale = params?.locale || routing.defaultLocale;
   if (!routing.locales.includes(locale as 'es' | 'en' | 'fr')) {
     if (params?.locale === undefined) {
