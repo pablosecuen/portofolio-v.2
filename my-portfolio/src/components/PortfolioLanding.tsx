@@ -152,7 +152,7 @@ export default function PortfolioLanding() {
       if (footerElement) {
         footerElement.innerHTML = footerElement.innerHTML.replace(
           /\d{4}/,
-          currentYear.toString()
+          `${currentYear} 🄡 Pablo Amico`
         );
       }
     }
