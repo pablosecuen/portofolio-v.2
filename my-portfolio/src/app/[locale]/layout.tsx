@@ -1,7 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { redirect } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import './globals.css';
 
 export default async function LocaleLayout({
   children,
