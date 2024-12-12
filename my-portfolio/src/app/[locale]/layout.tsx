@@ -7,27 +7,17 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale?: string };
+  params: { locale?: string }; // No es una promesa
 }) {
   const locale = params?.locale || routing.defaultLocale;
 
   if (!routing.locales.includes(locale as 'es' | 'en' | 'fr')) {
-    if (!params?.locale) {
-      return (
-        <html lang={routing.defaultLocale}>
-          <body>
-            <h1>Página no encontrada</h1>
-            {children}
-          </body>
-        </html>
-      );
-    }
     redirect(`/${routing.defaultLocale}/404`);
   }
 
   let messages;
   try {
-    messages = (await import(`../messages/${locale}/common.json`)).default;
+    messages = (await import(`@/messages/${locale}/common.json`)).default;
   } catch (error) {
     console.error(
       `No se pudieron cargar los mensajes para el idioma: ${locale}`,
