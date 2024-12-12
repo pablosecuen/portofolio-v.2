@@ -145,7 +145,7 @@ export default function PortfolioLanding() {
   };
 
   const currentYear = new Date().getFullYear();
-
+ 
   useEffect(() => {
     if (typeof document !== 'undefined') {
       const footerElement = document.getElementById('copyright');
