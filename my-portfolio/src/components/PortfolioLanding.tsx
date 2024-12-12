@@ -144,16 +144,19 @@ export default function PortfolioLanding() {
     router.push(newPathname);
   };
 
-  const footerElement = document.getElementById('copyright');
-
   const currentYear = new Date().getFullYear();
 
-  if (footerElement) {
-    footerElement.innerHTML = footerElement.innerHTML.replace(
-      /\d{4}/,
-      currentYear.toString()
-    );
-  }
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const footerElement = document.getElementById('copyright');
+      if (footerElement) {
+        footerElement.innerHTML = footerElement.innerHTML.replace(
+          /\d{4}/,
+          currentYear.toString()
+        );
+      }
+    }
+  }, [currentYear]);
 
   return (
     <div className='flex flex-col min-h-screen'>

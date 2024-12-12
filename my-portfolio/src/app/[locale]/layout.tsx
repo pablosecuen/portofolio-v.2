@@ -4,11 +4,13 @@ import { routing } from '@/i18n/routing';
 
 export default async function LocaleLayout({
   children,
-  params,
+  params: rawParams,
 }: {
   children: React.ReactNode;
-  params: { locale?: string }; // No es una promesa
+  params: Promise<{ locale?: string }>;
 }) {
+  const params = await rawParams; // Espera a que los parámetros se resuelvan
+
   const locale = params?.locale || routing.defaultLocale;
 
   if (!routing.locales.includes(locale as 'es' | 'en' | 'fr')) {

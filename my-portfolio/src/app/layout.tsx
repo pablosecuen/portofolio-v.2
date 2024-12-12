@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import './globals.css';
 
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
