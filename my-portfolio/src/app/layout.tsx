@@ -8,12 +8,13 @@ export default async function RootLayout({
   params: rawParams,
 }: {
   children: React.ReactNode;
-  params: { locale?: string };
+  params: Promise<{ locale?: string }>; // No es una promesa
 }) {
-  const params = await rawParams;
+  const params = await rawParams; // Resuelve la promesa
   const locale = params?.locale || routing.defaultLocale;
+
   if (!routing.locales.includes(locale as 'es' | 'en' | 'fr')) {
-    if (params?.locale === undefined) {
+    if (!params?.locale) {
       return (
         <html lang={routing.defaultLocale}>
           <body>
@@ -25,6 +26,7 @@ export default async function RootLayout({
     }
     redirect(`/${routing.defaultLocale}/404`);
   }
+
   let messages;
   try {
     messages = (await import(`../messages/${locale}/common.json`)).default;
@@ -35,6 +37,7 @@ export default async function RootLayout({
     );
     redirect(`/${routing.defaultLocale}/404`);
   }
+
   return (
     <html lang={locale}>
       <body>
