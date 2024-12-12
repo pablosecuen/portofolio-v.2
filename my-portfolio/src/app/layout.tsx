@@ -11,7 +11,6 @@ export default async function LocaleLayout({
   params: { locale?: string };
 }) {
   const locale = params?.locale || routing.defaultLocale;
-
   if (!routing.locales.includes(locale as 'es' | 'en' | 'fr')) {
     if (params?.locale === undefined) {
       return (
@@ -25,7 +24,6 @@ export default async function LocaleLayout({
     }
     redirect(`/${routing.defaultLocale}/404`);
   }
-
   let messages;
   try {
     messages = (await import(`../messages/${locale}/common.json`)).default;
@@ -36,7 +34,6 @@ export default async function LocaleLayout({
     );
     redirect(`/${routing.defaultLocale}/404`);
   }
-
   return (
     <html lang={locale}>
       <body>
