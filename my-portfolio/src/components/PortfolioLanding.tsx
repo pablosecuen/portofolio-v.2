@@ -48,7 +48,7 @@ export default function PortfolioLanding() {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen1, setIsModalOpen1] = useState(false);
-  const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
+  const [, setIsScrollTopVisible] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -58,9 +58,9 @@ export default function PortfolioLanding() {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let nameRegex = /^[a-zA-Z\s]*$/;
-    let messageRegex = /^(?!.*(http|https)).*$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nameRegex = /^[a-zA-Z\s]*$/;
+    const messageRegex = /^(?!.*(http|https)).*$/;
     if (!formData.name.match(nameRegex)) {
       setIsModalOpen1(true);
     } else if (!formData.email.match(emailRegex)) {
@@ -80,10 +80,12 @@ export default function PortfolioLanding() {
           'v8HZ6Sk79OJKu27jg'
         )
         .then(
-          (result: { text: any }) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          (result: { text: unknown }) => {
             setIsModalOpen(true);
           },
-          (error: { text: any }) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          (error: { text: unknown }) => {
             setIsModalOpen1(true);
           }
         );
@@ -142,16 +144,19 @@ export default function PortfolioLanding() {
     router.push(newPathname);
   };
 
-  const footerElement = document.getElementById('copyright');
-
   const currentYear = new Date().getFullYear();
-
-  if (footerElement) {
-    footerElement.innerHTML = footerElement.innerHTML.replace(
-      /\d{4}/,
-      currentYear.toString()
-    );
-  }
+ 
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const footerElement = document.getElementById('copyright');
+      if (footerElement) {
+        footerElement.innerHTML = footerElement.innerHTML.replace(
+          /\d{4}/,
+          `${currentYear} 🄡 Pablo Amico`
+        );
+      }
+    }
+  }, [currentYear]);
 
   return (
     <div className='flex flex-col min-h-screen'>
@@ -212,7 +217,7 @@ export default function PortfolioLanding() {
       <main className='flex-1'>
         <section className='w-full h-screen relative overflow-hidden flex items-center justify-center'>
           <div className='text-center'>
-            <div className='relative w-64 h-64 mx-auto mb-8'>
+            {/*      <div className='relative w-64 h-64 mx-auto mb-8'>
               <Image
                 src='/placeholder.svg'
                 alt={t('name')}
@@ -231,7 +236,7 @@ export default function PortfolioLanding() {
                   <div className='w-4 h-4 bg-black rounded-full' />
                 </div>
               </div>
-            </div>
+            </div> */}
             <h1 className='text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl'>
               {t('name')}
             </h1>
@@ -258,6 +263,7 @@ export default function PortfolioLanding() {
             </h2>
             <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
               {proyects.map((project, index) => {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
                 const [isExpanded, setIsExpanded] = useState(false);
 
                 const toggleExpand = () => {

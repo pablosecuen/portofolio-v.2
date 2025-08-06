@@ -3,17 +3,18 @@ import { redirect } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import './globals.css';
 
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
-  params,
+  params: rawParams,
 }: {
   children: React.ReactNode;
-  params: { locale?: string };
+  params: Promise<{ locale?: string }>; // No es una promesa
 }) {
+  const params = await rawParams; // Resuelve la promesa
   const locale = params?.locale || routing.defaultLocale;
 
   if (!routing.locales.includes(locale as 'es' | 'en' | 'fr')) {
-    if (params?.locale === undefined) {
+    if (!params?.locale) {
       return (
         <html lang={routing.defaultLocale}>
           <body>
