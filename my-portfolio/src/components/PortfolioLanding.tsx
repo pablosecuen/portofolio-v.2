@@ -270,41 +270,52 @@ export default function PortfolioLanding() {
                   setIsExpanded((prev) => !prev);
                 };
 
+                // Determine which description to use based on current language
+                const currentDescription = currentLanguage.code === 'en' 
+                  ? project.description 
+                  : project.descripcion;
+
                 return (
                   <Card key={index}>
                     <CardHeader>
-                      <CardTitle>{project.name}</CardTitle>
-                      <CardDescription
-                        className={`text-sm text-muted-foreground ${
-                          !isExpanded ? 'line-clamp-3' : ''
-                        }`}
-                      >
-                        {project.descripcion}
-                      </CardDescription>
-                      {!isExpanded && (
-                        <Button variant={'ghost'} onClick={toggleExpand}>
-                          Leer más
-                        </Button>
-                      )}
-                      {isExpanded && (
-                        <Button onClick={toggleExpand}>Mostrar menos</Button>
-                      )}
-                    </CardHeader>
-                    <CardContent>
-                      <Image
+                    <Image
                         src={project.img}
                         alt={project.name}
                         width={400}
                         height={200}
                         className='rounded-lg object-cover w-full'
                       />
+                      <CardTitle>{project.name}</CardTitle>
+                      <CardDescription
+                        className={`text-sm text-muted-foreground ${
+                          !isExpanded ? 'line-clamp-3' : ''
+                        }`}
+                        dangerouslySetInnerHTML={{
+                          __html: isExpanded 
+                            ? currentDescription 
+                            : currentDescription.replace(/<[^>]*>/g, '').substring(0, 150) + '...'
+                        }}
+                      />
+                      {!isExpanded && (
+                        <Button variant={'ghost'} onClick={toggleExpand}>
+                          {currentLanguage.code === 'en' ? 'Read more' : 'Leer más'}
+                        </Button>
+                      )}
+                      {isExpanded && (
+                        <Button onClick={toggleExpand}>
+                          {currentLanguage.code === 'en' ? 'Show less' : 'Mostrar menos'}
+                        </Button>
+                      )}
+                    </CardHeader>
+                    <CardContent>
+                     
                       <Link
                         href={project.url}
                         target='_blank'
                         rel='noopener noreferrer'
                       >
                         <Button variant={'outline'} className='mx-auto mt-4'>
-                          Visitar Sitio
+                          {currentLanguage.code === 'en' ? 'Visit Site' : 'Visitar Sitio'}
                         </Button>
                       </Link>
                     </CardContent>
