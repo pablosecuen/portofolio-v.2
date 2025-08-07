@@ -222,14 +222,17 @@ export const proyects: Project[] = [
     name: 'Madewell',
     img: madewell,
     description: `
-      <h3>Madewell Web - Enterprise E-commerce Platform</h3>
+      <h3><strong>Madewell Web - Enterprise E-commerce Platform</strong></h3>
+
       
       <p>I developed and maintained the next-generation e-commerce platform for Madewell (J.Crew Group), a high-traffic web application handling millions of transactions and users globally.</p>
 
-      <h4>Project Description:</h4>
+      <h4><strong>Project Description:</strong></h4>
+
       <p>Madewell Web is a sophisticated e-commerce platform built with Next.js 14 and React 18, implementing enterprise-level microservices architecture. The application uses TypeScript to ensure type-safety and Redux Toolkit for predictable state management, while Sass with CSS modules provides a scalable and maintainable styling system.</p>
 
-      <h4>Architecture and Technical Patterns:</h4>
+      <h4><strong>Architecture and Technical Patterns:</strong></h4>
+
       <p>I implemented a hexagonal architecture (Ports & Adapters) that allows dynamic switching between mock services and real APIs, facilitating development and testing. The project uses a custom abstraction layer pattern that separates business logic from specific external service implementations.</p>
       
       <p>State management follows an advanced Redux pattern with three distinct layers:</p>
@@ -239,7 +242,8 @@ export const proyects: Project[] = [
         <li>storeReducersAndActions for state mutations</li>
       </ul>
 
-      <h4>Complex Third-Party Integrations:</h4>
+      <h4><strong>Complex Third-Party Integrations:</strong></h4>
+
       <ul>
         <li><strong>Builder.io:</strong> Headless CMS for dynamic content management</li>
         <li><strong>Constructor.io:</strong> Intelligent search and personalized recommendations</li>
@@ -249,13 +253,16 @@ export const proyects: Project[] = [
         <li><strong>Payment services:</strong> Apple Pay and AfterPay integration</li>
       </ul>
 
-      <h4>Infrastructure and DevOps:</h4>
+      <h4><strong>Infrastructure and DevOps:</strong></h4>
+
       <p>I designed and implemented a fully automated CI/CD pipeline using Jenkins with deployment on Amazon EKS (Kubernetes). The application is containerized with Docker and uses Helm Charts for multi-environment deployment management. The system handles multi-region deployments with Akamai CDN for global performance optimization.</p>
 
-      <h4>Performance and Scalability:</h4>
+      <h4><strong>Performance and Scalability:</strong></h4>
+
       <p>The application is optimized for high performance using Next.js SSR and SSG, automatic code splitting, and image optimization. I implemented lazy loading, intelligent prefetching, and multi-level caching strategies to ensure sub-second load times.</p>
 
-      <h4>Key Technologies:</h4>
+      <h4><strong>Key Technologies:</strong></h4>
+
       <ul>
         <li><strong>Frontend:</strong> Next.js 14, React 18, TypeScript, Redux Toolkit, Sass</li>
         <li><strong>Infrastructure:</strong> AWS EKS, Docker, Kubernetes, Helm, Jenkins</li>
@@ -266,14 +273,17 @@ export const proyects: Project[] = [
       <p><em>This project demonstrates my ability to develop enterprise-level e-commerce applications, handle complex microservices architectures, implement sophisticated third-party integrations, and deliver scalable solutions that directly impact business revenue.</em></p>
     `,
     descripcion: `
-      <h3>Madewell Web - Plataforma E-commerce Enterprise</h3>
+      <h3><strong>Madewell Web - Plataforma E-commerce Enterprise</strong></h3>
+
       
       <p>Desarrollé y mantuve la plataforma e-commerce de próxima generación para Madewell (J.Crew Group), una aplicación web de alto tráfico que maneja millones de transacciones y usuarios globalmente.</p>
 
-      <h4>Descripción del Proyecto:</h4>
+      <h4><strong>Descripción del Proyecto:</strong></h4>
+
       <p>Madewell Web es una sofisticada plataforma de comercio electrónico construida con Next.js 14 y React 18, implementando una arquitectura de microservicios enterprise-level. La aplicación utiliza TypeScript para garantizar type-safety y Redux Toolkit para gestión de estado predictible, mientras que Sass con módulos CSS proporciona un sistema de estilos escalable y mantenible.</p>
 
-      <h4>Arquitectura y Patrones Técnicos:</h4>
+      <h4><strong>Arquitectura y Patrones Técnicos:</strong></h4>
+
       <p>Implementé una arquitectura hexagonal (Ports & Adapters) que permite intercambio dinámico entre servicios mock y APIs reales, facilitando el desarrollo y testing. El proyecto utiliza un patrón de abstraction layer personalizado que separa la lógica de negocio de las implementaciones específicas de servicios externos.</p>
       
       <p>La gestión de estado sigue un patrón Redux avanzado con tres capas distintas:</p>
@@ -283,7 +293,8 @@ export const proyects: Project[] = [
         <li>storeReducersAndActions para mutaciones de estado</li>
       </ul>
 
-      <h4>Integraciones Complejas de Terceros:</h4>
+      <h4><strong>Integraciones Complejas de Terceros:</strong></h4>
+
       <ul>
         <li><strong>Builder.io:</strong> CMS headless para gestión dinámica de contenido</li>
         <li><strong>Constructor.io:</strong> Búsqueda inteligente y recomendaciones personalizadas</li>
@@ -293,13 +304,15 @@ export const proyects: Project[] = [
         <li><strong>Servicios de pago:</strong> Apple Pay y AfterPay</li>
       </ul>
 
-      <h4>Infraestructura y DevOps:</h4>
+      <h4><strong>Infraestructura y DevOps:</strong></h4>
+
       <p>Diseñé e implementé un pipeline de CI/CD completamente automatizado usando Jenkins con deployment en Amazon EKS (Kubernetes). La aplicación se containeriza con Docker y utiliza Helm Charts para gestión de deployments multi-ambiente. El sistema maneja deployments multi-región con Akamai CDN para optimización de performance global.</p>
 
-      <h4>Performance y Escalabilidad:</h4>
+      <h4><strong>Performance y Escalabilidad:</strong></h4>
+
       <p>La aplicación está optimizada para alto rendimiento utilizando SSR y SSG de Next.js, code splitting automático, y optimización de imágenes. Implementé lazy loading, prefetching inteligente, y estrategias de caching multi-nivel para garantizar tiempos de carga sub-segundo.</p>
 
-      <h4>Tecnologías Clave:</h4>
+      <h4><strong>Tecnologías Clave:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> Next.js 14, React 18, TypeScript, Redux Toolkit, Sass</li>
         <li><strong>Infrastructure:</strong> AWS EKS, Docker, Kubernetes, Helm, Jenkins</li>
@@ -315,11 +328,12 @@ export const proyects: Project[] = [
     name: 'Parana Comex',
     img: paranacomex,
     description: `
-      <h3>Parana Comex - Foreign Trade Company</h3>
+      <h3><strong>Parana Comex - Foreign Trade Company</strong></h3>
+
       
       <p>Parana Comex is a foreign trade company dedicated to the import and export of all kinds of products. We have developed a cutting-edge, responsive, modern, and attractive website using state-of-the-art technology.</p>
       
-      <h4>Project Features:</h4>
+      <h4><strong>Project Features:</strong></h4>
       <ul>
         <li>Responsive and modern design</li>
         <li>Intuitive navigation interface</li>
@@ -328,11 +342,12 @@ export const proyects: Project[] = [
       </ul>
     `,
     descripcion: `
-      <h3>Parana Comex - Comercio Exterior</h3>
+      <h3><strong>Parana Comex - Comercio Exterior</strong></h3>
+
       
       <p>Parana Comex es una empresa de comercio exterior dedicada a la importación y exportación de todo tipo de productos. Desarrollamos una web responsive, moderna y atractiva con tecnología de punta.</p>
       
-      <h4>Características del Proyecto:</h4>
+      <h4><strong>Características del Proyecto:</strong></h4>
       <ul>
         <li>Diseño responsive y moderno</li>
         <li>Interfaz intuitiva para navegación</li>
@@ -346,11 +361,13 @@ export const proyects: Project[] = [
     name: 'Prim Hero',
     img: primhero,
     description: `
-      <h3>Prime Hero - Logistics Platform</h3>
+      <h3><strong>Prime Hero - Logistics Platform</strong></h3>
+
       
       <p>I'm pleased to introduce you to Prime Hero, the logistics platform designed and developed at WAM! Creative Studio. For Prime Hero, we have created a nationwide shipment tracking system, aiming to provide you with a first-class experience where you'll always be informed and at ease about the status and location of your packages.</p>
       
-      <h4>Key Features:</h4>
+      <h4><strong>Key Features:</strong></h4>
+
       <ul>
         <li>Real-time tracking system</li>
         <li>Nationwide shipment tracking</li>
@@ -358,7 +375,7 @@ export const proyects: Project[] = [
         <li>Updated package status information</li>
       </ul>
       
-      <h4>Technologies Used:</h4>
+      <h4><strong>Technologies Used:</strong></h4>
       <ul>
         <li>Frontend: TypeScript, React, Next.js 13, Tailwind</li>
         <li>Notifications: Sonner Toast</li>
@@ -367,11 +384,13 @@ export const proyects: Project[] = [
       </ul>
     `,
     descripcion: `
-      <h3>Prime Hero - Plataforma de Logística</h3>
+      <h3><strong>Prime Hero - Plataforma de Logística</strong></h3>
+
       
       <p>Me complace presentarles Prime Hero, la plataforma de logística diseñada y desarrollada en WAM! Estudio Creativo. Para Prime Hero, hemos creado un sistema de seguimiento y rastreo de envíos a nivel nacional, pensando en brindarte una experiencia de primera clase.</p>
       
-      <h4>Características Principales:</h4>
+      <h4><strong>Características Principales:</strong></h4>
+
       <ul>
         <li>Sistema de seguimiento en tiempo real</li>
         <li>Rastreo de envíos a nivel nacional</li>
@@ -379,7 +398,7 @@ export const proyects: Project[] = [
         <li>Información actualizada del estado de paquetes</li>
       </ul>
       
-      <h4>Tecnologías Utilizadas:</h4>
+      <h4><strong>Tecnologías Utilizadas:</strong></h4>
       <ul>
         <li>Frontend: TypeScript, React, Next.js 13, Tailwind</li>
         <li>Notificaciones: Sonner Toast</li>
@@ -393,11 +412,13 @@ export const proyects: Project[] = [
     name: 'Pet Friendly',
     img: pet,
     description: `
-      <h3>Pet Friendly Universe - Multi-Platform Site</h3>
+      <h3><strong>Pet Friendly Universe - Multi-Platform Site</strong></h3>
+
       
       <p>Pet Friendly Universe is a multi-platform site with a fully functional e-commerce system. Any user with previous administrator authorization can create a store and upload their product catalogs.</p>
 
-      <h4>Main Services:</h4>
+      <h4><strong>Main Services:</strong></h4>
+
       <ul>
         <li>Complete e-commerce for pet products</li>
         <li>Pet daycare services</li>
@@ -405,10 +426,12 @@ export const proyects: Project[] = [
         <li>Pet adoption platform</li>
       </ul>
 
-      <h4>Social Impact:</h4>
+      <h4><strong>Social Impact:</strong></h4>
+
       <p>Every sale made on the site donates 3% of its profits to non-governmental organizations for pet protection. These organizations have their own administrator dashboards to post pets for adoption.</p>
 
-      <h4>Administration Panel:</h4>
+      <h4><strong>Administration Panel:</strong></h4>
+
       <ul>
         <li>Complete user control</li>
         <li>Post management</li>
@@ -416,7 +439,7 @@ export const proyects: Project[] = [
         <li>Content moderation</li>
       </ul>
 
-      <h4>Technologies Used:</h4>
+      <h4><strong>Technologies Used:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> JavaScript, React, Redux</li>
         <li><strong>Backend:</strong> Express, PostgreSQL</li>
@@ -425,11 +448,13 @@ export const proyects: Project[] = [
       </ul>
     `,
     descripcion: `
-      <h3>Pet Friendly Universe - Plataforma Multiplataforma</h3>
+      <h3><strong>Pet Friendly Universe - Plataforma Multiplataforma</strong></h3>
+
       
       <p>Pet Friendly Universe es un sitio multiplataforma con un sistema de comercio electrónico completamente funcional. Cualquier usuario con autorización de administrador previa puede crear una tienda y cargar su catálogo de productos.</p>
 
-      <h4>Servicios Principales:</h4>
+      <h4><strong>Servicios Principales:</strong></h4>
+
       <ul>
         <li>E-commerce completo para productos de mascotas</li>
         <li>Servicios de guardería de mascotas</li>
@@ -437,10 +462,12 @@ export const proyects: Project[] = [
         <li>Plataforma de adopción de mascotas</li>
       </ul>
 
-      <h4>Impacto Social:</h4>
+      <h4><strong>Impacto Social:</strong></h4>
+
       <p>Cada venta realizada en el sitio dona el 3% de sus ganancias a organizaciones no gubernamentales para la protección de mascotas. Estas organizaciones tienen sus propios paneles de administración para publicar mascotas en adopción.</p>
 
-      <h4>Panel de Administración:</h4>
+      <h4><strong>Panel de Administración:</strong></h4>
+
       <ul>
         <li>Control completo de usuarios</li>
         <li>Gestión de publicaciones</li>
@@ -448,7 +475,7 @@ export const proyects: Project[] = [
         <li>Moderación de contenido</li>
       </ul>
 
-      <h4>Tecnologías Utilizadas:</h4>
+      <h4><strong>Tecnologías Utilizadas:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> JavaScript, React, Redux</li>
         <li><strong>Backend:</strong> Express, PostgreSQL</li>
@@ -463,11 +490,13 @@ export const proyects: Project[] = [
     name: 'Movi',
     img: movihome,
     description: `
-      <h3>Movi - Transportation Solutions Hub</h3>
+      <h3><strong>Movi - Transportation Solutions Hub</strong></h3>
+
       
       <p>Movi is the central hub for all your transportation solutions. You can order food delivery, ride-hailing, taxis, intercity buses, and even carpooling. We provide comprehensive solutions with reliable security systems, a robust backend, and an intuitive and fresh urban design.</p>
 
-      <h4>Services Available:</h4>
+      <h4><strong>Services Available:</strong></h4>
+
       <ul>
         <li>Food delivery service</li>
         <li>Ride-hailing and taxi booking</li>
@@ -475,17 +504,19 @@ export const proyects: Project[] = [
         <li>Carpooling platform</li>
       </ul>
 
-      <h4>Admin Dashboard:</h4>
+      <h4><strong>Admin Dashboard:</strong></h4>
+
       <p>In the /admin/dashboard section, you will find a complete and thoughtfully designed admin panel down to the last detail. It is intuitive and efficient for managing all transportation services.</p>
 
-      <h4>Technical Implementation:</h4>
+      <h4><strong>Technical Implementation:</strong></h4>
+
       <ul>
         <li><strong>Database:</strong> Firebase with geolocation integration</li>
         <li><strong>Deployment:</strong> Free hosting tools (may have slower response times)</li>
         <li><strong>Location Services:</strong> Real-time geolocation tracking</li>
       </ul>
 
-      <h4>Technology Stack:</h4>
+      <h4><strong>Technology Stack:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> React, Next.js, TypeScript</li>
         <li><strong>Styling:</strong> Tailwind CSS</li>
@@ -494,11 +525,11 @@ export const proyects: Project[] = [
       </ul>
     `,
     descripcion: `
-      <h3>Movi - Hub de Soluciones de Transporte</h3>
+      <h3><strong>Movi - Hub de Soluciones de Transporte</strong></h3>
       
       <p>Movi es la sede central para todas tus soluciones de transporte. Puedes pedir comida a domicilio, remises, taxis, buses intermunicipales e incluso hacer carpooling. Ofrecemos soluciones integrales con sistemas de seguridad confiables, un backend robusto y un diseño urbano intuitivo y fresco.</p>
 
-      <h4>Servicios Disponibles:</h4>
+      <h4><strong>Servicios Disponibles:</strong></h4>
       <ul>
         <li>Servicio de comida a domicilio</li>
         <li>Reserva de remises y taxis</li>
@@ -506,17 +537,17 @@ export const proyects: Project[] = [
         <li>Plataforma de carpooling</li>
       </ul>
 
-      <h4>Panel de Administración:</h4>
+      <h4><strong>Panel de Administración:</strong></h4>
       <p>En la sección /admin/dashboard, encontrarás un panel de administración completo y cuidadosamente diseñado hasta el último detalle. Es intuitivo y eficiente para gestionar todos los servicios de transporte.</p>
 
-      <h4>Implementación Técnica:</h4>
+      <h4><strong>Implementación Técnica:</strong></h4>
       <ul>
         <li><strong>Base de datos:</strong> Firebase con integración de geolocalización</li>
         <li><strong>Despliegue:</strong> Herramientas de hosting gratuitas (tiempos de respuesta más lentos)</li>
         <li><strong>Servicios de ubicación:</strong> Seguimiento de geolocalización en tiempo real</li>
       </ul>
 
-      <h4>Stack Tecnológico:</h4>
+      <h4><strong>Stack Tecnológico:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> React, Next.js, TypeScript</li>
         <li><strong>Estilos:</strong> Tailwind CSS</li>
@@ -531,11 +562,11 @@ export const proyects: Project[] = [
     name: 'Aythen',
     img: aythenHome,
     description: `
-      <h3>Aythen - Multi-Service Development Platform</h3>
+      <h3><strong>Aythen - Multi-Service Development Platform</strong></h3>
       
       <p>Aythen is a multi-service platform where you can assemble your own development team by adjusting the needs of your business to achieve a custom-developed proposal for the user.</p>
 
-      <h4>Platform Capabilities:</h4>
+      <h4><strong>Platform Capabilities:</strong></h4>
       <ul>
         <li>Custom development team assembly</li>
         <li>Business needs assessment and adjustment</li>
@@ -543,7 +574,7 @@ export const proyects: Project[] = [
         <li>Technical concept abstraction</li>
       </ul>
 
-      <h4>Integration Features:</h4>
+      <h4><strong>Integration Features:</strong></h4>
       <ul>
         <li><strong>API Integration:</strong> Over 50 integrable APIs</li>
         <li><strong>Flexibility:</strong> Infinite customization possibilities</li>
@@ -551,15 +582,15 @@ export const proyects: Project[] = [
         <li><strong>Scalability:</strong> Adaptable to growing business requirements</li>
       </ul>
 
-      <h4>Value Proposition:</h4>
+      <h4><strong>Value Proposition:</strong></h4>
       <p>Aythen allows you to abstract the most technical concepts and apply them to your business logic, making complex development accessible and manageable for any business size.</p>
     `,
     descripcion: `
-      <h3>Aythen - Plataforma Multi-Servicio de Desarrollo</h3>
+      <h3><strong>Aythen - Plataforma Multi-Servicio de Desarrollo</strong></h3>
       
       <p>Aythen es una plataforma multi-servicio donde puedes armar tu propio equipo de desarrollo ajustando las necesidades de tu negocio para lograr una propuesta especialmente desarrollada a medida del usuario.</p>
 
-      <h4>Capacidades de la Plataforma:</h4>
+      <h4><strong>Capacidades de la Plataforma:</strong></h4>
       <ul>
         <li>Armado de equipos de desarrollo personalizados</li>
         <li>Evaluación y ajuste de necesidades empresariales</li>
@@ -567,7 +598,7 @@ export const proyects: Project[] = [
         <li>Abstracción de conceptos técnicos</li>
       </ul>
 
-      <h4>Características de Integración:</h4>
+      <h4><strong>Características de Integración:</strong></h4>
       <ul>
         <li><strong>Integración de APIs:</strong> Más de 50 APIs integrables</li>
         <li><strong>Flexibilidad:</strong> Posibilidades infinitas de personalización</li>
@@ -575,7 +606,7 @@ export const proyects: Project[] = [
         <li><strong>Escalabilidad:</strong> Adaptable a requerimientos empresariales en crecimiento</li>
       </ul>
 
-      <h4>Propuesta de Valor:</h4>
+      <h4><strong>Propuesta de Valor:</strong></h4>
       <p>Aythen permite abstraer los conceptos más técnicos y aplicarlos a tu lógica de negocios, haciendo el desarrollo complejo accesible y manejable para cualquier tamaño de empresa.</p>
     `,
     url: 'https://web2.aythen.com/',
@@ -584,11 +615,11 @@ export const proyects: Project[] = [
     name: 'Wam',
     img: wamhome,
     description: `
-      <h3>WAM - Creative Marketing Agency</h3>
+      <h3><strong>WAM - Creative Marketing Agency</strong></h3>
       
       <p>WAM is a comprehensive marketing services agency specializing in corporate identity development, graphic design, and web development. Among its clients are well-known companies from the city of Rosario and the province of Santa Fe.</p>
 
-      <h4>Services Offered:</h4>
+      <h4><strong>Services Offered:</strong></h4>
       <ul>
         <li>Corporate identity development</li>
         <li>Professional graphic design</li>
@@ -596,7 +627,7 @@ export const proyects: Project[] = [
         <li>Comprehensive marketing solutions</li>
       </ul>
 
-      <h4>Client Base:</h4>
+      <h4><strong>Client Base:</strong></h4>
       <ul>
         <li>Well-known companies from Rosario</li>
         <li>Businesses throughout Santa Fe province</li>
@@ -604,15 +635,15 @@ export const proyects: Project[] = [
         <li>Growing brand portfolio</li>
       </ul>
 
-      <h4>Agency Expertise:</h4>
+      <h4><strong>Agency Expertise:</strong></h4>
       <p>WAM combines creative design with technical development to deliver comprehensive marketing solutions that help businesses establish strong brand identities and digital presence.</p>
     `,
     descripcion: `
-      <h3>WAM - Agencia Creativa de Marketing</h3>
+      <h3><strong>WAM - Agencia Creativa de Marketing</strong></h3>
       
       <p>WAM es una agencia de servicios de marketing integral, especializada en desarrollo de identidades corporativas, diseño gráfico y desarrollo web. Entre sus clientes se encuentran conocidas empresas de la ciudad de Rosario y provincia de Santa Fe.</p>
 
-      <h4>Servicios Ofrecidos:</h4>
+      <h4><strong>Servicios Ofrecidos:</strong></h4>
       <ul>
         <li>Desarrollo de identidades corporativas</li>
         <li>Diseño gráfico profesional</li>
@@ -620,7 +651,7 @@ export const proyects: Project[] = [
         <li>Soluciones integrales de marketing</li>
       </ul>
 
-      <h4>Base de Clientes:</h4>
+      <h4><strong>Base de Clientes:</strong></h4>
       <ul>
         <li>Empresas reconocidas de Rosario</li>
         <li>Negocios de toda la provincia de Santa Fe</li>
@@ -628,7 +659,7 @@ export const proyects: Project[] = [
         <li>Portfolio de marcas en crecimiento</li>
       </ul>
 
-      <h4>Experiencia de la Agencia:</h4>
+      <h4><strong>Experiencia de la Agencia:</strong></h4>
       <p>WAM combina diseño creativo con desarrollo técnico para entregar soluciones integrales de marketing que ayudan a las empresas a establecer identidades de marca sólidas y presencia digital.</p>
     `,
     url: 'https://wamcreativo.com/',
@@ -637,11 +668,11 @@ export const proyects: Project[] = [
     name: 'Meduxa Fest',
     img: meduxa,
     description: `
-      <h3>MEDUXA FEST - Costume-Themed Birthday Invitations</h3>
+      <h3><strong>MEDUXA FEST - Costume-Themed Birthday Invitations</strong></h3>
       
       <p>MEDUXA FEST is a delightful website that I have created with love and dedication to invite loved ones to costume-themed birthdays. It proposes a somewhat defined identity, offers costume ideas, and provides event information.</p>
 
-      <h4>Key Features:</h4>
+      <h4><strong>Key Features:</strong></h4>
       <ul>
         <li>Costume-themed birthday invitations</li>
         <li>Creative costume ideas and suggestions</li>
@@ -649,7 +680,7 @@ export const proyects: Project[] = [
         <li>Fully validated attendance confirmation form</li>
       </ul>
 
-      <h4>User Experience:</h4>
+      <h4><strong>User Experience:</strong></h4>
       <ul>
         <li>Delightful and engaging design</li>
         <li>Intuitive navigation</li>
@@ -657,7 +688,7 @@ export const proyects: Project[] = [
         <li>Smooth user interactions</li>
       </ul>
 
-      <h4>Technologies Used:</h4>
+      <h4><strong>Technologies Used:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> TypeScript, React, Next.js</li>
         <li><strong>Form Validation:</strong> Complete form validation system</li>
@@ -667,11 +698,11 @@ export const proyects: Project[] = [
       <p><em>This project showcases my ability to create engaging, themed web experiences with attention to detail and user experience.</em></p>
     `,
     descripcion: `
-      <h3>MEDUXA FEST - Invitaciones de Cumpleaños Temáticos</h3>
+      <h3><strong>MEDUXA FEST - Invitaciones de Cumpleaños Temáticos</strong></h3>
       
       <p>MEDUXA FEST es una encantadora página web que he creado con amor y dedicación para invitar seres queridos a cumpleaños con temática de disfraces. Propone una identidad definida, brinda ideas para disfraces y proporciona información del evento.</p>
 
-      <h4>Características Principales:</h4>
+      <h4><strong>Características Principales:</strong></h4>
       <ul>
         <li>Invitaciones de cumpleaños con temática de disfraces</li>
         <li>Ideas creativas y sugerencias de disfraces</li>
@@ -679,7 +710,7 @@ export const proyects: Project[] = [
         <li>Formulario totalmente validado para confirmar asistencia</li>
       </ul>
 
-      <h4>Experiencia de Usuario:</h4>
+      <h4><strong>Experiencia de Usuario:</strong></h4>
       <ul>
         <li>Diseño encantador y atractivo</li>
         <li>Navegación intuitiva</li>
@@ -687,7 +718,7 @@ export const proyects: Project[] = [
         <li>Interacciones fluidas</li>
       </ul>
 
-      <h4>Tecnologías Utilizadas:</h4>
+      <h4><strong>Tecnologías Utilizadas:</strong></h4>
       <ul>
         <li><strong>Frontend:</strong> TypeScript, React, Next.js</li>
         <li><strong>Validación de formularios:</strong> Sistema completo de validación</li>
@@ -702,11 +733,11 @@ export const proyects: Project[] = [
     name: 'Rent House',
     img: renthouse,
     description: `
-      <h3>Rent House - Temporary Property Rentals</h3>
+      <h3><strong>Rent House - Temporary Property Rentals</strong></h3>
       
       <p>Rent House is a temporary rental site for properties focused on events and farewells, featuring comprehensive web functionality with contact forms, property location services, and a fast-booking system.</p>
 
-      <h4>Services Offered:</h4>
+      <h4><strong>Services Offered:</strong></h4>
       <ul>
         <li>Temporary property rentals</li>
         <li>Event venue bookings</li>
@@ -714,7 +745,7 @@ export const proyects: Project[] = [
         <li>Special occasion venues</li>
       </ul>
 
-      <h4>Platform Features:</h4>
+      <h4><strong>Platform Features:</strong></h4>
       <ul>
         <li>Interactive contact forms</li>
         <li>Property location mapping</li>
@@ -722,7 +753,7 @@ export const proyects: Project[] = [
         <li>Property gallery and details</li>
       </ul>
 
-      <h4>User Experience:</h4>
+      <h4><strong>User Experience:</strong></h4>
       <ul>
         <li>Streamlined booking process</li>
         <li>Easy property browsing</li>
@@ -731,11 +762,11 @@ export const proyects: Project[] = [
       </ul>
     `,
     descripcion: `
-      <h3>Rent House - Alquiler Temporal de Propiedades</h3>
+      <h3><strong>Rent House - Alquiler Temporal de Propiedades</strong></h3>
       
       <p>Rent House es un sitio de alquiler temporal para propiedades enfocado en eventos y despedidas, con funcionalidad web completa que incluye formularios de contacto, servicios de ubicación de propiedades y sistema de reserva rápida.</p>
 
-      <h4>Servicios Ofrecidos:</h4>
+      <h4><strong>Servicios Ofrecidos:</strong></h4>
       <ul>
         <li>Alquiler temporal de propiedades</li>
         <li>Reserva de venues para eventos</li>
@@ -743,7 +774,7 @@ export const proyects: Project[] = [
         <li>Venues para ocasiones especiales</li>
       </ul>
 
-      <h4>Características de la Plataforma:</h4>
+      <h4><strong>Características de la Plataforma:</strong></h4>
       <ul>
         <li>Formularios de contacto interactivos</li>
         <li>Mapeo de ubicación de propiedades</li>
@@ -765,11 +796,11 @@ export const proyects: Project[] = [
     name: 'Interchange institute',
     img: interchange,
     description: `
-      <h3>Interchange Institute - Virtual Campus Platform</h3>
+      <h3><strong>Interchange Institute - Virtual Campus Platform</strong></h3>
       
       <p>The project consists of developing an institutional website with a virtual campus specifically designed for students, allowing them to perform various educational and administrative activities online.</p>
 
-      <h4>Student Features:</h4>
+      <h4><strong>Student Features:</strong></h4>
       <ul>
         <li>Online exams and assessments</li>
         <li>Assignment submission and tracking</li>
@@ -778,7 +809,7 @@ export const proyects: Project[] = [
         <li>Course-organized pedagogical resources</li>
       </ul>
 
-      <h4>Administrative Platform:</h4>
+      <h4><strong>Administrative Platform:</strong></h4>
       <ul>
         <li>Centralized management dashboard</li>
         <li>Financial administration and fee control</li>
@@ -788,7 +819,7 @@ export const proyects: Project[] = [
         <li>Academic documentation generation</li>
       </ul>
 
-      <h4>Communication Features:</h4>
+      <h4><strong>Communication Features:</strong></h4>
       <ul>
         <li>Internal and external communication optimization</li>
         <li>Personalized notifications</li>
@@ -796,15 +827,15 @@ export const proyects: Project[] = [
         <li>Student-teacher interaction tools</li>
       </ul>
 
-      <h4>Platform Benefits:</h4>
+      <h4><strong>Platform Benefits:</strong></h4>
       <p>This project combines educational and administrative management in an integrated digital environment, offering modern solutions for both students and the institute's management team. Its intuitive design and advanced functionality make it a key tool for improving operational efficiency and learning quality.</p>
     `,
     descripcion: `
-      <h3>Interchange Institute - Plataforma de Campus Virtual</h3>
+      <h3><strong>Interchange Institute - Plataforma de Campus Virtual</strong></h3>
       
       <p>El proyecto consiste en el desarrollo de un sitio web institucional con un campus virtual diseñado específicamente para estudiantes, que les permite realizar diversas actividades educativas y administrativas de manera online.</p>
 
-      <h4>Características para Estudiantes:</h4>
+      <h4><strong>Características para Estudiantes:</strong></h4>
       <ul>
         <li>Exámenes y evaluaciones en línea</li>
         <li>Entrega y seguimiento de tareas</li>
@@ -813,7 +844,7 @@ export const proyects: Project[] = [
         <li>Recursos pedagógicos organizados por curso</li>
       </ul>
 
-      <h4>Plataforma Administrativa:</h4>
+      <h4><strong>Plataforma Administrativa:</strong></h4>
       <ul>
         <li>Dashboard centralizado de gestión</li>
         <li>Administración financiera y control de cuotas</li>
@@ -823,7 +854,7 @@ export const proyects: Project[] = [
         <li>Generación de documentación académica</li>
       </ul>
 
-      <h4>Características de Comunicación:</h4>
+      <h4><strong>Características de Comunicación:</strong></h4>
       <ul>
         <li>Optimización de comunicación interna y externa</li>
         <li>Notificaciones personalizadas</li>
@@ -831,7 +862,7 @@ export const proyects: Project[] = [
         <li>Herramientas de interacción estudiante-profesor</li>
       </ul>
 
-      <h4>Beneficios de la Plataforma:</h4>
+      <h4><strong>Beneficios de la Plataforma:</strong></h4>
       <p>Este proyecto combina la gestión educativa y administrativa en un entorno digital integrado, ofreciendo soluciones modernas tanto para estudiantes como para el equipo de gestión del instituto. Su diseño intuitivo y funcionalidad avanzada lo convierten en una herramienta clave para mejorar la eficiencia operativa y la calidad del aprendizaje.</p>
     `,
     url: 'https://www.interchange.com.ar/',
@@ -845,11 +876,11 @@ export const proyects: Project[] = [
       Additionally, the site highlights the company's commitment to excellence, emphasizing the careful selection of premium woods that provide a unique flavor to food. Information about the company's history, its national distribution network, and contact options for customers and resellers interested in their products is also provided.
     `,
     descripcion: `
-      <h3>Carbón Los Leños - Producción de Carbón Vegetal</h3>
+      <h3><strong>Carbón Los Leños - Producción de Carbón Vegetal</strong></h3>
       
       <p>El sitio web de "Carbón Los Leños" es la plataforma oficial de una empresa argentina dedicada a la producción y distribución de carbón vegetal de alta calidad.</p>
 
-      <h4>Productos Ofrecidos:</h4>
+      <h4><strong>Productos Ofrecidos:</strong></h4>
       <ul>
         <li>Carbón vegetal de alta calidad</li>
         <li>Leña seleccionada</li>
@@ -867,7 +898,7 @@ export const proyects: Project[] = [
         <li>Control de calidad riguroso</li>
       </ul>
 
-      <h4>Información Corporativa:</h4>
+      <h4><strong>Información Corporativa:</strong></h4>
       <ul>
         <li>Historia y trayectoria de la empresa</li>
         <li>Red de distribución a nivel nacional</li>
@@ -890,11 +921,11 @@ export const proyects: Project[] = [
       This project reflects my ability to combine intuitive design, technical functionality, and modern web development best practices.
     `,
     descripcion: `
-      <h3>Kaffetto - Experiencia Interactiva del Café</h3>
+      <h3><strong>Kaffetto - Experiencia Interactiva del Café</strong></h3>
       
       <p>Kaffetto es un proyecto web innovador enfocado en proporcionar una experiencia interactiva para los amantes del café, garantizando un rendimiento óptimo y una navegación fluida.</p>
 
-      <h4>Características Avanzadas:</h4>
+      <h4><strong>Características Avanzadas:</strong></h4>
       <ul>
         <li>Sistema de filtrado dinámico para explorar tipos de café</li>
         <li>Integración de pasarelas de pago seguras</li>
@@ -902,7 +933,7 @@ export const proyects: Project[] = [
         <li>Experiencia de compra personalizada</li>
       </ul>
 
-      <h4>Diseño y Experiencia:</h4>
+      <h4><strong>Diseño y Experiencia:</strong></h4>
       <ul>
         <li>Diseño responsivo cuidadosamente elaborado</li>
         <li>Optimización para dispositivos móviles y de escritorio</li>
@@ -910,7 +941,7 @@ export const proyects: Project[] = [
         <li>Navegación fluida y eficiente</li>
       </ul>
 
-      <h4>Optimización Técnica:</h4>
+      <h4><strong>Optimización Técnica:</strong></h4>
       <ul>
         <li>Técnicas de SEO avanzadas</li>
         <li>Máxima visibilidad en buscadores</li>
@@ -931,11 +962,11 @@ export const proyects: Project[] = [
       Additionally, it features a highlighted offers section, providing information about current discounts and promotions. The store also offers interest-free installment payment options and free shipping for purchases exceeding a specific amount, improving the online shopping experience for its customers.
     `,
     descripcion: `
-      <h3>Vichino Shoes - Tienda de Calzado Online</h3>
+      <h3><strong>Vichino Shoes - Tienda de Calzado Online</strong></h3>
       
       <p>Vichino es una tienda en línea especializada en calzado para hombres y mujeres, ofreciendo una variedad de productos como zapatillas y zapatos de cuero.</p>
 
-      <h4>Productos Disponibles:</h4>
+      <h4><strong>Productos Disponibles:</strong></h4>
       <ul>
         <li>Zapatillas para hombres y mujeres</li>
         <li>Zapatos de cuero de alta calidad</li>
@@ -943,7 +974,7 @@ export const proyects: Project[] = [
         <li>Variedad de estilos y tallas</li>
       </ul>
 
-      <h4>Estructura del Sitio:</h4>
+      <h4><strong>Estructura del Sitio:</strong></h4>
       <ul>
         <li>Categorías específicas: "Hombre" y "Mujer"</li>
         <li>Navegación clara y funcional</li>
@@ -951,7 +982,7 @@ export const proyects: Project[] = [
         <li>Información de descuentos y promociones</li>
       </ul>
 
-      <h4>Beneficios para el Cliente:</h4>
+      <h4><strong>Beneficios para el Cliente:</strong></h4>
       <ul>
         <li>Opciones de pago en cuotas sin interés</li>
         <li>Envíos gratuitos para compras superiores a monto específico</li>
@@ -970,11 +1001,11 @@ export const proyects: Project[] = [
       Additionally, they provide accessories and consumables to complement the culinary experience. The company stands out for its commitment to quality, offering warranties of up to 10 years on their products. They also promote an active community, providing recipes, tips, and classes to maximize the use of their kamados.
     `,
     descripcion: `
-      <h3>Kamado Argentino - Dispositivos de Cocción Japoneses</h3>
+      <h3><strong>Kamado Argentino - Dispositivos de Cocción Japoneses</strong></h3>
       
       <p>Kamado Argentino es una empresa argentina especializada en la fabricación y distribución de kamados, dispositivos de cocción de origen japonés que permiten asar, ahumar, hornear y grillar alimentos.</p>
 
-      <h4>Gama de Productos:</h4>
+      <h4><strong>Gama de Productos:</strong></h4>
       <ul>
         <li><strong>Kamado Asador Criollo:</strong> Ideal para reuniones familiares de hasta 15 personas</li>
         <li><strong>Kamado Gran Asador Patagónico:</strong> Diseñado para eventos de mayor envergadura</li>
@@ -982,7 +1013,7 @@ export const proyects: Project[] = [
         <li>Consumibles para complementar la experiencia culinaria</li>
       </ul>
 
-      <h4>Métodos de Cocción:</h4>
+      <h4><strong>Métodos de Cocción:</strong></h4>
       <ul>
         <li>Asado tradicional</li>
         <li>Ahumado de carnes</li>
@@ -990,7 +1021,7 @@ export const proyects: Project[] = [
         <li>Grillado especializado</li>
       </ul>
 
-      <h4>Compromiso con la Calidad:</h4>
+      <h4><strong>Compromiso con la Calidad:</strong></h4>
       <ul>
         <li>Garantías de hasta 10 años en productos</li>
         <li>Fabricación argentina de alta calidad</li>
@@ -1011,11 +1042,11 @@ export const proyects: Project[] = [
       Additionally, the application is installable as a progressive web app (PWA), allowing users to add it to their devices for faster access and a native app-like experience. This feature improves accessibility and convenience for those seeking an efficient and easy-to-use video conferencing solution.
     `,
     descripcion: `
-      <h3>Conference App - Plataforma de Videoconferencias</h3>
+      <h3><strong>Conference App - Plataforma de Videoconferencias</strong></h3>
       
       <p>Conference App es una plataforma de videoconferencias que permite a los usuarios crear y unirse a reuniones en línea, facilitando la colaboración en tiempo real.</p>
 
-      <h4>Funcionalidades Principales:</h4>
+      <h4><strong>Funcionalidades Principales:</strong></h4>
       <ul>
         <li>Videollamadas de alta calidad</li>
         <li>Audiollamadas cristalinas</li>
@@ -1023,7 +1054,7 @@ export const proyects: Project[] = [
         <li>Mensajería instantánea integrada</li>
       </ul>
 
-      <h4>Características Técnicas:</h4>
+      <h4><strong>Características Técnicas:</strong></h4>
       <ul>
         <li>Aplicación Web Progresiva (PWA)</li>
         <li>Instalable en dispositivos</li>
@@ -1031,7 +1062,7 @@ export const proyects: Project[] = [
         <li>Experiencia similar a aplicación nativa</li>
       </ul>
 
-      <h4>Beneficios para el Usuario:</h4>
+      <h4><strong>Beneficios para el Usuario:</strong></h4>
       <ul>
         <li>Colaboración en tiempo real</li>
         <li>Accesibilidad mejorada</li>
@@ -1052,11 +1083,11 @@ export const proyects: Project[] = [
       The interface is intuitive, offering a user-friendly experience for managing raffles in various contexts, such as events, promotions, or recreational activities. Additionally, the application is built with modern technologies, ensuring optimal performance and easy accessibility from different devices.
     `,
     descripcion: `
-      <h3>Raffle App - Herramienta de Sorteos</h3>
+      <h3><strong>Raffle App - Herramienta de Sorteos</strong></h3>
       
       <p>La aplicación Raffle es una herramienta diseñada para facilitar la realización de sorteos de manera sencilla y eficiente.</p>
 
-      <h4>Funcionalidades Principales:</h4>
+      <h4><strong>Funcionalidades Principales:</strong></h4>
       <ul>
         <li>Carga de listas de participantes desde archivos de texto</li>
         <li>Selección aleatoria de ganadores</li>
@@ -1064,7 +1095,7 @@ export const proyects: Project[] = [
         <li>Gestión completa de sorteos</li>
       </ul>
 
-      <h4>Contextos de Uso:</h4>
+      <h4><strong>Contextos de Uso:</strong></h4>
       <ul>
         <li>Eventos corporativos</li>
         <li>Promociones comerciales</li>
@@ -1072,7 +1103,7 @@ export const proyects: Project[] = [
         <li>Sorteos educativos</li>
       </ul>
 
-      <h4>Experiencia de Usuario:</h4>
+      <h4><strong>Experiencia de Usuario:</strong></h4>
       <ul>
         <li>Interfaz intuitiva y amigable</li>
         <li>Proceso simplificado de sorteo</li>
@@ -1080,7 +1111,7 @@ export const proyects: Project[] = [
         <li>Rendimiento óptimo</li>
       </ul>
 
-      <h4>Tecnología:</h4>
+      <h4><strong>Tecnología:</strong></h4>
       <p>Construida con tecnologías modernas para asegurar un rendimiento óptimo y fácil accesibilidad desde cualquier dispositivo.</p>
     `,
     url: 'https://raffle-app-public.vercel.app/',

@@ -283,7 +283,7 @@ export default function PortfolioLanding() {
                         alt={project.name}
                         width={400}
                         height={200}
-                        className='rounded-lg object-cover w-full'
+                        className='rounded-lg object-cover w-full m-4'
                       />
                       <CardTitle>{project.name}</CardTitle>
                       <CardDescription
