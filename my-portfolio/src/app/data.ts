@@ -782,7 +782,7 @@ export const proyects: Project[] = [
         <li>Galería y detalles de propiedades</li>
       </ul>
 
-      <h4>Experiencia de Usuario:</h4>
+      <h4><strong>Experiencia de Usuario:</strong></h4> 
       <ul>
         <li>Proceso de reserva simplificado</li>
         <li>Navegación fácil de propiedades</li>
@@ -890,7 +890,7 @@ export const proyects: Project[] = [
         <li>Sales y condimentos</li>
       </ul>
 
-      <h4>Compromiso con la Calidad:</h4>
+      <h4><strong>Compromiso con la Calidad:</strong></h4>
       <ul>
         <li>Cuidadosa selección de maderas de primera calidad</li>
         <li>Sabor único aportado a los alimentos</li>
