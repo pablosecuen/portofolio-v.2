@@ -398,6 +398,7 @@ export const projects: Project[] = [
       'Student-teacher interaction tools',
       'Intuitive design and advanced functionality'
     ],
+    liveUrl: 'https://www.interchange.com.ar',
     category: 'fullstack'
   },
   {
@@ -430,6 +431,7 @@ export const projects: Project[] = [
       'Scalability ready',
       'Optimal performance'
     ],
+     liveUrl: 'https://kaffetto.com/', 
     category: 'web'
   },
   {
@@ -457,6 +459,7 @@ export const projects: Project[] = [
       'Google GM Tracking implementation',
       'Responsive design and intuitive user experience'
     ],
+    liveUrl: 'https://carbonloslenos.com.ar/',
     category: 'fullstack'
   },
   {
@@ -515,6 +518,7 @@ export const projects: Project[] = [
       'User flow tracking for marketing',
       'Custom plugin integration'
     ],
+     liveUrl: 'https://conference-app-meet.vercel.app/',
     category: 'web'
   },
   {
@@ -542,6 +546,7 @@ export const projects: Project[] = [
       'User-friendly interface',
       'Adapted to different culinary needs'
     ],
+    liveUrl: 'https://kamadoargentino.com.ar/',
     category: 'web'
   },
   {
@@ -564,6 +569,7 @@ export const projects: Project[] = [
       'Accessible from different devices',
       'Optimal performance'
     ],
+    liveUrl: 'https://raffle-app-public.vercel.app/',
     category: 'web'
   },
   {
@@ -588,6 +594,7 @@ export const projects: Project[] = [
       'Smooth interactions',
       'Custom themed styles'
     ],
+    liveUrl: 'https://birthday-ruddy.vercel.app/',
     category: 'web'
   }
 ];
@@ -639,6 +646,7 @@ export const projectsEs: Project[] = [
       'Herramientas de interacción estudiante-profesor',
       'Diseño intuitivo y funcionalidad avanzada'
     ],
+     liveUrl: 'https://www.interchange.com.ar',
     category: 'fullstack'
   },
   {
@@ -663,6 +671,7 @@ export const projectsEs: Project[] = [
       'Preparado para escalabilidad',
       'Rendimiento óptimo'
     ],
+    liveUrl: 'https://kaffetto.com/', 
     category: 'web'
   },
   {
@@ -684,6 +693,7 @@ export const projectsEs: Project[] = [
       'Implementación de Google GM Tracking',
       'Diseño responsivo y experiencia de usuario intuitiva'
     ],
+      liveUrl: 'https://carbonloslenos.com.ar/',
     category: 'fullstack'
   },
   {
@@ -708,6 +718,7 @@ export const projectsEs: Project[] = [
       'Solución eficiente y fácil de usar',
       'Conveniencia para reuniones virtuales'
     ],
+    liveUrl: 'https://conference-app-meet.vercel.app/',
     category: 'web'
   },
   {
@@ -736,6 +747,7 @@ export const projectsEs: Project[] = [
       'Tracking de flujo de usuarios para marketing',
       'Integración de plugins personalizados'
     ],
+      liveUrl: 'https://conference-app-meet.vercel.app/',
     category: 'web'
   },
   {
@@ -759,6 +771,7 @@ export const projectsEs: Project[] = [
       'Interfaz amigable y fácil de usar',
       'Adaptado a diferentes necesidades culinarias'
     ],
+    liveUrl: 'https://kamadoargentino.com.ar/',
     category: 'web'
   },
   {
@@ -779,6 +792,7 @@ export const projectsEs: Project[] = [
       'Accesibilidad desde diferentes dispositivos',
       'Rendimiento óptimo'
     ],
+    liveUrl: 'https://raffle-app-public.vercel.app/',
     category: 'web'
   },
   {
@@ -800,6 +814,7 @@ export const projectsEs: Project[] = [
       'Interacciones fluidas',
       'Estilos temáticos personalizados'
     ],
+    liveUrl: 'https://birthday-ruddy.vercel.app/',
     category: 'web'
   }
 ];
