@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Glass Morphism Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Dark theme base colors */
+    --background: 220 13% 8%;
+    --background-secondary: 220 13% 10%;
+    --background-tertiary: 220 13% 12%;
+    --foreground: 210 40% 98%;
+    --foreground-muted: 215 20.2% 65.1%;
+
+    /* Glass morphism colors */
+    --glass-primary: 220 13% 15%;
+    --glass-secondary: 220 13% 18%;
+    --glass-border: 220 13% 25%;
+    
+    /* Violet accent colors */
+    --violet-primary: 262 83% 58%;
+    --violet-secondary: 262 50% 45%;
+    --violet-muted: 262 30% 35%;
+    
+    /* Card colors */
+    --card: 220 13% 12%;
+    --card-foreground: 210 40% 98%;
+    --card-glass: 220 13% 15%;
+    
+    /* Interactive elements */
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Accent and muted */
+    --accent: 262 50% 45%;
+    --accent-foreground: 210 40% 98%;
+    --muted: 220 13% 18%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    /* Borders and inputs */
+    --border: 220 13% 25%;
+    --input: 220 13% 18%;
+    --ring: 262 83% 58%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(262 50% 45%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(220 13% 15% / 0.8) 0%, hsl(220 13% 18% / 0.6) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 8%) 0%, hsl(220 13% 12%) 50%, hsl(262 30% 20%) 100%);
+    
+    /* Shadows */
+    --shadow-glass: 0 8px 32px hsl(220 13% 5% / 0.4);
+    --shadow-violet: 0 4px 20px hsl(262 83% 58% / 0.3);
+    --shadow-dark: 0 4px 16px hsl(220 13% 3% / 0.6);
+    
+    /* Radius */
+    --radius: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: var(--gradient-hero);
+    min-height: 100vh;
+  }
+  
+  /* Glass morphism base class */
+  .glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border) / 0.3);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  /* Enhanced glass with violet accent */
+  .glass-violet {
+    background: linear-gradient(135deg, hsl(262 30% 15% / 0.4) 0%, hsl(220 13% 15% / 0.8) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(262 50% 45% / 0.2);
+    box-shadow: var(--shadow-violet), var(--shadow-glass);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
