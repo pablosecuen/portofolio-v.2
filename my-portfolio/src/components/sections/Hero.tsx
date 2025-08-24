@@ -44,7 +44,7 @@ export function Hero() {
         </div>
 
         {/* Main Content */}
-        <div className='space-y-4 sm:space-y-6'>n
+        <div className='space-y-4 sm:space-y-6'>
           <div className='space-y-3 sm:space-y-4'>
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-foreground via-violet-primary to-foreground bg-clip-text text-transparent animate-fade-in-up px-4'>
               {t.hero.title}
