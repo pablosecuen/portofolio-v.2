@@ -80,13 +80,14 @@ export function Hero() {
             <Button
               variant='outline'
               size='lg'
-              disabled
-              title='CV coming soon'
               className='glass border-glass-border/30 hover:border-violet-primary/50 hover:bg-violet-primary/10 w-full sm:w-auto'
+              asChild
             >
-              <Download className='mr-2 h-4 w-4' aria-hidden='true' />
-              <span className='hidden sm:inline'>Download CV</span>
-              <span className='sm:hidden'>CV</span>
+              <a href='/Pablo-Amico-CV-2026.pdf' download='Pablo_Amico_Senior_Web_Engineer_CV_2026.pdf'>
+                <Download className='mr-2 h-4 w-4' aria-hidden='true' />
+                <span className='hidden sm:inline'>Download CV</span>
+                <span className='sm:hidden'>CV</span>
+              </a>
             </Button>
 
             <Button
