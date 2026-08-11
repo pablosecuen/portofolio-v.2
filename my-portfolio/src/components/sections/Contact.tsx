@@ -37,18 +37,18 @@ export function Contact() {
   const availability = [
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Available Worldwide (Remote)'
+      label: t.contact.location,
+      value: t.contact.locationValue
     },
     {
       icon: Clock,
-      label: 'Timezone',
-      value: 'UTC-3 (EST)'
+      label: t.contact.timezone,
+      value: t.contact.timezoneValue
     },
     {
       icon: Calendar,
-      label: 'Availability',
-      value: 'Open for new projects'
+      label: t.contact.openStatus,
+      value: t.contact.openStatusValue
     }
   ];
 
@@ -72,7 +72,7 @@ export function Contact() {
           {/* Contact Methods */}
           <div className="space-y-4 sm:space-y-6">
             <h3 className="text-xl sm:text-2xl font-bold text-violet-primary mb-4 sm:mb-6">
-              Get In Touch
+              {t.contact.getInTouch}
             </h3>
             
             {contactMethods.map((method) => (
@@ -81,14 +81,15 @@ export function Contact() {
                 variant="hover"
                 className={`p-4 sm:p-6 group transition-all duration-300 ${method.color}`}
               >
-                <a 
+                <a
                   href={method.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`${method.label}: ${method.value}`}
                   className="flex items-center gap-4"
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
-                    <method.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                    <method.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" aria-hidden="true" />
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="font-semibold text-foreground text-sm sm:text-base">
@@ -106,7 +107,7 @@ export function Contact() {
           {/* Availability Info */}
           <div className="space-y-4 sm:space-y-6">
             <h3 className="text-xl sm:text-2xl font-bold text-violet-primary mb-4 sm:mb-6">
-              Availability
+              {t.contact.availabilityTitle}
             </h3>
             
             {availability.map((item) => (
@@ -117,7 +118,7 @@ export function Contact() {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-lg bg-violet-primary/20 flex items-center justify-center">
-                    <item.icon className="h-6 w-6 text-violet-primary" />
+                    <item.icon className="h-6 w-6 text-violet-primary" aria-hidden="true" />
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">
@@ -157,17 +158,6 @@ export function Contact() {
                 </a>
               </Button>
               
-              <Button
-                size="lg"
-                variant="outline"
-                className="glass border-glass-border/30 hover:border-violet-primary/50 w-full sm:w-auto"
-                asChild
-              >
-               {/*  <a href="https://calendly.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="text-sm sm:text-base">Schedule a Call</span>
-                </a> */}
-              </Button>
             </div>
             
             <div className="pt-6 border-t border-glass-border/30">
@@ -182,7 +172,7 @@ export function Contact() {
         <div className="mt-12 sm:mt-16 text-center">
           <GlassCard variant="default" className="p-4 sm:p-6">
             <p className="text-xs sm:text-sm text-foreground-muted px-4">
-              © 2024 Senior Frontend Developer Portfolio. Built with React, Next.js & TypeScript.
+              &copy; {new Date().getFullYear()} Pablo Amico &mdash; {t.contact.footer}
             </p>
             <div className="flex justify-center gap-3 sm:gap-4 mt-3 sm:mt-4">
               {contactMethods.map((method) => (
@@ -191,9 +181,10 @@ export function Contact() {
                   href={method.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={method.label}
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-violet-primary/20 flex items-center justify-center hover:bg-violet-primary/30 transition-colors"
                 >
-                  <method.icon className="h-3 w-3 sm:h-4 sm:w-4 text-violet-primary" />
+                  <method.icon className="h-3 w-3 sm:h-4 sm:w-4 text-violet-primary" aria-hidden="true" />
                 </a>
               ))}
             </div>

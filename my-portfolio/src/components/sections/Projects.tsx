@@ -67,9 +67,10 @@ export function Projects() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`Screenshot of the ${project.title} project`}
                     className="h-24 sm:h-32 object-contain opacity-80 drop-shadow-xl rounded-lg"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
@@ -126,8 +127,9 @@ export function Projects() {
                       asChild
                     >
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <Eye className="h-4 w-4 mr-2" />
+                        <Eye className="h-4 w-4 mr-2" aria-hidden="true" />
                         {t.projects.live}
+                        <span className="sr-only">{` (${project.title})`}</span>
                       </a>
                     </Button>
                   )}
@@ -140,8 +142,9 @@ export function Projects() {
                       asChild
                     >
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4 mr-2" />
+                        <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                         {t.projects.code}
+                        <span className="sr-only">{` (${project.title})`}</span>
                       </a>
                     </Button>
                   )}
@@ -157,19 +160,19 @@ export function Projects() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-violet-primary mb-2">50+</div>
-                <div className="text-sm text-foreground-muted">Projects Completed</div>
+                <div className="text-sm text-foreground-muted">{t.projects.stats.projects}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-violet-primary mb-2">25+</div>
-                <div className="text-sm text-foreground-muted">Happy Clients</div>
+                <div className="text-sm text-foreground-muted">{t.projects.stats.clients}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-violet-primary mb-2">5+</div>
-                <div className="text-sm text-foreground-muted">Years Experience</div>
+                <div className="text-sm text-foreground-muted">{t.projects.stats.years}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-violet-primary mb-2">99%</div>
-                <div className="text-sm text-foreground-muted">Success Rate</div>
+                <div className="text-sm text-foreground-muted">{t.projects.stats.success}</div>
               </div>
             </div>
           </GlassCard>

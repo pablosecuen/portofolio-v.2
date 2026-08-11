@@ -9,28 +9,11 @@ export function About() {
   const { t } = useLanguage();
   const ref = useStaggeredAnimation(150);
 
-  const highlights = [
-    {
-      icon: Code,
-      title: '5+ Years',
-      description: 'Frontend Development'
-    },
-    {
-      icon: Zap,
-      title: '50+ Projects',
-      description: 'Successfully Delivered'
-    },
-    {
-      icon: Target,
-      title: '99%',
-      description: 'Client Satisfaction'
-    },
-    {
-      icon: Heart,
-      title: 'Passionate',
-      description: 'About Clean Code'
-    }
-  ];
+  const highlightIcons = [Code, Zap, Target, Heart];
+  const highlights = t.about.highlights.map((item, index) => ({
+    icon: highlightIcons[index],
+    ...item
+  }));
 
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 px-4">
@@ -80,7 +63,7 @@ export function About() {
               >
                 <div className="space-y-2 sm:space-y-3">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto rounded-lg bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <item.icon className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
+                    <item.icon className="h-4 w-4 sm:h-6 sm:w-6 text-white" aria-hidden="true" />
                   </div>
                   <div>
                     <div className="text-lg sm:text-xl lg:text-2xl font-bold text-violet-primary">

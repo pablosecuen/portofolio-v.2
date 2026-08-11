@@ -596,6 +596,239 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://birthday-ruddy.vercel.app/',
     category: 'web'
+  },
+  {
+    id: '10',
+    title: 'HPN Supplements — E-commerce Store',
+    description: 'Shopify storefront for HPN Supplements, a health & wellness supplement brand. Built and maintain the theme along with custom checkout UI extensions and a full migration off legacy Shopify Scripts to Shopify Functions.',
+    image: '/proyects/hpnsupplements.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Shopify Functions discount engine (bundles, volume discounts)',
+      'Checkout UI extensions: subscription upsells, trust badges, order duplication',
+      'Migration from legacy Shopify Scripts to Shopify Functions',
+      'Admin dashboard for discount & promo management',
+      'Performance-optimized storefront'
+    ],
+    liveUrl: 'https://hpnsupplements.com',
+    category: 'web'
+  },
+  {
+    id: '11',
+    title: 'GetTruSupps — E-commerce Store',
+    description: 'Shopify storefront for TRU Supplements, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
+    image: '/proyects/gettrusupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Bundle & volume discount functions',
+      'Checkout UI extensions for upsells and trust badges',
+      'Responsive, conversion-focused storefront design',
+      'Ongoing theme maintenance and performance tuning'
+    ],
+    liveUrl: 'https://gettrusupps.com',
+    category: 'web'
+  },
+  {
+    id: '12',
+    title: 'OneSol Supplements — E-commerce Store',
+    description: 'Shopify storefront for OneSol Supplements, part of the same multi-brand supplement portfolio, with shared checkout discount infrastructure and a fully custom theme.',
+    image: '/proyects/onesolsupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Bundle & volume discount functions',
+      'Checkout UI extensions for upsells and trust badges',
+      'Cross-brand component reuse with HPN & TRU storefronts',
+      'Performance and conversion optimization'
+    ],
+    liveUrl: 'https://onesol.com',
+    category: 'web'
+  },
+  {
+    id: '13',
+    title: 'MarginLab — Shopify Profit Analytics SaaS',
+    description: 'A/B testing, personalization, and profit-analytics SaaS built for Shopify merchants, with checkout and theme extensions being prepared for the Shopify App Store.',
+    image: '/proyects/marginlab.png',
+    technologies: ['Next.js', 'TypeScript', 'Shopify Extensions', 'Turborepo', 'Vercel'],
+    features: [
+      'Shopify checkout & theme app extensions',
+      'A/B testing and personalization engine',
+      'Merchant profit-analytics dashboard',
+      'Monorepo architecture for shared packages',
+      'Preparing for Shopify App Store submission'
+    ],
+    liveUrl: 'https://marginlab.vercel.app',
+    category: 'fullstack'
+  },
+  {
+    id: '14',
+    title: 'Monthly — Personal Finance Tracker',
+    description: 'A personal budgeting and expense-tracking web app with AI-assisted spending insights, packaged as an installable PWA and Android app.',
+    image: '/proyects/monthly.png',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
+    features: [
+      'AI-assisted spending insights (Cerebras)',
+      'Supabase-backed sync across devices',
+      'Installable PWA with Android TWA wrapper',
+      'Custom domain: monthly.com.ar',
+      'Fast, offline-friendly Vite + React 19 stack'
+    ],
+    liveUrl: 'https://monthly.com.ar',
+    category: 'fullstack'
+  },
+  {
+    id: '15',
+    title: 'Focus Digital Insight — Chrome Extension',
+    description: 'A Chrome extension (Manifest V3) that inspects any webpage in real time for SEO signals, detected tech stack, and tracking scripts, using a Rust-to-WebAssembly detection engine.',
+    image: '/proyects/focusdigitalinsight.png',
+    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
+    features: [
+      'Real-time SEO audit of the active tab',
+      'Tech-stack detection engine compiled from Rust to WASM',
+      'Tracking script and pixel detection',
+      'Manifest V3 Chrome extension architecture'
+    ],
+    category: 'library'
+  },
+  {
+    id: '16',
+    title: 'Seamless Chex — ACH Payments Marketing Site',
+    description: 'Migrated the marketing site for Seamless Chex, an ACH payment processing platform, from Webflow to Astro for faster load times and easier long-term maintenance.',
+    image: '/proyects/seamlesschex.png',
+    technologies: ['Astro', 'Tailwind CSS', 'MDX', 'Cloudflare Pages'],
+    features: [
+      'Full migration from Webflow to Astro',
+      'MDX-powered content sections',
+      'Deployed on Cloudflare Pages',
+      'Optimized Core Web Vitals over the legacy Webflow build'
+    ],
+    liveUrl: 'https://sc-astro-6ps.pages.dev',
+    category: 'web'
+  },
+  {
+    id: '17',
+    title: 'ClinicMind — Practice Management SaaS Website',
+    description: 'Marketing website for ClinicMind, a chiropractic and health-practice-management SaaS platform.',
+    image: '/proyects/clinicmind.png',
+    technologies: ['HTML', 'Tailwind CSS', 'Vercel'],
+    features: [
+      'Multi-page marketing site with blog',
+      'Feature and product pages (AI Scribe, ClinicMind Pay, etc.)',
+      'SEO-optimized static build',
+      'Deployed on Vercel'
+    ],
+    liveUrl: 'https://www.clinicmind.com',
+    category: 'web'
+  },
+  {
+    id: '18',
+    title: 'Edelman Team — HVAC & Plumbing Web App',
+    description: 'Location-aware web application for Edelman Heating, Cooling, Plumbing, Electric & Solar, serving Illinois and Wisconsin, with IP-based geolocation and integrations for scheduling and blog content.',
+    image: '/proyects/edelmanteam.png',
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'WordPress REST API', 'ServiceTitan'],
+    features: [
+      'IP-based geolocation for personalized service-area content',
+      'WordPress-powered blog via REST API',
+      'ServiceTitan integration for scheduling',
+      'Formspree-powered contact forms',
+      'Location pages across Illinois & Wisconsin service areas'
+    ],
+    liveUrl: 'https://www.edelmanteam.com',
+    category: 'fullstack'
+  },
+  {
+    id: '19',
+    title: 'Piedmont Capital Advisors — Financial Advisory Site',
+    description: 'WordPress website for Piedmont Capital Advisors, a financial advisory firm, currently being rebuilt with a custom Gutenberg block theme.',
+    image: '/proyects/piedmontcapital.png',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    features: [
+      'Custom WordPress theme and content structure',
+      'Firm overview, services, and team pages',
+      'Contact and lead-generation forms'
+    ],
+    liveUrl: 'https://www.piedmontcapitaladvisors.com',
+    category: 'web'
+  },
+  {
+    id: '20',
+    title: 'Funes Vape — Product Catalog',
+    description: 'E-commerce product catalog for a vape shop, with a Supabase-backed product database and a modern shadcn/ui interface.',
+    image: '/proyects/funesvape.jpg',
+    technologies: ['React', 'TypeScript', 'Vite', 'shadcn/ui', 'Supabase', 'Tailwind CSS'],
+    features: [
+      'Supabase-backed product database',
+      'Category and product filtering',
+      'Responsive product catalog UI',
+      'Fast Vite-based build'
+    ],
+    liveUrl: 'https://funes-vape.vercel.app',
+    category: 'fullstack'
+  },
+  {
+    id: '21',
+    title: 'Magic Tarot — AI Tarot Reading App',
+    description: 'A mobile tarot-reading app with AI-assisted card interpretations, animated card draws, and zodiac-based personalization.',
+    image: '/proyects/magictarot.webp',
+    technologies: ['React Native', 'Expo', 'TypeScript'],
+    features: [
+      'AI-assisted tarot card interpretations',
+      'Animated card draw and reveal',
+      'Zodiac-based personalization',
+      'Built with React Native & Expo'
+    ],
+    category: 'mobile'
+  },
+  {
+    id: '22',
+    title: 'J.Crew',
+    description: 'Enterprise-level e-commerce platform for J.Crew, developed as part of the Minutentag team on the same codebase and vendor integrations as the Madewell platform (J.Crew Group brands).',
+    image: '/proyects/jcrew.png',
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Akamai',
+      'Jenkins',
+      'Jest',
+      'Builder.io',
+      'Constructor.io',
+      'Loqate',
+      'Monetate',
+      'Salesforce',
+      'Merkle'
+    ],
+    features: [
+      'Real-time inventory management',
+      'Advanced product filtering',
+      'Secure and seamless checkout',
+      'Integration with Builder.io, Constructor.io, Loqate, Monetate, Salesforce, Merkle',
+      'Admin dashboard',
+      'Mobile-responsive design',
+      'Performance optimization with Akamai',
+      'Automated testing with Jest',
+      'CI/CD pipelines with Jenkins'
+    ],
+    liveUrl: 'https://www.jcrew.com',
+    category: 'fullstack'
+  },
+  {
+    id: '23',
+    title: 'Ambrosia Collective — E-commerce Store',
+    description: 'Shopify storefront for Ambrosia Collective, a superfood supplement brand, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
+    image: '/proyects/ambrosiacollective.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Bundle & volume discount functions',
+      'Checkout UI extensions for upsells and trust badges',
+      'Cross-brand component reuse with HPN, TRU & OneSol storefronts',
+      'Performance and conversion optimization'
+    ],
+    liveUrl: 'https://ambrosiacollective.com',
+    category: 'web'
   }
 ];
 
@@ -816,6 +1049,228 @@ export const projectsEs: Project[] = [
     ],
     liveUrl: 'https://birthday-ruddy.vercel.app/',
     category: 'web'
+  },
+  {
+    id: '10',
+    title: 'HPN Supplements — Tienda E-commerce',
+    description: 'Tienda Shopify para HPN Supplements, marca de suplementos de salud y bienestar. Desarrollo y mantenimiento del theme junto con extensiones de checkout a medida y migración completa de Shopify Scripts a Shopify Functions.',
+    image: '/proyects/hpnsupplements.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Motor de descuentos con Shopify Functions (bundles, descuentos por volumen)',
+      'Extensiones de checkout: upsells de suscripción, sellos de confianza, duplicación de pedidos',
+      'Migración de Shopify Scripts legacy a Shopify Functions',
+      'Panel de administración para gestión de descuentos y promociones',
+      'Tienda optimizada en rendimiento'
+    ],
+    liveUrl: 'https://hpnsupplements.com',
+    category: 'web'
+  },
+  {
+    id: '11',
+    title: 'GetTruSupps — Tienda E-commerce',
+    description: 'Tienda Shopify para TRU Supplements, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
+    image: '/proyects/gettrusupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Funciones de descuento por bundle y volumen',
+      'Extensiones de checkout para upsells y sellos de confianza',
+      'Diseño de tienda responsivo orientado a conversión',
+      'Mantenimiento continuo del theme y optimización de rendimiento'
+    ],
+    liveUrl: 'https://gettrusupps.com',
+    category: 'web'
+  },
+  {
+    id: '12',
+    title: 'OneSol Supplements — Tienda E-commerce',
+    description: 'Tienda Shopify para OneSol Supplements, parte del mismo portfolio multi-marca de suplementos, con infraestructura de descuentos de checkout compartida y theme totalmente a medida.',
+    image: '/proyects/onesolsupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Funciones de descuento por bundle y volumen',
+      'Extensiones de checkout para upsells y sellos de confianza',
+      'Reutilización de componentes entre las tiendas HPN y TRU',
+      'Optimización de rendimiento y conversión'
+    ],
+    liveUrl: 'https://onesol.com',
+    category: 'web'
+  },
+  {
+    id: '13',
+    title: 'MarginLab — SaaS de Analítica de Rentabilidad para Shopify',
+    description: 'SaaS de A/B testing, personalización y analítica de rentabilidad para comercios Shopify, con extensiones de checkout y theme en preparación para el Shopify App Store.',
+    image: '/proyects/marginlab.png',
+    technologies: ['Next.js', 'TypeScript', 'Shopify Extensions', 'Turborepo', 'Vercel'],
+    features: [
+      'Extensiones de checkout y theme app de Shopify',
+      'Motor de A/B testing y personalización',
+      'Dashboard de analítica de rentabilidad para comercios',
+      'Arquitectura monorepo con paquetes compartidos',
+      'En preparación para publicación en el Shopify App Store'
+    ],
+    liveUrl: 'https://marginlab.vercel.app',
+    category: 'fullstack'
+  },
+  {
+    id: '14',
+    title: 'Monthly — Gestor de Finanzas Personales',
+    description: 'Aplicación web de presupuesto y control de gastos personales con insights asistidos por IA, empaquetada como PWA instalable y app Android.',
+    image: '/proyects/monthly.png',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
+    features: [
+      'Insights de gastos asistidos por IA (Cerebras)',
+      'Sincronización entre dispositivos con Supabase',
+      'PWA instalable con wrapper Android TWA',
+      'Dominio propio: monthly.com.ar',
+      'Stack rápido y offline-friendly con Vite + React 19'
+    ],
+    liveUrl: 'https://monthly.com.ar',
+    category: 'fullstack'
+  },
+  {
+    id: '15',
+    title: 'Focus Digital Insight — Extensión de Chrome',
+    description: 'Extensión de Chrome (Manifest V3) que analiza cualquier página en tiempo real detectando señales de SEO, stack tecnológico y scripts de tracking, usando un motor de detección compilado de Rust a WebAssembly.',
+    image: '/proyects/focusdigitalinsight.png',
+    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
+    features: [
+      'Auditoría SEO en tiempo real de la pestaña activa',
+      'Motor de detección de stack tecnológico compilado de Rust a WASM',
+      'Detección de scripts y píxeles de tracking',
+      'Arquitectura de extensión Chrome Manifest V3'
+    ],
+    category: 'library'
+  },
+  {
+    id: '16',
+    title: 'Seamless Chex — Sitio de Pagos ACH',
+    description: 'Migración del sitio de marketing de Seamless Chex, una plataforma de procesamiento de pagos ACH, de Webflow a Astro para mejorar tiempos de carga y facilitar el mantenimiento a largo plazo.',
+    image: '/proyects/seamlesschex.png',
+    technologies: ['Astro', 'Tailwind CSS', 'MDX', 'Cloudflare Pages'],
+    features: [
+      'Migración completa de Webflow a Astro',
+      'Secciones de contenido con MDX',
+      'Desplegado en Cloudflare Pages',
+      'Core Web Vitals optimizados respecto al sitio Webflow original'
+    ],
+    liveUrl: 'https://sc-astro-6ps.pages.dev',
+    category: 'web'
+  },
+  {
+    id: '17',
+    title: 'ClinicMind — Sitio de SaaS de Gestión de Clínicas',
+    description: 'Sitio de marketing para ClinicMind, una plataforma SaaS de gestión de consultorios quiroprácticos y de salud.',
+    image: '/proyects/clinicmind.png',
+    technologies: ['HTML', 'Tailwind CSS', 'Vercel'],
+    features: [
+      'Sitio de marketing multipágina con blog',
+      'Páginas de producto y features (AI Scribe, ClinicMind Pay, etc.)',
+      'Build estático optimizado para SEO',
+      'Desplegado en Vercel'
+    ],
+    liveUrl: 'https://www.clinicmind.com',
+    category: 'web'
+  },
+  {
+    id: '18',
+    title: 'Edelman Team — App Web para Climatización y Plomería',
+    description: 'Aplicación web con geolocalización para Edelman Heating, Cooling, Plumbing, Electric & Solar, que atiende Illinois y Wisconsin, con integraciones de agenda y contenido de blog.',
+    image: '/proyects/edelmanteam.png',
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'WordPress REST API', 'ServiceTitan'],
+    features: [
+      'Geolocalización por IP para contenido personalizado por zona de servicio',
+      'Blog impulsado por WordPress vía REST API',
+      'Integración con ServiceTitan para turnos',
+      'Formularios de contacto con Formspree',
+      'Páginas de zonas de servicio en Illinois y Wisconsin'
+    ],
+    liveUrl: 'https://www.edelmanteam.com',
+    category: 'fullstack'
+  },
+  {
+    id: '19',
+    title: 'Piedmont Capital Advisors — Sitio de Asesoría Financiera',
+    description: 'Sitio WordPress para Piedmont Capital Advisors, una firma de asesoría financiera, actualmente en proceso de rediseño con un theme a medida basado en bloques de Gutenberg.',
+    image: '/proyects/piedmontcapital.png',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    features: [
+      'Theme de WordPress y estructura de contenido a medida',
+      'Páginas de la firma, servicios y equipo',
+      'Formularios de contacto y generación de leads'
+    ],
+    liveUrl: 'https://www.piedmontcapitaladvisors.com',
+    category: 'web'
+  },
+  {
+    id: '20',
+    title: 'Funes Vape — Catálogo de Productos',
+    description: 'Catálogo de productos e-commerce para una vapeshop, con base de datos en Supabase e interfaz moderna con shadcn/ui.',
+    image: '/proyects/funesvape.jpg',
+    technologies: ['React', 'TypeScript', 'Vite', 'shadcn/ui', 'Supabase', 'Tailwind CSS'],
+    features: [
+      'Base de datos de productos en Supabase',
+      'Filtrado por categoría y producto',
+      'UI de catálogo responsiva',
+      'Build rápido basado en Vite'
+    ],
+    liveUrl: 'https://funes-vape.vercel.app',
+    category: 'fullstack'
+  },
+  {
+    id: '21',
+    title: 'Magic Tarot — App de Tarot con IA',
+    description: 'App móvil de lectura de tarot con interpretaciones asistidas por IA, animación de cartas y personalización por signo zodiacal.',
+    image: '/proyects/magictarot.webp',
+    technologies: ['React Native', 'Expo', 'TypeScript'],
+    features: [
+      'Interpretaciones de tarot asistidas por IA',
+      'Animación de robo y revelado de cartas',
+      'Personalización basada en el signo zodiacal',
+      'Construida con React Native y Expo'
+    ],
+    category: 'mobile'
+  },
+  {
+    id: '22',
+    title: 'J.Crew',
+    description: 'Plataforma e-commerce empresarial para J.Crew, desarrollada como parte del equipo de Minutentag sobre el mismo código base e integraciones de proveedores que la plataforma de Madewell (marcas de J.Crew Group).',
+    image: '/proyects/jcrew.png',
+    technologies: [
+      'Next.js', 'React', 'TypeScript', 'Akamai', 'Jenkins', 'Jest', 'Builder.io', 'Constructor.io', 'Loqate', 'Monetate', 'Salesforce', 'Merkle'
+    ],
+    features: [
+      'Gestión de inventario en tiempo real',
+      'Filtrado avanzado de productos',
+      'Checkout seguro y fluido',
+      'Integración con Builder.io, Constructor.io, Loqate, Monetate, Salesforce, Merkle',
+      'Panel de administración',
+      'Diseño responsive',
+      'Optimización de rendimiento con Akamai',
+      'Testing automatizado con Jest',
+      'Pipelines CI/CD con Jenkins'
+    ],
+    liveUrl: 'https://www.jcrew.com',
+    category: 'fullstack'
+  },
+  {
+    id: '23',
+    title: 'Ambrosia Collective — Tienda E-commerce',
+    description: 'Tienda Shopify para Ambrosia Collective, marca de suplementos superfood, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
+    image: '/proyects/ambrosiacollective.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Funciones de descuento por bundle y volumen',
+      'Extensiones de checkout para upsells y sellos de confianza',
+      'Reutilización de componentes entre las tiendas HPN, TRU y OneSol',
+      'Optimización de rendimiento y conversión'
+    ],
+    liveUrl: 'https://ambrosiacollective.com',
+    category: 'web'
   }
 ];
 
@@ -949,12 +1404,19 @@ export const translations = {
       description: 'I\'m a Senior Frontend Developer with 5+ years of experience specializing in React ecosystem. I love creating intuitive user interfaces and optimizing performance.',
       skills: 'Core Skills',
       passion: 'What drives me',
-      passionText: 'Creating seamless user experiences through clean code, modern technologies, and attention to detail.'
+      passionText: 'Creating seamless user experiences through clean code, modern technologies, and attention to detail.',
+      highlights: [
+        { title: '5+ Years', description: 'Frontend Development' },
+        { title: '50+ Projects', description: 'Successfully Delivered' },
+        { title: '99%', description: 'Client Satisfaction' },
+        { title: 'Passionate', description: 'About Clean Code' }
+      ]
     },
     experience: {
       title: 'Professional Experience',
       present: 'Present',
-      achievements: 'Key Achievements'
+      achievements: 'Key Achievements',
+      timeline: 'Career Timeline'
     },
     projects: {
       title: 'Featured Projects',
@@ -967,11 +1429,32 @@ export const translations = {
         mobile: 'Mobile',
         fullstack: 'Full Stack',
         library: 'Libraries'
+      },
+      stats: {
+        projects: 'Projects Completed',
+        clients: 'Happy Clients',
+        years: 'Years Experience',
+        success: 'Success Rate'
       }
     },
     techStack: {
       title: 'Tech Stack & Skills',
-      level: 'Proficiency Level'
+      level: 'Proficiency Level',
+      legend: {
+        expert: 'Expert (5/5)',
+        advanced: 'Advanced (4/5)',
+        intermediate: 'Intermediate (3/5)',
+        beginner: 'Beginner (2/5)',
+        learning: 'Learning (1/5)'
+      },
+      highlights: {
+        reactTitle: 'React Ecosystem',
+        reactDesc: '5+ Years Experience',
+        tsTitle: 'TypeScript',
+        tsDesc: 'Type-Safe Development',
+        perfTitle: 'Performance',
+        perfDesc: 'Optimization Expert'
+      }
     },
     contact: {
       title: 'Let\'s Work Together',
@@ -979,10 +1462,19 @@ export const translations = {
       email: 'Send Email',
       linkedin: 'LinkedIn',
       whatsapp: 'WhatsApp',
+      getInTouch: 'Get In Touch',
+      availabilityTitle: 'Availability',
+      location: 'Location',
+      locationValue: 'Available Worldwide (Remote)',
+      timezone: 'Timezone',
+      timezoneValue: 'UTC-3 (EST)',
+      openStatus: 'Availability',
+      openStatusValue: 'Open for new projects',
       ctaTitle: 'Ready to Start Your Project?',
       ctaDesc: "Let's discuss how I can help bring your ideas to life with modern web technologies.",
       ctaEmail: 'Send Me an Email',
-      ctaResponse: 'Response time: Usually within 24 hours'
+      ctaResponse: 'Response time: Usually within 24 hours',
+      footer: 'Senior Frontend Developer Portfolio. Built with React & TypeScript.'
     }
   },
   es: {
@@ -1004,12 +1496,19 @@ export const translations = {
       description: 'Soy un Desarrollador Frontend Senior con más de 5 años de experiencia especializado en el ecosistema React. Me encanta crear interfaces de usuario intuitivas y optimizar el rendimiento.',
       skills: 'Habilidades Principales',
       passion: 'Lo que me motiva',
-      passionText: 'Crear experiencias de usuario fluidas a través de código limpio, tecnologías modernas y atención al detalle.'
+      passionText: 'Crear experiencias de usuario fluidas a través de código limpio, tecnologías modernas y atención al detalle.',
+      highlights: [
+        { title: '+5 Años', description: 'Desarrollo Frontend' },
+        { title: '+50 Proyectos', description: 'Entregados con Éxito' },
+        { title: '99%', description: 'Satisfacción del Cliente' },
+        { title: 'Apasionado', description: 'Por el Código Limpio' }
+      ]
     },
     experience: {
       title: 'Experiencia Profesional',
       present: 'Actualidad',
-      achievements: 'Logros Principales'
+      achievements: 'Logros Principales',
+      timeline: 'Línea de Tiempo Profesional'
     },
     projects: {
       title: 'Proyectos Destacados',
@@ -1022,11 +1521,32 @@ export const translations = {
         mobile: 'Móvil',
         fullstack: 'Full Stack',
         library: 'Librerías'
+      },
+      stats: {
+        projects: 'Proyectos Completados',
+        clients: 'Clientes Satisfechos',
+        years: 'Años de Experiencia',
+        success: 'Tasa de Éxito'
       }
     },
     techStack: {
       title: 'Stack Tecnológico y Habilidades',
-      level: 'Nivel de Competencia'
+      level: 'Nivel de Competencia',
+      legend: {
+        expert: 'Experto (5/5)',
+        advanced: 'Avanzado (4/5)',
+        intermediate: 'Intermedio (3/5)',
+        beginner: 'Principiante (2/5)',
+        learning: 'Aprendiendo (1/5)'
+      },
+      highlights: {
+        reactTitle: 'Ecosistema React',
+        reactDesc: '+5 Años de Experiencia',
+        tsTitle: 'TypeScript',
+        tsDesc: 'Desarrollo Type-Safe',
+        perfTitle: 'Rendimiento',
+        perfDesc: 'Experto en Optimización'
+      }
     },
     contact: {
       title: 'Trabajemos Juntos',
@@ -1034,10 +1554,19 @@ export const translations = {
       email: 'Enviar Email',
       linkedin: 'LinkedIn',
       whatsapp: 'WhatsApp',
+      getInTouch: 'Ponte en Contacto',
+      availabilityTitle: 'Disponibilidad',
+      location: 'Ubicación',
+      locationValue: 'Disponible en todo el mundo (Remoto)',
+      timezone: 'Zona Horaria',
+      timezoneValue: 'UTC-3 (EST)',
+      openStatus: 'Disponibilidad',
+      openStatusValue: 'Abierto a nuevos proyectos',
       ctaTitle: '¿Listo para empezar tu proyecto?',
       ctaDesc: 'Conversemos cómo puedo ayudarte a hacer realidad tus ideas con tecnologías web modernas.',
       ctaEmail: 'Envíame un Email',
-      ctaResponse: 'Tiempo de respuesta: Normalmente dentro de las 24 horas'
+      ctaResponse: 'Tiempo de respuesta: Normalmente dentro de las 24 horas',
+      footer: 'Portfolio de Desarrollador Frontend Senior. Hecho con React & TypeScript.'
     }
   }
 };

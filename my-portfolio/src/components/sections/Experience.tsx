@@ -51,13 +51,13 @@ export function Experience() {
                       {exp.position}
                     </h3>
                     <div className="flex items-center gap-2 text-foreground-muted mt-2">
-                      <MapPin className="h-4 w-4 flex-shrink-0" />
+                      <MapPin className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                       <span className="font-semibold text-sm sm:text-base">{exp.company}</span>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground-muted">
-                    <Calendar className="h-4 w-4 flex-shrink-0" />
+                    <Calendar className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                     <span>
                       {formatDate(exp.startDate)} - {formatDate(exp.endDate)}
                     </span>
@@ -86,7 +86,7 @@ export function Experience() {
                 {/* Right Column - Achievements */}
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center gap-2 text-violet-primary">
-                    <Award className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                    <Award className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" aria-hidden="true" />
                     <span className="font-semibold text-sm sm:text-base">{t.experience.achievements}</span>
                   </div>
                   <ul className="space-y-2">
@@ -110,7 +110,7 @@ export function Experience() {
         <div className="mt-12 lg:mt-16 relative hidden md:block">
           <GlassCard variant="violet" className="p-6 sm:p-8">
             <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-violet-primary">
-              Career Timeline
+              {t.experience.timeline}
             </h3>
             <div className="relative">
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-primary" />

@@ -11,13 +11,18 @@ import { Contact } from '@/components/sections/Contact';
 const Index = () => {
   return (
     <LanguageProvider>
+      <a href="#main-content" className="sr-only-focusable">
+        Skip to main content
+      </a>
       <div className="min-h-screen">
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <TechStack />
-        <Contact />
+        <main id="main-content">
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <TechStack />
+          <Contact />
+        </main>
         <FloatingMenu />
       </div>
     </LanguageProvider>

@@ -62,7 +62,7 @@ export function TechStack() {
                       {/* Tech Header */}
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                          <span className="text-lg">{tech.icon}</span>
+                          <span className="text-lg" aria-hidden="true">{tech.icon}</span>
                           <span className="font-medium text-foreground">
                             {tech.name}
                           </span>
@@ -102,23 +102,23 @@ export function TechStack() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 text-center">
               <div className="space-y-2">
                 <div className="w-4 h-4 bg-violet-primary rounded mx-auto" />
-                <div className="text-xs text-foreground-muted">Expert (5/5)</div>
+                <div className="text-xs text-foreground-muted">{t.techStack.legend.expert}</div>
               </div>
               <div className="space-y-2">
                 <div className="w-4 h-4 bg-violet-secondary rounded mx-auto" />
-                <div className="text-xs text-foreground-muted">Advanced (4/5)</div>
+                <div className="text-xs text-foreground-muted">{t.techStack.legend.advanced}</div>
               </div>
               <div className="space-y-2">
                 <div className="w-4 h-4 bg-violet-muted rounded mx-auto" />
-                <div className="text-xs text-foreground-muted">Intermediate (3/5)</div>
+                <div className="text-xs text-foreground-muted">{t.techStack.legend.intermediate}</div>
               </div>
               <div className="space-y-2">
                 <div className="w-4 h-4 bg-glass-border rounded mx-auto" />
-                <div className="text-xs text-foreground-muted">Beginner (2/5)</div>
+                <div className="text-xs text-foreground-muted">{t.techStack.legend.beginner}</div>
               </div>
               <div className="space-y-2">
                 <div className="w-4 h-4 bg-glass-border/50 rounded mx-auto" />
-                <div className="text-xs text-foreground-muted">Learning (1/5)</div>
+                <div className="text-xs text-foreground-muted">{t.techStack.legend.learning}</div>
               </div>
             </div>
           </GlassCard>
@@ -127,21 +127,21 @@ export function TechStack() {
         {/* Additional Stats */}
         <div className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <GlassCard variant="default" className="p-6 text-center">
-            <div className="text-3xl mb-2">⚛️</div>
-            <div className="text-lg font-bold text-violet-primary mb-1">React Ecosystem</div>
-            <div className="text-sm text-foreground-muted">5+ Years Experience</div>
+            <div className="text-3xl mb-2" aria-hidden="true">⚛️</div>
+            <div className="text-lg font-bold text-violet-primary mb-1">{t.techStack.highlights.reactTitle}</div>
+            <div className="text-sm text-foreground-muted">{t.techStack.highlights.reactDesc}</div>
           </GlassCard>
-          
+
           <GlassCard variant="default" className="p-6 text-center">
-            <div className="text-3xl mb-2">📘</div>
-            <div className="text-lg font-bold text-violet-primary mb-1">TypeScript</div>
-            <div className="text-sm text-foreground-muted">Type-Safe Development</div>
+            <div className="text-3xl mb-2" aria-hidden="true">📘</div>
+            <div className="text-lg font-bold text-violet-primary mb-1">{t.techStack.highlights.tsTitle}</div>
+            <div className="text-sm text-foreground-muted">{t.techStack.highlights.tsDesc}</div>
           </GlassCard>
-          
+
           <GlassCard variant="default" className="p-6 text-center">
-            <div className="text-3xl mb-2">🚀</div>
-            <div className="text-lg font-bold text-violet-primary mb-1">Performance</div>
-            <div className="text-sm text-foreground-muted">Optimization Expert</div>
+            <div className="text-3xl mb-2" aria-hidden="true">🚀</div>
+            <div className="text-lg font-bold text-violet-primary mb-1">{t.techStack.highlights.perfTitle}</div>
+            <div className="text-sm text-foreground-muted">{t.techStack.highlights.perfDesc}</div>
           </GlassCard>
         </div>
       </div>
