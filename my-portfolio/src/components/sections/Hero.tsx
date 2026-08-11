@@ -6,13 +6,13 @@ import { ArrowDown, Download, Mail } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { useLanguage } from '@/contexts/useLanguage';
 
+function scrollToProjects() {
+  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+}
+
 export function Hero() {
   const { t } = useLanguage();
   const ref = useScrollAnimation();
-
-  const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section

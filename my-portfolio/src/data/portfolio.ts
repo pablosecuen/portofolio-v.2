@@ -1280,6 +1280,8 @@ export const techStack: TechStack[] = [
     technologies: [
       { name: 'React', level: 5, icon: '⚛️' },
       { name: 'Next.js', level: 5, icon: '▲' },
+      { name: 'Astro', level: 4, icon: '🪐' },
+      { name: 'React Native / Expo', level: 4, icon: '📱' },
     ]
   },
   {
@@ -1288,6 +1290,15 @@ export const techStack: TechStack[] = [
       { name: 'TypeScript', level: 5, icon: '📘' },
       { name: 'JavaScript', level: 5, icon: '💛' },
       { name: 'Node.js', level: 4, icon: '🟢' },
+      { name: 'PHP', level: 4, icon: '🐘' },
+    ]
+  },
+  {
+    category: 'E-commerce & CMS',
+    technologies: [
+      { name: 'Shopify (Liquid & Functions)', level: 5, icon: '🛍️' },
+      { name: 'WordPress', level: 5, icon: '📝' },
+      { name: 'Custom Theme Development', level: 5, icon: '🧩' },
     ]
   },
   {
@@ -1311,8 +1322,8 @@ export const techStack: TechStack[] = [
   {
     category: 'Backend & Database',
     technologies: [
-
-      { name: 'PostgreSQL', level: 4, icon: '🐘' },
+      { name: 'Supabase', level: 4, icon: '⚡' },
+      { name: 'PostgreSQL', level: 4, icon: '🗄️' },
       { name: 'MongoDB', level: 4, icon: '🍃' },
       { name: 'Firebase', level: 4, icon: '📊' }
     ]
@@ -1320,11 +1331,11 @@ export const techStack: TechStack[] = [
   {
     category: 'Tools & DevOps',
     technologies: [
-      { name: 'Git', level: 5, icon: '📝' },
+      { name: 'Git', level: 5, icon: '🔧' },
       { name: 'Docker', level: 4, icon: '🐳' },
       { name: 'AWS', level: 4, icon: '☁️' },
       { name: 'Vercel', level: 5, icon: '▲' },
-      { name: 'Jenkins', level: 2, icon: '☁️' }
+      { name: 'Jenkins', level: 2, icon: '⚙️' }
     ]
   }
 ];
@@ -1335,6 +1346,8 @@ export const techStackEs: TechStack[] = [
     technologies: [
       { name: 'React', level: 5, icon: '⚛️' },
       { name: 'Next.js', level: 5, icon: '▲' },
+      { name: 'Astro', level: 4, icon: '🪐' },
+      { name: 'React Native / Expo', level: 4, icon: '📱' },
     ]
   },
   {
@@ -1343,6 +1356,15 @@ export const techStackEs: TechStack[] = [
       { name: 'TypeScript', level: 5, icon: '📘' },
       { name: 'JavaScript', level: 5, icon: '💛' },
       { name: 'Node.js', level: 4, icon: '🟢' },
+      { name: 'PHP', level: 4, icon: '🐘' },
+    ]
+  },
+  {
+    category: 'E-commerce y CMS',
+    technologies: [
+      { name: 'Shopify (Liquid y Functions)', level: 5, icon: '🛍️' },
+      { name: 'WordPress', level: 5, icon: '📝' },
+      { name: 'Desarrollo de Themes a Medida', level: 5, icon: '🧩' },
     ]
   },
   {
@@ -1366,8 +1388,8 @@ export const techStackEs: TechStack[] = [
   {
     category: 'Backend y Base de Datos',
     technologies: [
-      { name: 'Node.js', level: 4, icon: '🟢' },
-      { name: 'PostgreSQL', level: 4, icon: '🐘' },
+      { name: 'Supabase', level: 4, icon: '⚡' },
+      { name: 'PostgreSQL', level: 4, icon: '🗄️' },
       { name: 'MongoDB', level: 4, icon: '🍃' },
       { name: 'Firebase', level: 4, icon: '📊' }
     ]
@@ -1375,11 +1397,11 @@ export const techStackEs: TechStack[] = [
   {
     category: 'Herramientas y DevOps',
     technologies: [
-      { name: 'Git', level: 5, icon: '📝' },
+      { name: 'Git', level: 5, icon: '🔧' },
       { name: 'Docker', level: 4, icon: '🐳' },
       { name: 'AWS', level: 4, icon: '☁️' },
       { name: 'Vercel', level: 5, icon: '▲' },
-      { name: 'Jenkins', level: 2, icon: '☁️' }
+      { name: 'Jenkins', level: 2, icon: '⚙️' }
     ]
   }
 ];

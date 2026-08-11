@@ -6,12 +6,12 @@ import { projects, projectsEs } from '@/data/portfolio';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import { useLanguage } from "@/contexts/useLanguage";
 
+const categories = ['all', 'web', 'mobile', 'fullstack', 'library'];
+
 export function Projects() {
   const { t, language } = useLanguage();
   const ref = useStaggeredAnimation(150);
   const [activeCategory, setActiveCategory] = useState<string>('all');
-
-  const categories = ['all', 'web', 'mobile', 'fullstack', 'library'];
 
   // Selecciona el array correcto según el idioma
   const projectsData = language === 'es' ? projectsEs : projects;
@@ -41,7 +41,7 @@ export function Projects() {
                     ? 'bg-gradient-primary border-violet-primary/30' 
                     : 'glass border-glass-border/30 hover:border-violet-primary/50'
                   }
-                  transition-all duration-300
+                  transition-colors duration-300
                 `}
               >
                 {t.projects.categories[category as keyof typeof t.projects.categories]}
@@ -59,7 +59,7 @@ export function Projects() {
               key={project.id}
               data-animate
               variant="hover"
-              className="group overflow-hidden"
+              className="group overflow-hidden flex flex-col h-full"
             >
               {/* Project Image */}
               <div className="relative h-40 sm:h-48 bg-gradient-primary/20 overflow-hidden">
@@ -81,7 +81,7 @@ export function Projects() {
               </div>
 
               {/* Project Content */}
-              <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+              <div className="p-4 sm:p-6 space-y-3 sm:space-y-4 flex flex-col flex-1">
                 <div>
                   <h3 className="text-xl font-bold text-violet-primary group-hover:text-violet-secondary transition-colors mb-2">
                     {project.title}
@@ -109,8 +109,8 @@ export function Projects() {
                     {t.projects.features}
                   </h4>
                   <ul className="text-xs text-foreground-muted space-y-1">
-                    {project.features.slice(0, 3).map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2">
+                    {project.features.slice(0, 3).map((feature) => (
+                      <li key={feature} className="flex items-center gap-2">
                         <div className="w-1 h-1 rounded-full bg-violet-primary" />
                         {feature}
                       </li>
@@ -119,7 +119,7 @@ export function Projects() {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3 pt-4">
+                <div className="flex gap-3 pt-4 mt-auto">
                   {project.liveUrl && (
                     <Button
                       size="sm"

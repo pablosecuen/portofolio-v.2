@@ -90,9 +90,9 @@ export function Experience() {
                     <span className="font-semibold text-sm sm:text-base">{t.experience.achievements}</span>
                   </div>
                   <ul className="space-y-2">
-                    {exp.achievements.map((achievement, idx) => (
-                      <li 
-                        key={idx}
+                    {exp.achievements.map((achievement) => (
+                      <li
+                        key={achievement}
                         className="text-xs sm:text-sm text-foreground-muted flex items-start gap-2"
                       >
                         <div className="w-2 h-2 rounded-full bg-violet-primary mt-1.5 sm:mt-2 flex-shrink-0" />

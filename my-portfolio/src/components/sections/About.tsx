@@ -5,11 +5,12 @@ import { useStaggeredAnimation } from '@/hooks/useScrollAnimation';
 import { Code, Heart, Zap, Target } from 'lucide-react';
 import { useLanguage } from "@/contexts/useLanguage";
 
+const highlightIcons = [Code, Zap, Target, Heart];
+
 export function About() {
   const { t } = useLanguage();
   const ref = useStaggeredAnimation(150);
 
-  const highlightIcons = [Code, Zap, Target, Heart];
   const highlights = t.about.highlights.map((item, index) => ({
     icon: highlightIcons[index],
     ...item
@@ -53,9 +54,9 @@ export function About() {
 
           {/* Right Column - Highlights */}
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            {highlights.map((item, index) => (
+            {highlights.map((item) => (
               <GlassCard
-                key={index}
+                key={item.title}
                 data-animate
                 variant="hover"
                 animation="scale"

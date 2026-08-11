@@ -4,6 +4,7 @@ export function useScrollAnimation() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const node = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -16,13 +17,13 @@ export function useScrollAnimation() {
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);
@@ -34,6 +35,7 @@ export function useStaggeredAnimation(delay = 100) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const node = containerRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -51,13 +53,13 @@ export function useStaggeredAnimation(delay = 100) {
       }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, [delay]);

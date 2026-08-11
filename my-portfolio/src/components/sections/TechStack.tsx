@@ -4,23 +4,23 @@ import { useStaggeredAnimation } from '@/hooks/useScrollAnimation';
 import { techStack, techStackEs } from '@/data/portfolio';
 import { useLanguage } from "@/contexts/useLanguage";
 
+function getLevelColor(level: number) {
+  if (level >= 5) return 'bg-violet-primary';
+  if (level >= 4) return 'bg-violet-secondary';
+  if (level >= 3) return 'bg-violet-muted';
+  return 'bg-glass-border';
+}
+
+function getLevelWidth(level: number) {
+  return `${(level / 5) * 100}%`;
+}
+
 export function TechStack() {
   const { t, language } = useLanguage();
   const ref = useStaggeredAnimation(100);
 
   // Selecciona el array correcto según el idioma
   const techStackData = language === 'es' ? techStackEs : techStack;
-
-  const getLevelColor = (level: number) => {
-    if (level >= 5) return 'bg-violet-primary';
-    if (level >= 4) return 'bg-violet-secondary';
-    if (level >= 3) return 'bg-violet-muted';
-    return 'bg-glass-border';
-  };
-
-  const getLevelWidth = (level: number) => {
-    return `${(level / 5) * 100}%`;
-  };
 
   return (
     <section id="tech" className="py-12 sm:py-16 lg:py-20 px-4 bg-background-secondary/30">
