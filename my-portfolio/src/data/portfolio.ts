@@ -371,6 +371,153 @@ export const projects: Project[] = [
     category: 'fullstack'
   },
   {
+    id: '22',
+    title: 'J.Crew',
+    description: 'Enterprise-level e-commerce platform for J.Crew, developed as part of the Minutentag team on the same codebase and vendor integrations as the Madewell platform (J.Crew Group brands).',
+    image: '/proyects/jcrew.png',
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Akamai',
+      'Jenkins',
+      'Jest',
+      'Builder.io',
+      'Constructor.io',
+      'Loqate',
+      'Monetate',
+      'Salesforce',
+      'Merkle'
+    ],
+    features: [
+      'Real-time inventory management',
+      'Advanced product filtering',
+      'Secure and seamless checkout',
+      'Integration with Builder.io, Constructor.io, Loqate, Monetate, Salesforce, Merkle',
+      'Admin dashboard',
+      'Mobile-responsive design',
+      'Performance optimization with Akamai',
+      'Automated testing with Jest',
+      'CI/CD pipelines with Jenkins'
+    ],
+    liveUrl: 'https://www.jcrew.com',
+    category: 'fullstack'
+  },
+  {
+    id: '11',
+    title: 'GetTruSupps — E-commerce Store',
+    description: 'Shopify storefront for TRU Supplements, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
+    image: '/proyects/gettrusupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Bundle & volume discount functions',
+      'Checkout UI extensions for upsells and trust badges',
+      'Responsive, conversion-focused storefront design',
+      'Ongoing theme maintenance and performance tuning'
+    ],
+    liveUrl: 'https://gettrusupps.com',
+    category: 'web'
+  },
+  {
+    id: '10',
+    title: 'HPN Supplements — E-commerce Store',
+    description: 'Shopify storefront for HPN Supplements, a health & wellness supplement brand. Built and maintain the theme along with custom checkout UI extensions and a full migration off legacy Shopify Scripts to Shopify Functions.',
+    image: '/proyects/hpnsupplements.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Shopify Functions discount engine (bundles, volume discounts)',
+      'Checkout UI extensions: subscription upsells, trust badges, order duplication',
+      'Migration from legacy Shopify Scripts to Shopify Functions',
+      'Admin dashboard for discount & promo management',
+      'Performance-optimized storefront'
+    ],
+    liveUrl: 'https://hpnsupplements.com',
+    category: 'web'
+  },
+  {
+    id: '12',
+    title: 'OneSol Supplements — E-commerce Store',
+    description: 'Shopify storefront for OneSol Supplements, part of the same multi-brand supplement portfolio, with shared checkout discount infrastructure and a fully custom theme.',
+    image: '/proyects/onesolsupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Bundle & volume discount functions',
+      'Checkout UI extensions for upsells and trust badges',
+      'Cross-brand component reuse with HPN & TRU storefronts',
+      'Performance and conversion optimization'
+    ],
+    liveUrl: 'https://onesol.com',
+    category: 'web'
+  },
+  {
+    id: '23',
+    title: 'Ambrosia Collective — E-commerce Store',
+    description: 'Shopify storefront for Ambrosia Collective, a superfood supplement brand, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
+    image: '/proyects/ambrosiacollective.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Custom Shopify Liquid theme',
+      'Bundle & volume discount functions',
+      'Checkout UI extensions for upsells and trust badges',
+      'Cross-brand component reuse with HPN, TRU & OneSol storefronts',
+      'Performance and conversion optimization'
+    ],
+    liveUrl: 'https://ambrosiacollective.com',
+    category: 'web'
+  },
+  {
+    id: '24',
+    title: 'Monthly — AI Content Engine',
+    description: "Automated programmatic-SEO content engine behind Monthly's marketing site (monthly.com.ar). A queue-driven pipeline decides what to write next by SEO opportunity (keyword-cannibalization checks, category balance, provincial cluster coverage), generates structured content with Cerebras AI validated against Zod schemas, and runs it through a custom-built detector for generic AI phrasing and near-duplicate content before anything publishes. A targeted repair loop feeds the model its exact mistakes instead of blindly regenerating, and nothing ships below an 80/100 quality gate. Fully automated through a weekly GitHub Actions run.",
+    image: '/proyects/monthly.png',
+    technologies: ['Astro', 'Cerebras AI', 'Zod', 'TypeScript', 'GitHub Actions', 'Playwright'],
+    features: [
+      'SEO-opportunity queue: prioritizes content by cannibalization risk, category balance, and cluster coverage',
+      'Structured generation with Cerebras AI + Zod schema validation per content type',
+      'Custom AI-copy pattern detector (generic phrasing, buzzwords, forced localization, keyword stuffing)',
+      'Near-duplicate detection via w-shingling + Jaccard similarity, within-page and cross-page',
+      'Targeted repair loop that feeds specific issues back to the model instead of blind regeneration',
+      'Quantified publication-quality gate (80/100) combining originality, depth, structure, and SEO',
+      'Weekly GitHub Actions pipeline: generate → validate → build → OG images → SEO audit → PR'
+    ],
+    liveUrl: 'https://monthly.com.ar',
+    category: 'fullstack'
+  },
+  {
+    id: '14',
+    title: 'Monthly — Personal Finance App',
+    description: 'The budgeting app behind Monthly: plan salary, fixed expenses, weekend spending money, and investments without connecting a bank account, with AI-assisted spending insights. Ships as an installable PWA and as a native Android app via a TWA wrapper.',
+    image: '/proyects/monthly.png',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
+    features: [
+      'AI-assisted spending insights (Cerebras)',
+      'Salary, fixed-expense, weekend-money, and investment planning',
+      'Supabase-backed sync across devices',
+      'Installable PWA with an Android TWA wrapper (Play Store-ready)',
+      'No bank connection required'
+    ],
+    liveUrl: 'https://app.monthly.com.ar',
+    category: 'fullstack'
+  },
+  {
+    id: '15',
+    title: 'Focus Digital Insight — Chrome Extension',
+    description: 'A Chrome extension (Manifest V3) that inspects any webpage in real time for SEO signals, detected tech stack, and tracking scripts, using a Rust-to-WebAssembly detection engine.',
+    image: '/proyects/focusdigitalinsight.png',
+    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
+    features: [
+      'Real-time SEO audit of the active tab',
+      'Tech-stack detection engine compiled from Rust to WASM',
+      'Tracking script and pixel detection',
+      'Manifest V3 Chrome extension architecture'
+    ],
+    liveUrl: 'https://chromewebstore.google.com/detail/focus-digital-insight/gcmhelkoendjknbjogjpkmmhiamedfnm',
+    category: 'library'
+  },
+  {
     id: '2',
     title: 'Interchange Institute - Virtual Campus Platform',
     description: 'Development of an institutional website and virtual campus for Interchange Institute, allowing students to perform educational and administrative activities online. Includes exams, assignment submissions, grade consultation, access to materials, financial management, automatic notifications, and optimized communication between students and teachers.',
@@ -598,55 +745,6 @@ export const projects: Project[] = [
     category: 'web'
   },
   {
-    id: '10',
-    title: 'HPN Supplements — E-commerce Store',
-    description: 'Shopify storefront for HPN Supplements, a health & wellness supplement brand. Built and maintain the theme along with custom checkout UI extensions and a full migration off legacy Shopify Scripts to Shopify Functions.',
-    image: '/proyects/hpnsupplements.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
-    features: [
-      'Custom Shopify Liquid theme',
-      'Shopify Functions discount engine (bundles, volume discounts)',
-      'Checkout UI extensions: subscription upsells, trust badges, order duplication',
-      'Migration from legacy Shopify Scripts to Shopify Functions',
-      'Admin dashboard for discount & promo management',
-      'Performance-optimized storefront'
-    ],
-    liveUrl: 'https://hpnsupplements.com',
-    category: 'web'
-  },
-  {
-    id: '11',
-    title: 'GetTruSupps — E-commerce Store',
-    description: 'Shopify storefront for TRU Supplements, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
-    image: '/proyects/gettrusupps.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
-    features: [
-      'Custom Shopify Liquid theme',
-      'Bundle & volume discount functions',
-      'Checkout UI extensions for upsells and trust badges',
-      'Responsive, conversion-focused storefront design',
-      'Ongoing theme maintenance and performance tuning'
-    ],
-    liveUrl: 'https://gettrusupps.com',
-    category: 'web'
-  },
-  {
-    id: '12',
-    title: 'OneSol Supplements — E-commerce Store',
-    description: 'Shopify storefront for OneSol Supplements, part of the same multi-brand supplement portfolio, with shared checkout discount infrastructure and a fully custom theme.',
-    image: '/proyects/onesolsupps.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
-    features: [
-      'Custom Shopify Liquid theme',
-      'Bundle & volume discount functions',
-      'Checkout UI extensions for upsells and trust badges',
-      'Cross-brand component reuse with HPN & TRU storefronts',
-      'Performance and conversion optimization'
-    ],
-    liveUrl: 'https://onesol.com',
-    category: 'web'
-  },
-  {
     id: '13',
     title: 'MarginLab — Shopify Profit Analytics SaaS',
     description: 'A/B testing, personalization, and profit-analytics SaaS built for Shopify merchants, with checkout and theme extensions being prepared for the Shopify App Store.',
@@ -661,36 +759,6 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://marginlab.vercel.app',
     category: 'fullstack'
-  },
-  {
-    id: '14',
-    title: 'Monthly — Personal Finance Tracker',
-    description: 'A personal budgeting and expense-tracking web app with AI-assisted spending insights, packaged as an installable PWA and Android app.',
-    image: '/proyects/monthly.png',
-    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
-    features: [
-      'AI-assisted spending insights (Cerebras)',
-      'Supabase-backed sync across devices',
-      'Installable PWA with Android TWA wrapper',
-      'Custom domain: monthly.com.ar',
-      'Fast, offline-friendly Vite + React 19 stack'
-    ],
-    liveUrl: 'https://monthly.com.ar',
-    category: 'fullstack'
-  },
-  {
-    id: '15',
-    title: 'Focus Digital Insight — Chrome Extension',
-    description: 'A Chrome extension (Manifest V3) that inspects any webpage in real time for SEO signals, detected tech stack, and tracking scripts, using a Rust-to-WebAssembly detection engine.',
-    image: '/proyects/focusdigitalinsight.png',
-    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
-    features: [
-      'Real-time SEO audit of the active tab',
-      'Tech-stack detection engine compiled from Rust to WASM',
-      'Tracking script and pixel detection',
-      'Manifest V3 Chrome extension architecture'
-    ],
-    category: 'library'
   },
   {
     id: '16',
@@ -780,55 +848,6 @@ export const projects: Project[] = [
       'Built with React Native & Expo'
     ],
     category: 'mobile'
-  },
-  {
-    id: '22',
-    title: 'J.Crew',
-    description: 'Enterprise-level e-commerce platform for J.Crew, developed as part of the Minutentag team on the same codebase and vendor integrations as the Madewell platform (J.Crew Group brands).',
-    image: '/proyects/jcrew.png',
-    technologies: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Akamai',
-      'Jenkins',
-      'Jest',
-      'Builder.io',
-      'Constructor.io',
-      'Loqate',
-      'Monetate',
-      'Salesforce',
-      'Merkle'
-    ],
-    features: [
-      'Real-time inventory management',
-      'Advanced product filtering',
-      'Secure and seamless checkout',
-      'Integration with Builder.io, Constructor.io, Loqate, Monetate, Salesforce, Merkle',
-      'Admin dashboard',
-      'Mobile-responsive design',
-      'Performance optimization with Akamai',
-      'Automated testing with Jest',
-      'CI/CD pipelines with Jenkins'
-    ],
-    liveUrl: 'https://www.jcrew.com',
-    category: 'fullstack'
-  },
-  {
-    id: '23',
-    title: 'Ambrosia Collective — E-commerce Store',
-    description: 'Shopify storefront for Ambrosia Collective, a superfood supplement brand, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
-    image: '/proyects/ambrosiacollective.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
-    features: [
-      'Custom Shopify Liquid theme',
-      'Bundle & volume discount functions',
-      'Checkout UI extensions for upsells and trust badges',
-      'Cross-brand component reuse with HPN, TRU & OneSol storefronts',
-      'Performance and conversion optimization'
-    ],
-    liveUrl: 'https://ambrosiacollective.com',
-    category: 'web'
   }
 ];
 
@@ -854,6 +873,142 @@ export const projectsEs: Project[] = [
     ],
     liveUrl: 'https://www.madewell.com',
     category: 'fullstack'
+  },
+  {
+    id: '22',
+    title: 'J.Crew',
+    description: 'Plataforma e-commerce empresarial para J.Crew, desarrollada como parte del equipo de Minutentag sobre el mismo código base e integraciones de proveedores que la plataforma de Madewell (marcas de J.Crew Group).',
+    image: '/proyects/jcrew.png',
+    technologies: [
+      'Next.js', 'React', 'TypeScript', 'Akamai', 'Jenkins', 'Jest', 'Builder.io', 'Constructor.io', 'Loqate', 'Monetate', 'Salesforce', 'Merkle'
+    ],
+    features: [
+      'Gestión de inventario en tiempo real',
+      'Filtrado avanzado de productos',
+      'Checkout seguro y fluido',
+      'Integración con Builder.io, Constructor.io, Loqate, Monetate, Salesforce, Merkle',
+      'Panel de administración',
+      'Diseño responsive',
+      'Optimización de rendimiento con Akamai',
+      'Testing automatizado con Jest',
+      'Pipelines CI/CD con Jenkins'
+    ],
+    liveUrl: 'https://www.jcrew.com',
+    category: 'fullstack'
+  },
+  {
+    id: '11',
+    title: 'GetTruSupps — Tienda E-commerce',
+    description: 'Tienda Shopify para TRU Supplements, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
+    image: '/proyects/gettrusupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Funciones de descuento por bundle y volumen',
+      'Extensiones de checkout para upsells y sellos de confianza',
+      'Diseño de tienda responsivo orientado a conversión',
+      'Mantenimiento continuo del theme y optimización de rendimiento'
+    ],
+    liveUrl: 'https://gettrusupps.com',
+    category: 'web'
+  },
+  {
+    id: '10',
+    title: 'HPN Supplements — Tienda E-commerce',
+    description: 'Tienda Shopify para HPN Supplements, marca de suplementos de salud y bienestar. Desarrollo y mantenimiento del theme junto con extensiones de checkout a medida y migración completa de Shopify Scripts a Shopify Functions.',
+    image: '/proyects/hpnsupplements.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Motor de descuentos con Shopify Functions (bundles, descuentos por volumen)',
+      'Extensiones de checkout: upsells de suscripción, sellos de confianza, duplicación de pedidos',
+      'Migración de Shopify Scripts legacy a Shopify Functions',
+      'Panel de administración para gestión de descuentos y promociones',
+      'Tienda optimizada en rendimiento'
+    ],
+    liveUrl: 'https://hpnsupplements.com',
+    category: 'web'
+  },
+  {
+    id: '12',
+    title: 'OneSol Supplements — Tienda E-commerce',
+    description: 'Tienda Shopify para OneSol Supplements, parte del mismo portfolio multi-marca de suplementos, con infraestructura de descuentos de checkout compartida y theme totalmente a medida.',
+    image: '/proyects/onesolsupps.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Funciones de descuento por bundle y volumen',
+      'Extensiones de checkout para upsells y sellos de confianza',
+      'Reutilización de componentes entre las tiendas HPN y TRU',
+      'Optimización de rendimiento y conversión'
+    ],
+    liveUrl: 'https://onesol.com',
+    category: 'web'
+  },
+  {
+    id: '23',
+    title: 'Ambrosia Collective — Tienda E-commerce',
+    description: 'Tienda Shopify para Ambrosia Collective, marca de suplementos superfood, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
+    image: '/proyects/ambrosiacollective.png',
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
+    features: [
+      'Theme de Shopify Liquid a medida',
+      'Funciones de descuento por bundle y volumen',
+      'Extensiones de checkout para upsells y sellos de confianza',
+      'Reutilización de componentes entre las tiendas HPN, TRU y OneSol',
+      'Optimización de rendimiento y conversión'
+    ],
+    liveUrl: 'https://ambrosiacollective.com',
+    category: 'web'
+  },
+  {
+    id: '24',
+    title: 'Monthly — Motor de Contenido con IA',
+    description: 'Motor de contenido programático para el sitio de marketing de Monthly (monthly.com.ar). Un pipeline basado en colas decide qué escribir según oportunidad SEO (riesgo de canibalización de keywords, balance de categorías, cobertura de clusters provinciales), genera contenido estructurado con Cerebras AI validado contra schemas de Zod, y lo pasa por un detector propio de "esto lo escribió una IA" y de contenido casi-duplicado antes de publicar nada. Un loop de reparación dirigida le devuelve al modelo sus errores exactos en vez de regenerar a ciegas, y nada se publica por debajo de un piso de calidad de 80/100. Totalmente automatizado con una corrida semanal en GitHub Actions.',
+    image: '/proyects/monthly.png',
+    technologies: ['Astro', 'Cerebras AI', 'Zod', 'TypeScript', 'GitHub Actions', 'Playwright'],
+    features: [
+      'Cola de oportunidad SEO: prioriza contenido por riesgo de canibalización, balance de categorías y cobertura de clusters',
+      'Generación estructurada con Cerebras AI + validación por schema de Zod según tipo de contenido',
+      'Detector propio de patrones de copy de IA (frases genéricas, buzzwords, localización forzada, keyword stuffing)',
+      'Detección de casi-duplicados vía w-shingling + similitud de Jaccard, dentro de la página y entre páginas',
+      'Loop de reparación dirigida que le devuelve al modelo los problemas puntuales en vez de regenerar a ciegas',
+      'Piso de calidad de publicación cuantificado (80/100) combinando originalidad, profundidad, estructura y SEO',
+      'Pipeline semanal en GitHub Actions: generar → validar → build → imágenes OG → auditoría SEO → PR'
+    ],
+    liveUrl: 'https://monthly.com.ar',
+    category: 'fullstack'
+  },
+  {
+    id: '14',
+    title: 'Monthly — App de Finanzas Personales',
+    description: 'La app de presupuesto detrás de Monthly: planificá sueldo, gastos fijos, plata libre de fin de semana e inversiones sin conectar el banco, con insights de gastos asistidos por IA. Disponible como PWA instalable y como app Android nativa vía wrapper TWA.',
+    image: '/proyects/monthly.png',
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
+    features: [
+      'Insights de gastos asistidos por IA (Cerebras)',
+      'Planificación de sueldo, gastos fijos, plata libre de fin de semana e inversiones',
+      'Sincronización entre dispositivos con Supabase',
+      'PWA instalable con wrapper Android TWA (listo para Play Store)',
+      'No requiere conectar el banco'
+    ],
+    liveUrl: 'https://app.monthly.com.ar',
+    category: 'fullstack'
+  },
+  {
+    id: '15',
+    title: 'Focus Digital Insight — Extensión de Chrome',
+    description: 'Extensión de Chrome (Manifest V3) que analiza cualquier página en tiempo real detectando señales de SEO, stack tecnológico y scripts de tracking, usando un motor de detección compilado de Rust a WebAssembly.',
+    image: '/proyects/focusdigitalinsight.png',
+    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
+    features: [
+      'Auditoría SEO en tiempo real de la pestaña activa',
+      'Motor de detección de stack tecnológico compilado de Rust a WASM',
+      'Detección de scripts y píxeles de tracking',
+      'Arquitectura de extensión Chrome Manifest V3'
+    ],
+    liveUrl: 'https://chromewebstore.google.com/detail/focus-digital-insight/gcmhelkoendjknbjogjpkmmhiamedfnm',
+    category: 'library'
   },
   {
     id: '2',
@@ -1051,55 +1206,6 @@ export const projectsEs: Project[] = [
     category: 'web'
   },
   {
-    id: '10',
-    title: 'HPN Supplements — Tienda E-commerce',
-    description: 'Tienda Shopify para HPN Supplements, marca de suplementos de salud y bienestar. Desarrollo y mantenimiento del theme junto con extensiones de checkout a medida y migración completa de Shopify Scripts a Shopify Functions.',
-    image: '/proyects/hpnsupplements.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
-    features: [
-      'Theme de Shopify Liquid a medida',
-      'Motor de descuentos con Shopify Functions (bundles, descuentos por volumen)',
-      'Extensiones de checkout: upsells de suscripción, sellos de confianza, duplicación de pedidos',
-      'Migración de Shopify Scripts legacy a Shopify Functions',
-      'Panel de administración para gestión de descuentos y promociones',
-      'Tienda optimizada en rendimiento'
-    ],
-    liveUrl: 'https://hpnsupplements.com',
-    category: 'web'
-  },
-  {
-    id: '11',
-    title: 'GetTruSupps — Tienda E-commerce',
-    description: 'Tienda Shopify para TRU Supplements, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
-    image: '/proyects/gettrusupps.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
-    features: [
-      'Theme de Shopify Liquid a medida',
-      'Funciones de descuento por bundle y volumen',
-      'Extensiones de checkout para upsells y sellos de confianza',
-      'Diseño de tienda responsivo orientado a conversión',
-      'Mantenimiento continuo del theme y optimización de rendimiento'
-    ],
-    liveUrl: 'https://gettrusupps.com',
-    category: 'web'
-  },
-  {
-    id: '12',
-    title: 'OneSol Supplements — Tienda E-commerce',
-    description: 'Tienda Shopify para OneSol Supplements, parte del mismo portfolio multi-marca de suplementos, con infraestructura de descuentos de checkout compartida y theme totalmente a medida.',
-    image: '/proyects/onesolsupps.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
-    features: [
-      'Theme de Shopify Liquid a medida',
-      'Funciones de descuento por bundle y volumen',
-      'Extensiones de checkout para upsells y sellos de confianza',
-      'Reutilización de componentes entre las tiendas HPN y TRU',
-      'Optimización de rendimiento y conversión'
-    ],
-    liveUrl: 'https://onesol.com',
-    category: 'web'
-  },
-  {
     id: '13',
     title: 'MarginLab — SaaS de Analítica de Rentabilidad para Shopify',
     description: 'SaaS de A/B testing, personalización y analítica de rentabilidad para comercios Shopify, con extensiones de checkout y theme en preparación para el Shopify App Store.',
@@ -1114,36 +1220,6 @@ export const projectsEs: Project[] = [
     ],
     liveUrl: 'https://marginlab.vercel.app',
     category: 'fullstack'
-  },
-  {
-    id: '14',
-    title: 'Monthly — Gestor de Finanzas Personales',
-    description: 'Aplicación web de presupuesto y control de gastos personales con insights asistidos por IA, empaquetada como PWA instalable y app Android.',
-    image: '/proyects/monthly.png',
-    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
-    features: [
-      'Insights de gastos asistidos por IA (Cerebras)',
-      'Sincronización entre dispositivos con Supabase',
-      'PWA instalable con wrapper Android TWA',
-      'Dominio propio: monthly.com.ar',
-      'Stack rápido y offline-friendly con Vite + React 19'
-    ],
-    liveUrl: 'https://monthly.com.ar',
-    category: 'fullstack'
-  },
-  {
-    id: '15',
-    title: 'Focus Digital Insight — Extensión de Chrome',
-    description: 'Extensión de Chrome (Manifest V3) que analiza cualquier página en tiempo real detectando señales de SEO, stack tecnológico y scripts de tracking, usando un motor de detección compilado de Rust a WebAssembly.',
-    image: '/proyects/focusdigitalinsight.png',
-    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
-    features: [
-      'Auditoría SEO en tiempo real de la pestaña activa',
-      'Motor de detección de stack tecnológico compilado de Rust a WASM',
-      'Detección de scripts y píxeles de tracking',
-      'Arquitectura de extensión Chrome Manifest V3'
-    ],
-    category: 'library'
   },
   {
     id: '16',
@@ -1233,44 +1309,6 @@ export const projectsEs: Project[] = [
       'Construida con React Native y Expo'
     ],
     category: 'mobile'
-  },
-  {
-    id: '22',
-    title: 'J.Crew',
-    description: 'Plataforma e-commerce empresarial para J.Crew, desarrollada como parte del equipo de Minutentag sobre el mismo código base e integraciones de proveedores que la plataforma de Madewell (marcas de J.Crew Group).',
-    image: '/proyects/jcrew.png',
-    technologies: [
-      'Next.js', 'React', 'TypeScript', 'Akamai', 'Jenkins', 'Jest', 'Builder.io', 'Constructor.io', 'Loqate', 'Monetate', 'Salesforce', 'Merkle'
-    ],
-    features: [
-      'Gestión de inventario en tiempo real',
-      'Filtrado avanzado de productos',
-      'Checkout seguro y fluido',
-      'Integración con Builder.io, Constructor.io, Loqate, Monetate, Salesforce, Merkle',
-      'Panel de administración',
-      'Diseño responsive',
-      'Optimización de rendimiento con Akamai',
-      'Testing automatizado con Jest',
-      'Pipelines CI/CD con Jenkins'
-    ],
-    liveUrl: 'https://www.jcrew.com',
-    category: 'fullstack'
-  },
-  {
-    id: '23',
-    title: 'Ambrosia Collective — Tienda E-commerce',
-    description: 'Tienda Shopify para Ambrosia Collective, marca de suplementos superfood, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
-    image: '/proyects/ambrosiacollective.png',
-    technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
-    features: [
-      'Theme de Shopify Liquid a medida',
-      'Funciones de descuento por bundle y volumen',
-      'Extensiones de checkout para upsells y sellos de confianza',
-      'Reutilización de componentes entre las tiendas HPN, TRU y OneSol',
-      'Optimización de rendimiento y conversión'
-    ],
-    liveUrl: 'https://ambrosiacollective.com',
-    category: 'web'
   }
 ];
 
