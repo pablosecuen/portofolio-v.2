@@ -24,7 +24,7 @@ export function TechStack() {
 
   return (
     <section id="tech" className="py-12 sm:py-16 lg:py-20 px-4 bg-background-secondary/30">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-foreground to-violet-primary bg-clip-text text-transparent mb-4">
             {t.techStack.title}

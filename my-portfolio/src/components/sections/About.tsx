@@ -18,7 +18,7 @@ export function About() {
 
   return (
     <section id="about" className="py-12 sm:py-16 lg:py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div 
           ref={ref}
           className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
