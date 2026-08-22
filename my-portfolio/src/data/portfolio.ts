@@ -339,7 +339,7 @@ export const experiencesEs: Experience[] = [
 export const projects: Project[] = [
   {
     id: '25',
-    title: 'Intent-Driven Naming — AI Agent Skill',
+    title: 'Intent-Driven Naming - AI Agent Skill',
     description: 'An Agent Skill and conformance project for generating, auditing, and safely refactoring software identifiers according to semantic intent across languages and stacks. Instruction-only core with deterministic tooling around it to validate the package, route context efficiently, run provider-neutral evaluations, and block safety regressions across 15+ languages.',
     image: '/proyects/intentdrivennaming.png',
     technologies: ['Python', 'JSON Schema', 'GitHub Actions', 'Agent Skills'],
@@ -357,7 +357,7 @@ export const projects: Project[] = [
   },
   {
     id: '19',
-    title: 'Piedmont Capital Advisors — Financial Advisory Site',
+    title: 'Piedmont Capital Advisors - Financial Advisory Site',
     description: "Full custom rebuild of the WordPress site for Piedmont Capital Advisors, a financial advisory firm — replacing a page-builder-driven theme with a hand-built Gutenberg block theme. Every content section (hero, team bios, service breakdowns, testimonials) ships as a native custom block backed by its own PHP render callback and a dedicated SCSS/JS bundle compiled through wp-scripts, giving editors true drag-and-drop control without a page builder. Custom post types and taxonomies model the firm's services and team structure directly in wp-admin, and every template is built around structured data and semantic markup for search visibility.",
     image: '/proyects/piedmontcapital.png',
     technologies: ['WordPress', 'PHP', 'MySQL', 'Custom Gutenberg Blocks', 'Custom Post Types & Taxonomies', 'SCSS', 'wp-scripts / Webpack', 'SEO & Schema Markup'],
@@ -440,7 +440,7 @@ export const projects: Project[] = [
   },
   {
     id: '11',
-    title: 'GetTruSupps — E-commerce Store',
+    title: 'GetTruSupps - E-commerce Store',
     description: 'Shopify storefront for TRU Supplements, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
     image: '/proyects/gettrusupps.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
@@ -456,7 +456,7 @@ export const projects: Project[] = [
   },
   {
     id: '10',
-    title: 'HPN Supplements — E-commerce Store',
+    title: 'HPN Supplements - E-commerce Store',
     description: 'Shopify storefront for HPN Supplements, a health & wellness supplement brand. Built and maintain the theme along with custom checkout UI extensions and a full migration off legacy Shopify Scripts to Shopify Functions.',
     image: '/proyects/hpnsupplements.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
@@ -473,7 +473,7 @@ export const projects: Project[] = [
   },
   {
     id: '12',
-    title: 'OneSol Supplements — E-commerce Store',
+    title: 'OneSol Supplements - E-commerce Store',
     description: 'Shopify storefront for OneSol Supplements, part of the same multi-brand supplement portfolio, with shared checkout discount infrastructure and a fully custom theme.',
     image: '/proyects/onesolsupps.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
@@ -489,7 +489,7 @@ export const projects: Project[] = [
   },
   {
     id: '23',
-    title: 'Ambrosia Collective — E-commerce Store',
+    title: 'Ambrosia Collective - E-commerce Store',
     description: 'Shopify storefront for Ambrosia Collective, a superfood supplement brand, sharing the same checkout UI extension suite (bundle discounts, subscription upsells, trust badges) built across the HPN Supplements brand family.',
     image: '/proyects/ambrosiacollective.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
@@ -505,7 +505,7 @@ export const projects: Project[] = [
   },
   {
     id: '24',
-    title: 'Monthly — AI Content Engine',
+    title: 'Monthly - AI Content Engine',
     description: "Automated programmatic-SEO content engine behind Monthly's marketing site (monthly.com.ar). A queue-driven pipeline decides what to write next by SEO opportunity (keyword-cannibalization checks, category balance, provincial cluster coverage), generates structured content with Cerebras AI validated against Zod schemas, and runs it through a custom-built detector for generic AI phrasing and near-duplicate content before anything publishes. A targeted repair loop feeds the model its exact mistakes instead of blindly regenerating, and nothing ships below an 80/100 quality gate. Fully automated through a weekly GitHub Actions run.",
     image: '/proyects/monthly.png',
     technologies: ['Astro', 'Cerebras AI', 'Zod', 'TypeScript', 'GitHub Actions', 'Playwright'],
@@ -523,7 +523,7 @@ export const projects: Project[] = [
   },
   {
     id: '14',
-    title: 'Monthly — Personal Finance App',
+    title: 'Monthly - Personal Finance App',
     description: "The budgeting app behind Monthly: plan salary, fixed expenses, weekend spending money, and investments without ever connecting a bank account, with AI-assisted spending insights powered by Cerebras. Built as a true installable PWA — custom service worker, web app manifest, offline-capable shell — and wrapped as a native Android app via a TWA for Play Store distribution. Every user's financial data is isolated at the database level with Supabase Row Level Security, and spending patterns are surfaced through interactive charts instead of raw numbers, with push notifications keeping people on top of their budget.",
     image: '/proyects/monthly.png',
     technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI', 'PWA (Service Worker)', 'Supabase RLS', 'Push Notifications', 'Data Visualization'],
@@ -542,7 +542,7 @@ export const projects: Project[] = [
   },
   {
     id: '15',
-    title: 'Focus Digital Insight — Chrome Extension',
+    title: 'Focus Digital Insight - Chrome Extension',
     description: 'A Chrome extension (Manifest V3) that inspects any webpage in real time for SEO signals, detected tech stack, and tracking scripts. The detection engine is written in Rust and compiled to WebAssembly via wasm-bindgen, running inside a content script injected into the active tab and coordinated by a background service worker — the same architecture browsers expect from production-grade extensions, not a bolted-on script. It recognizes a wide range of CMSs and frameworks (WordPress, Shopify, React, and more) directly from page signals, and is live on the Chrome Web Store.',
     image: '/proyects/focusdigitalinsight.png',
     technologies: ['TypeScript', 'Rust', 'WebAssembly', 'wasm-bindgen', 'Chrome Extension API', 'Manifest V3'],
@@ -786,7 +786,7 @@ export const projects: Project[] = [
   },
   {
     id: '13',
-    title: 'MarginLab — Shopify Profit Analytics SaaS',
+    title: 'MarginLab - Shopify Profit Analytics SaaS',
     description: 'A/B testing, personalization, and profit-analytics SaaS built for Shopify merchants, with checkout and theme extensions being prepared for the Shopify App Store.',
     image: '/proyects/marginlab.png',
     technologies: ['Next.js', 'TypeScript', 'Shopify Extensions', 'Turborepo', 'Vercel'],
@@ -802,7 +802,7 @@ export const projects: Project[] = [
   },
   {
     id: '16',
-    title: 'Seamless Chex — ACH Payments Marketing Site',
+    title: 'Seamless Chex - ACH Payments Marketing Site',
     description: 'Migrated the marketing site for Seamless Chex, an ACH payment processing platform, from Webflow to Astro for faster load times and easier long-term maintenance.',
     image: '/proyects/seamlesschex.png',
     technologies: ['Astro', 'Tailwind CSS', 'MDX', 'Cloudflare Pages'],
@@ -817,7 +817,7 @@ export const projects: Project[] = [
   },
   {
     id: '17',
-    title: 'ClinicMind — Practice Management SaaS Website',
+    title: 'ClinicMind - Practice Management SaaS Website',
     description: 'Marketing website for ClinicMind, a chiropractic and health-practice-management SaaS platform.',
     image: '/proyects/clinicmind.png',
     technologies: ['HTML', 'Tailwind CSS', 'Vercel'],
@@ -832,7 +832,7 @@ export const projects: Project[] = [
   },
   {
     id: '18',
-    title: 'Edelman Team — HVAC & Plumbing Web App',
+    title: 'Edelman Team - HVAC & Plumbing Web App',
     description: 'Location-aware web application for Edelman Heating, Cooling, Plumbing, Electric & Solar, serving Illinois and Wisconsin, with IP-based geolocation and integrations for scheduling and blog content.',
     image: '/proyects/edelmanteam.png',
     technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'WordPress REST API', 'ServiceTitan'],
@@ -848,7 +848,7 @@ export const projects: Project[] = [
   },
   {
     id: '20',
-    title: 'Funes Vape — Product Catalog',
+    title: 'Funes Vape - Product Catalog',
     description: 'E-commerce product catalog for a vape shop, with a Supabase-backed product database and a modern shadcn/ui interface.',
     image: '/proyects/funesvape.jpg',
     technologies: ['React', 'TypeScript', 'Vite', 'shadcn/ui', 'Supabase', 'Tailwind CSS'],
@@ -863,7 +863,7 @@ export const projects: Project[] = [
   },
   {
     id: '21',
-    title: 'Magic Tarot — AI Tarot Reading App',
+    title: 'Magic Tarot - AI Tarot Reading App',
     description: 'A mobile tarot-reading app with AI-assisted card interpretations, animated card draws, and zodiac-based personalization.',
     image: '/proyects/magictarot.webp',
     technologies: ['React Native', 'Expo', 'TypeScript'],
@@ -880,7 +880,7 @@ export const projects: Project[] = [
 export const projectsEs: Project[] = [
   {
     id: '25',
-    title: 'Intent-Driven Naming — Skill de Agente IA',
+    title: 'Intent-Driven Naming - Skill de Agente IA',
     description: 'Un Agent Skill y proyecto de conformidad para generar, auditar y refactorizar de forma segura identificadores de software según su intención semántica, a través de lenguajes y stacks. Núcleo basado únicamente en instrucciones, rodeado de tooling determinístico para validar el paquete, enrutar contexto eficientemente, correr evaluaciones neutrales al proveedor y bloquear regresiones de seguridad en más de 15 lenguajes.',
     image: '/proyects/intentdrivennaming.png',
     technologies: ['Python', 'JSON Schema', 'GitHub Actions', 'Agent Skills'],
@@ -898,7 +898,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '19',
-    title: 'Piedmont Capital Advisors — Sitio de Asesoría Financiera',
+    title: 'Piedmont Capital Advisors - Sitio de Asesoría Financiera',
     description: 'Rebuild completo a medida del sitio WordPress de Piedmont Capital Advisors, una firma de asesoría financiera — reemplazando un theme armado con page builder por un theme de bloques Gutenberg hecho a mano. Cada sección de contenido (hero, bios del equipo, detalle de servicios, testimonios) es un bloque custom nativo con su propio render callback en PHP y su bundle de SCSS/JS compilado con wp-scripts, dándole a los editores control real de drag-and-drop sin depender de un page builder. Custom Post Types y taxonomías modelan los servicios y el equipo directamente en el admin de WordPress, y cada template está armado alrededor de datos estructurados y markup semántico para visibilidad en buscadores.',
     image: '/proyects/piedmontcapital.png',
     technologies: ['WordPress', 'PHP', 'MySQL', 'Custom Gutenberg Blocks', 'Custom Post Types & Taxonomies', 'SCSS', 'wp-scripts / Webpack', 'SEO & Schema Markup'],
@@ -959,7 +959,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '11',
-    title: 'GetTruSupps — Tienda E-commerce',
+    title: 'GetTruSupps - Tienda E-commerce',
     description: 'Tienda Shopify para TRU Supplements, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
     image: '/proyects/gettrusupps.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
@@ -975,7 +975,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '10',
-    title: 'HPN Supplements — Tienda E-commerce',
+    title: 'HPN Supplements - Tienda E-commerce',
     description: 'Tienda Shopify para HPN Supplements, marca de suplementos de salud y bienestar. Desarrollo y mantenimiento del theme junto con extensiones de checkout a medida y migración completa de Shopify Scripts a Shopify Functions.',
     image: '/proyects/hpnsupplements.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions', 'GraphQL', 'React'],
@@ -992,7 +992,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '12',
-    title: 'OneSol Supplements — Tienda E-commerce',
+    title: 'OneSol Supplements - Tienda E-commerce',
     description: 'Tienda Shopify para OneSol Supplements, parte del mismo portfolio multi-marca de suplementos, con infraestructura de descuentos de checkout compartida y theme totalmente a medida.',
     image: '/proyects/onesolsupps.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
@@ -1008,7 +1008,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '23',
-    title: 'Ambrosia Collective — Tienda E-commerce',
+    title: 'Ambrosia Collective - Tienda E-commerce',
     description: 'Tienda Shopify para Ambrosia Collective, marca de suplementos superfood, compartiendo la misma suite de extensiones de checkout (descuentos por bundle, upsells de suscripción, sellos de confianza) construida para la familia de marcas HPN.',
     image: '/proyects/ambrosiacollective.png',
     technologies: ['Shopify', 'Liquid', 'JavaScript', 'Shopify Functions'],
@@ -1024,7 +1024,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '24',
-    title: 'Monthly — Motor de Contenido con IA',
+    title: 'Monthly - Motor de Contenido con IA',
     description: 'Motor de contenido programático para el sitio de marketing de Monthly (monthly.com.ar). Un pipeline basado en colas decide qué escribir según oportunidad SEO (riesgo de canibalización de keywords, balance de categorías, cobertura de clusters provinciales), genera contenido estructurado con Cerebras AI validado contra schemas de Zod, y lo pasa por un detector propio de "esto lo escribió una IA" y de contenido casi-duplicado antes de publicar nada. Un loop de reparación dirigida le devuelve al modelo sus errores exactos en vez de regenerar a ciegas, y nada se publica por debajo de un piso de calidad de 80/100. Totalmente automatizado con una corrida semanal en GitHub Actions.',
     image: '/proyects/monthly.png',
     technologies: ['Astro', 'Cerebras AI', 'Zod', 'TypeScript', 'GitHub Actions', 'Playwright'],
@@ -1042,7 +1042,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '14',
-    title: 'Monthly — App de Finanzas Personales',
+    title: 'Monthly - App de Finanzas Personales',
     description: 'La app de presupuesto detrás de Monthly: planificá sueldo, gastos fijos, plata libre de fin de semana e inversiones sin conectar el banco nunca, con insights de gastos asistidos por IA vía Cerebras. Construida como una PWA instalable de verdad — service worker propio, web app manifest, shell con soporte offline — y empaquetada como app Android nativa mediante un wrapper TWA para distribución en Play Store. Los datos financieros de cada usuario están aislados a nivel de base de datos con Row Level Security de Supabase, y los patrones de gasto se muestran con gráficos interactivos en vez de números crudos, con notificaciones push para mantener a la gente al tanto de su presupuesto.',
     image: '/proyects/monthly.png',
     technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI', 'PWA (Service Worker)', 'Supabase RLS', 'Push Notifications', 'Data Visualization'],
@@ -1061,7 +1061,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '15',
-    title: 'Focus Digital Insight — Extensión de Chrome',
+    title: 'Focus Digital Insight - Extensión de Chrome',
     description: 'Extensión de Chrome (Manifest V3) que analiza cualquier página en tiempo real detectando señales de SEO, stack tecnológico y scripts de tracking. El motor de detección está escrito en Rust y compilado a WebAssembly vía wasm-bindgen, corriendo dentro de un content script inyectado en la pestaña activa y coordinado por un service worker en background — la misma arquitectura que se espera de una extensión de producción, no un script pegado con cinta. Reconoce un rango amplio de CMSs y frameworks (WordPress, Shopify, React, y más) directamente desde señales de la página, y está publicada y en vivo en la Chrome Web Store.',
     image: '/proyects/focusdigitalinsight.png',
     technologies: ['TypeScript', 'Rust', 'WebAssembly', 'wasm-bindgen', 'Chrome Extension API', 'Manifest V3'],
@@ -1273,7 +1273,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '13',
-    title: 'MarginLab — SaaS de Analítica de Rentabilidad para Shopify',
+    title: 'MarginLab - SaaS de Analítica de Rentabilidad para Shopify',
     description: 'SaaS de A/B testing, personalización y analítica de rentabilidad para comercios Shopify, con extensiones de checkout y theme en preparación para el Shopify App Store.',
     image: '/proyects/marginlab.png',
     technologies: ['Next.js', 'TypeScript', 'Shopify Extensions', 'Turborepo', 'Vercel'],
@@ -1289,7 +1289,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '16',
-    title: 'Seamless Chex — Sitio de Pagos ACH',
+    title: 'Seamless Chex - Sitio de Pagos ACH',
     description: 'Migración del sitio de marketing de Seamless Chex, una plataforma de procesamiento de pagos ACH, de Webflow a Astro para mejorar tiempos de carga y facilitar el mantenimiento a largo plazo.',
     image: '/proyects/seamlesschex.png',
     technologies: ['Astro', 'Tailwind CSS', 'MDX', 'Cloudflare Pages'],
@@ -1304,7 +1304,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '17',
-    title: 'ClinicMind — Sitio de SaaS de Gestión de Clínicas',
+    title: 'ClinicMind - Sitio de SaaS de Gestión de Clínicas',
     description: 'Sitio de marketing para ClinicMind, una plataforma SaaS de gestión de consultorios quiroprácticos y de salud.',
     image: '/proyects/clinicmind.png',
     technologies: ['HTML', 'Tailwind CSS', 'Vercel'],
@@ -1319,7 +1319,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '18',
-    title: 'Edelman Team — App Web para Climatización y Plomería',
+    title: 'Edelman Team - App Web para Climatización y Plomería',
     description: 'Aplicación web con geolocalización para Edelman Heating, Cooling, Plumbing, Electric & Solar, que atiende Illinois y Wisconsin, con integraciones de agenda y contenido de blog.',
     image: '/proyects/edelmanteam.png',
     technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'WordPress REST API', 'ServiceTitan'],
@@ -1335,7 +1335,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '20',
-    title: 'Funes Vape — Catálogo de Productos',
+    title: 'Funes Vape - Catálogo de Productos',
     description: 'Catálogo de productos e-commerce para una vapeshop, con base de datos en Supabase e interfaz moderna con shadcn/ui.',
     image: '/proyects/funesvape.jpg',
     technologies: ['React', 'TypeScript', 'Vite', 'shadcn/ui', 'Supabase', 'Tailwind CSS'],
@@ -1350,7 +1350,7 @@ export const projectsEs: Project[] = [
   },
   {
     id: '21',
-    title: 'Magic Tarot — App de Tarot con IA',
+    title: 'Magic Tarot - App de Tarot con IA',
     description: 'App móvil de lectura de tarot con interpretaciones asistidas por IA, animación de cartas y personalización por signo zodiacal.',
     image: '/proyects/magictarot.webp',
     technologies: ['React Native', 'Expo', 'TypeScript'],

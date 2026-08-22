@@ -81,7 +81,7 @@ export function Projects() {
               </div>
 
               {/* Project Content */}
-              <div className="p-4 sm:p-6 space-y-3 sm:space-y-4 flex flex-col flex-1">
+              <div className="p-4 sm:p-6 gap-3 sm:gap-4 flex flex-col flex-1">
                 <div>
                   <h3 className="text-xl font-bold text-violet-primary group-hover:text-violet-secondary transition-colors mb-2">
                     {project.title}
