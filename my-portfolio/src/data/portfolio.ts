@@ -338,6 +338,38 @@ export const experiencesEs: Experience[] = [
 
 export const projects: Project[] = [
   {
+    id: '25',
+    title: 'Intent-Driven Naming — AI Agent Skill',
+    description: 'An Agent Skill and conformance project for generating, auditing, and safely refactoring software identifiers according to semantic intent across languages and stacks. Instruction-only core with deterministic tooling around it to validate the package, route context efficiently, run provider-neutral evaluations, and block safety regressions across 15+ languages.',
+    image: '/proyects/intentdrivennaming.png',
+    technologies: ['Python', 'JSON Schema', 'GitHub Actions', 'Agent Skills'],
+    features: [
+      'Five-outcome semantic decision model: keep, rename, map, migrate, defer',
+      'Progressive-disclosure architecture: small router, conditional workflows and language profiles',
+      'Provider-neutral evaluation harness (JSONL) with blinded human review and pairwise scoring',
+      'Contract-safety fixtures across TypeScript, Python, Go, Rust, Java, C#, SQL, Terraform, and generated code',
+      '84 activation cases and 48 behavior cases with 185 explicit invariants across 7 locales',
+      'Deterministic release archive with SHA-256 checksums and SPDX 2.3 inventory',
+      'CI-enforced repository, schema, and fixture validation'
+    ],
+    githubUrl: 'https://github.com/pabloamicodev/intent-driven-naming/',
+    category: 'library'
+  },
+  {
+    id: '19',
+    title: 'Piedmont Capital Advisors — Financial Advisory Site',
+    description: 'WordPress website for Piedmont Capital Advisors, a financial advisory firm, currently being rebuilt with a custom Gutenberg block theme.',
+    image: '/proyects/piedmontcapital.png',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    features: [
+      'Custom WordPress theme and content structure',
+      'Firm overview, services, and team pages',
+      'Contact and lead-generation forms'
+    ],
+    liveUrl: 'https://www.piedmontcapitaladvisors.com',
+    category: 'web'
+  },
+  {
     id: '1',
     title: 'Madewell',
     description: 'Enterprise-level e-commerce platform for Madewell, developed as part of the Minutentag team. Features advanced filtering, real-time inventory, seamless checkout, and integrations with multiple 3rd party vendors and CMSs.',
@@ -807,20 +839,6 @@ export const projects: Project[] = [
     category: 'fullstack'
   },
   {
-    id: '19',
-    title: 'Piedmont Capital Advisors — Financial Advisory Site',
-    description: 'WordPress website for Piedmont Capital Advisors, a financial advisory firm, currently being rebuilt with a custom Gutenberg block theme.',
-    image: '/proyects/piedmontcapital.png',
-    technologies: ['WordPress', 'PHP', 'MySQL'],
-    features: [
-      'Custom WordPress theme and content structure',
-      'Firm overview, services, and team pages',
-      'Contact and lead-generation forms'
-    ],
-    liveUrl: 'https://www.piedmontcapitaladvisors.com',
-    category: 'web'
-  },
-  {
     id: '20',
     title: 'Funes Vape — Product Catalog',
     description: 'E-commerce product catalog for a vape shop, with a Supabase-backed product database and a modern shadcn/ui interface.',
@@ -852,6 +870,38 @@ export const projects: Project[] = [
 ];
 
 export const projectsEs: Project[] = [
+  {
+    id: '25',
+    title: 'Intent-Driven Naming — Skill de Agente IA',
+    description: 'Un Agent Skill y proyecto de conformidad para generar, auditar y refactorizar de forma segura identificadores de software según su intención semántica, a través de lenguajes y stacks. Núcleo basado únicamente en instrucciones, rodeado de tooling determinístico para validar el paquete, enrutar contexto eficientemente, correr evaluaciones neutrales al proveedor y bloquear regresiones de seguridad en más de 15 lenguajes.',
+    image: '/proyects/intentdrivennaming.png',
+    technologies: ['Python', 'JSON Schema', 'GitHub Actions', 'Agent Skills'],
+    features: [
+      'Modelo de decisión semántica con cinco resultados: keep, rename, map, migrate, defer',
+      'Arquitectura de divulgación progresiva: router pequeño, workflows y perfiles de lenguaje condicionales',
+      'Harness de evaluación neutral al proveedor (JSONL) con revisión humana ciega y scoring pairwise',
+      'Fixtures de seguridad de contratos en TypeScript, Python, Go, Rust, Java, C#, SQL, Terraform y código generado',
+      '84 casos de activación y 48 casos de comportamiento con 185 invariantes explícitos en 7 locales',
+      'Archivo de release determinístico con checksums SHA-256 e inventario SPDX 2.3',
+      'Validación de repositorio, schemas y fixtures forzada por CI'
+    ],
+    githubUrl: 'https://github.com/pabloamicodev/intent-driven-naming/',
+    category: 'library'
+  },
+  {
+    id: '19',
+    title: 'Piedmont Capital Advisors — Sitio de Asesoría Financiera',
+    description: 'Sitio WordPress para Piedmont Capital Advisors, una firma de asesoría financiera, actualmente en proceso de rediseño con un theme a medida basado en bloques de Gutenberg.',
+    image: '/proyects/piedmontcapital.png',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    features: [
+      'Theme de WordPress y estructura de contenido a medida',
+      'Páginas de la firma, servicios y equipo',
+      'Formularios de contacto y generación de leads'
+    ],
+    liveUrl: 'https://www.piedmontcapitaladvisors.com',
+    category: 'web'
+  },
   {
     id: '1',
     title: 'Madewell',
@@ -1268,20 +1318,6 @@ export const projectsEs: Project[] = [
     category: 'fullstack'
   },
   {
-    id: '19',
-    title: 'Piedmont Capital Advisors — Sitio de Asesoría Financiera',
-    description: 'Sitio WordPress para Piedmont Capital Advisors, una firma de asesoría financiera, actualmente en proceso de rediseño con un theme a medida basado en bloques de Gutenberg.',
-    image: '/proyects/piedmontcapital.png',
-    technologies: ['WordPress', 'PHP', 'MySQL'],
-    features: [
-      'Theme de WordPress y estructura de contenido a medida',
-      'Páginas de la firma, servicios y equipo',
-      'Formularios de contacto y generación de leads'
-    ],
-    liveUrl: 'https://www.piedmontcapitaladvisors.com',
-    category: 'web'
-  },
-  {
     id: '20',
     title: 'Funes Vape — Catálogo de Productos',
     description: 'Catálogo de productos e-commerce para una vapeshop, con base de datos en Supabase e interfaz moderna con shadcn/ui.',
@@ -1329,6 +1365,8 @@ export const techStack: TechStack[] = [
       { name: 'JavaScript', level: 5, icon: '💛' },
       { name: 'Node.js', level: 4, icon: '🟢' },
       { name: 'PHP', level: 4, icon: '🐘' },
+      { name: 'Python', level: 4, icon: '🐍' },
+      { name: 'Rust', level: 3, icon: '🦀' },
     ]
   },
   {
@@ -1337,6 +1375,9 @@ export const techStack: TechStack[] = [
       { name: 'Shopify (Liquid & Functions)', level: 5, icon: '🛍️' },
       { name: 'WordPress', level: 5, icon: '📝' },
       { name: 'Custom Theme Development', level: 5, icon: '🧩' },
+      { name: 'WooCommerce', level: 4, icon: '🛒' },
+      { name: 'Elementor', level: 4, icon: '🧱' },
+      { name: 'Mercado Pago', level: 4, icon: '💳' },
     ]
   },
   {
@@ -1354,7 +1395,8 @@ export const techStack: TechStack[] = [
       { name: 'Tailwind CSS', level: 5, icon: '💨' },
       { name: 'Styled Components', level: 4, icon: '💅' },
       { name: 'CSS Modules', level: 4, icon: '📦' },
-      { name: 'SASS/SCSS', level: 4, icon: '🎨' }
+      { name: 'SASS/SCSS', level: 4, icon: '🎨' },
+      { name: 'shadcn/ui', level: 4, icon: '🔲' }
     ]
   },
   {
@@ -1363,7 +1405,21 @@ export const techStack: TechStack[] = [
       { name: 'Supabase', level: 4, icon: '⚡' },
       { name: 'PostgreSQL', level: 4, icon: '🗄️' },
       { name: 'MongoDB', level: 4, icon: '🍃' },
-      { name: 'Firebase', level: 4, icon: '📊' }
+      { name: 'Firebase', level: 4, icon: '📊' },
+      { name: 'GraphQL', level: 4, icon: '🔺' },
+      { name: 'MySQL', level: 4, icon: '🐬' },
+      { name: 'Express', level: 4, icon: '🚂' },
+      { name: 'Socket.io', level: 3, icon: '🔌' },
+      { name: 'WebRTC', level: 3, icon: '📹' }
+    ]
+  },
+  {
+    category: 'AI & Automation',
+    technologies: [
+      { name: 'Cerebras AI', level: 4, icon: '🧠' },
+      { name: 'Zod', level: 5, icon: '🛡️' },
+      { name: 'AI Agent Skills', level: 4, icon: '🤖' },
+      { name: 'Playwright', level: 4, icon: '🎭' }
     ]
   },
   {
@@ -1373,7 +1429,16 @@ export const techStack: TechStack[] = [
       { name: 'Docker', level: 4, icon: '🐳' },
       { name: 'AWS', level: 4, icon: '☁️' },
       { name: 'Vercel', level: 5, icon: '▲' },
-      { name: 'Jenkins', level: 2, icon: '⚙️' }
+      { name: 'Jenkins', level: 2, icon: '⚙️' },
+      { name: 'Jest', level: 5, icon: '🃏' },
+      { name: 'GitHub Actions', level: 5, icon: '🐙' },
+      { name: 'Vite', level: 5, icon: '⚡' },
+      { name: 'WebAssembly', level: 3, icon: '🕸️' },
+      { name: 'Cloudflare Pages', level: 3, icon: '🌩️' },
+      { name: 'Turborepo', level: 3, icon: '🚀' },
+      { name: 'Figma API', level: 3, icon: '🖌️' },
+      { name: 'Akamai', level: 3, icon: '🌐' },
+      { name: 'Chrome Extension API', level: 3, icon: '🧭' }
     ]
   }
 ];
@@ -1395,6 +1460,8 @@ export const techStackEs: TechStack[] = [
       { name: 'JavaScript', level: 5, icon: '💛' },
       { name: 'Node.js', level: 4, icon: '🟢' },
       { name: 'PHP', level: 4, icon: '🐘' },
+      { name: 'Python', level: 4, icon: '🐍' },
+      { name: 'Rust', level: 3, icon: '🦀' },
     ]
   },
   {
@@ -1403,6 +1470,9 @@ export const techStackEs: TechStack[] = [
       { name: 'Shopify (Liquid y Functions)', level: 5, icon: '🛍️' },
       { name: 'WordPress', level: 5, icon: '📝' },
       { name: 'Desarrollo de Themes a Medida', level: 5, icon: '🧩' },
+      { name: 'WooCommerce', level: 4, icon: '🛒' },
+      { name: 'Elementor', level: 4, icon: '🧱' },
+      { name: 'Mercado Pago', level: 4, icon: '💳' },
     ]
   },
   {
@@ -1420,7 +1490,8 @@ export const techStackEs: TechStack[] = [
       { name: 'Tailwind CSS', level: 5, icon: '💨' },
       { name: 'Styled Components', level: 4, icon: '💅' },
       { name: 'CSS Modules', level: 4, icon: '📦' },
-      { name: 'SASS/SCSS', level: 4, icon: '🎨' }
+      { name: 'SASS/SCSS', level: 4, icon: '🎨' },
+      { name: 'shadcn/ui', level: 4, icon: '🔲' }
     ]
   },
   {
@@ -1429,7 +1500,21 @@ export const techStackEs: TechStack[] = [
       { name: 'Supabase', level: 4, icon: '⚡' },
       { name: 'PostgreSQL', level: 4, icon: '🗄️' },
       { name: 'MongoDB', level: 4, icon: '🍃' },
-      { name: 'Firebase', level: 4, icon: '📊' }
+      { name: 'Firebase', level: 4, icon: '📊' },
+      { name: 'GraphQL', level: 4, icon: '🔺' },
+      { name: 'MySQL', level: 4, icon: '🐬' },
+      { name: 'Express', level: 4, icon: '🚂' },
+      { name: 'Socket.io', level: 3, icon: '🔌' },
+      { name: 'WebRTC', level: 3, icon: '📹' }
+    ]
+  },
+  {
+    category: 'IA y Automatización',
+    technologies: [
+      { name: 'Cerebras AI', level: 4, icon: '🧠' },
+      { name: 'Zod', level: 5, icon: '🛡️' },
+      { name: 'AI Agent Skills', level: 4, icon: '🤖' },
+      { name: 'Playwright', level: 4, icon: '🎭' }
     ]
   },
   {
@@ -1439,7 +1524,16 @@ export const techStackEs: TechStack[] = [
       { name: 'Docker', level: 4, icon: '🐳' },
       { name: 'AWS', level: 4, icon: '☁️' },
       { name: 'Vercel', level: 5, icon: '▲' },
-      { name: 'Jenkins', level: 2, icon: '⚙️' }
+      { name: 'Jenkins', level: 2, icon: '⚙️' },
+      { name: 'Jest', level: 5, icon: '🃏' },
+      { name: 'GitHub Actions', level: 5, icon: '🐙' },
+      { name: 'Vite', level: 5, icon: '⚡' },
+      { name: 'WebAssembly', level: 3, icon: '🕸️' },
+      { name: 'Cloudflare Pages', level: 3, icon: '🌩️' },
+      { name: 'Turborepo', level: 3, icon: '🚀' },
+      { name: 'Figma API', level: 3, icon: '🖌️' },
+      { name: 'Akamai', level: 3, icon: '🌐' },
+      { name: 'Chrome Extension API', level: 3, icon: '🧭' }
     ]
   }
 ];
