@@ -358,13 +358,16 @@ export const projects: Project[] = [
   {
     id: '19',
     title: 'Piedmont Capital Advisors — Financial Advisory Site',
-    description: 'WordPress website for Piedmont Capital Advisors, a financial advisory firm, currently being rebuilt with a custom Gutenberg block theme.',
+    description: "Full custom rebuild of the WordPress site for Piedmont Capital Advisors, a financial advisory firm — replacing a page-builder-driven theme with a hand-built Gutenberg block theme. Every content section (hero, team bios, service breakdowns, testimonials) ships as a native custom block backed by its own PHP render callback and a dedicated SCSS/JS bundle compiled through wp-scripts, giving editors true drag-and-drop control without a page builder. Custom post types and taxonomies model the firm's services and team structure directly in wp-admin, and every template is built around structured data and semantic markup for search visibility.",
     image: '/proyects/piedmontcapital.png',
-    technologies: ['WordPress', 'PHP', 'MySQL'],
+    technologies: ['WordPress', 'PHP', 'MySQL', 'Custom Gutenberg Blocks', 'Custom Post Types & Taxonomies', 'SCSS', 'wp-scripts / Webpack', 'SEO & Schema Markup'],
     features: [
-      'Custom WordPress theme and content structure',
-      'Firm overview, services, and team pages',
-      'Contact and lead-generation forms'
+      'Hand-built Gutenberg block library (block.json + PHP render callbacks) replacing a page-builder theme',
+      'Custom Post Types & Taxonomies for services and team members, editable natively in wp-admin',
+      'SCSS + wp-scripts/Webpack build pipeline per block, no bundled page-builder bloat',
+      'Schema.org structured data and SEO-optimized markup across templates',
+      'Firm overview, services, and team pages built from reusable blocks',
+      'Contact and lead-generation forms wired into the custom theme'
     ],
     liveUrl: 'https://www.piedmontcapitaladvisors.com',
     category: 'web'
@@ -521,14 +524,17 @@ export const projects: Project[] = [
   {
     id: '14',
     title: 'Monthly — Personal Finance App',
-    description: 'The budgeting app behind Monthly: plan salary, fixed expenses, weekend spending money, and investments without connecting a bank account, with AI-assisted spending insights. Ships as an installable PWA and as a native Android app via a TWA wrapper.',
+    description: "The budgeting app behind Monthly: plan salary, fixed expenses, weekend spending money, and investments without ever connecting a bank account, with AI-assisted spending insights powered by Cerebras. Built as a true installable PWA — custom service worker, web app manifest, offline-capable shell — and wrapped as a native Android app via a TWA for Play Store distribution. Every user's financial data is isolated at the database level with Supabase Row Level Security, and spending patterns are surfaced through interactive charts instead of raw numbers, with push notifications keeping people on top of their budget.",
     image: '/proyects/monthly.png',
-    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI', 'PWA (Service Worker)', 'Supabase RLS', 'Push Notifications', 'Data Visualization'],
     features: [
       'AI-assisted spending insights (Cerebras)',
       'Salary, fixed-expense, weekend-money, and investment planning',
-      'Supabase-backed sync across devices',
-      'Installable PWA with an Android TWA wrapper (Play Store-ready)',
+      'True installable PWA: custom service worker, web app manifest, offline shell',
+      'Native Android distribution via a TWA wrapper (Play Store-ready)',
+      'Per-user data isolation with Supabase Row Level Security',
+      'Push notifications for budget and spending alerts',
+      'Interactive charts for spending and investment visualization',
       'No bank connection required'
     ],
     liveUrl: 'https://app.monthly.com.ar',
@@ -537,14 +543,16 @@ export const projects: Project[] = [
   {
     id: '15',
     title: 'Focus Digital Insight — Chrome Extension',
-    description: 'A Chrome extension (Manifest V3) that inspects any webpage in real time for SEO signals, detected tech stack, and tracking scripts, using a Rust-to-WebAssembly detection engine.',
+    description: 'A Chrome extension (Manifest V3) that inspects any webpage in real time for SEO signals, detected tech stack, and tracking scripts. The detection engine is written in Rust and compiled to WebAssembly via wasm-bindgen, running inside a content script injected into the active tab and coordinated by a background service worker — the same architecture browsers expect from production-grade extensions, not a bolted-on script. It recognizes a wide range of CMSs and frameworks (WordPress, Shopify, React, and more) directly from page signals, and is live on the Chrome Web Store.',
     image: '/proyects/focusdigitalinsight.png',
-    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
+    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'wasm-bindgen', 'Chrome Extension API', 'Manifest V3'],
     features: [
       'Real-time SEO audit of the active tab',
-      'Tech-stack detection engine compiled from Rust to WASM',
+      'Detection engine written in Rust, compiled to WebAssembly via wasm-bindgen',
+      'Content script + background service worker architecture (Manifest V3)',
+      'Multi-CMS and framework fingerprinting (WordPress, Shopify, React, and more)',
       'Tracking script and pixel detection',
-      'Manifest V3 Chrome extension architecture'
+      'Published and live on the Chrome Web Store'
     ],
     liveUrl: 'https://chromewebstore.google.com/detail/focus-digital-insight/gcmhelkoendjknbjogjpkmmhiamedfnm',
     category: 'library'
@@ -891,13 +899,16 @@ export const projectsEs: Project[] = [
   {
     id: '19',
     title: 'Piedmont Capital Advisors — Sitio de Asesoría Financiera',
-    description: 'Sitio WordPress para Piedmont Capital Advisors, una firma de asesoría financiera, actualmente en proceso de rediseño con un theme a medida basado en bloques de Gutenberg.',
+    description: 'Rebuild completo a medida del sitio WordPress de Piedmont Capital Advisors, una firma de asesoría financiera — reemplazando un theme armado con page builder por un theme de bloques Gutenberg hecho a mano. Cada sección de contenido (hero, bios del equipo, detalle de servicios, testimonios) es un bloque custom nativo con su propio render callback en PHP y su bundle de SCSS/JS compilado con wp-scripts, dándole a los editores control real de drag-and-drop sin depender de un page builder. Custom Post Types y taxonomías modelan los servicios y el equipo directamente en el admin de WordPress, y cada template está armado alrededor de datos estructurados y markup semántico para visibilidad en buscadores.',
     image: '/proyects/piedmontcapital.png',
-    technologies: ['WordPress', 'PHP', 'MySQL'],
+    technologies: ['WordPress', 'PHP', 'MySQL', 'Custom Gutenberg Blocks', 'Custom Post Types & Taxonomies', 'SCSS', 'wp-scripts / Webpack', 'SEO & Schema Markup'],
     features: [
-      'Theme de WordPress y estructura de contenido a medida',
-      'Páginas de la firma, servicios y equipo',
-      'Formularios de contacto y generación de leads'
+      'Librería de bloques Gutenberg hecha a mano (block.json + render callbacks en PHP) reemplazando un theme de page builder',
+      'Custom Post Types y taxonomías para servicios y equipo, editables nativamente desde wp-admin',
+      'Pipeline de build SCSS + wp-scripts/Webpack por bloque, sin el peso de un page builder',
+      'Datos estructurados Schema.org y markup optimizado para SEO en todos los templates',
+      'Páginas de la firma, servicios y equipo armadas con bloques reutilizables',
+      'Formularios de contacto y generación de leads integrados al theme custom'
     ],
     liveUrl: 'https://www.piedmontcapitaladvisors.com',
     category: 'web'
@@ -1032,14 +1043,17 @@ export const projectsEs: Project[] = [
   {
     id: '14',
     title: 'Monthly — App de Finanzas Personales',
-    description: 'La app de presupuesto detrás de Monthly: planificá sueldo, gastos fijos, plata libre de fin de semana e inversiones sin conectar el banco, con insights de gastos asistidos por IA. Disponible como PWA instalable y como app Android nativa vía wrapper TWA.',
+    description: 'La app de presupuesto detrás de Monthly: planificá sueldo, gastos fijos, plata libre de fin de semana e inversiones sin conectar el banco nunca, con insights de gastos asistidos por IA vía Cerebras. Construida como una PWA instalable de verdad — service worker propio, web app manifest, shell con soporte offline — y empaquetada como app Android nativa mediante un wrapper TWA para distribución en Play Store. Los datos financieros de cada usuario están aislados a nivel de base de datos con Row Level Security de Supabase, y los patrones de gasto se muestran con gráficos interactivos en vez de números crudos, con notificaciones push para mantener a la gente al tanto de su presupuesto.',
     image: '/proyects/monthly.png',
-    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI'],
+    technologies: ['React 19', 'TypeScript', 'Vite', 'Supabase', 'Zustand', 'Tailwind CSS', 'Cerebras AI', 'PWA (Service Worker)', 'Supabase RLS', 'Push Notifications', 'Data Visualization'],
     features: [
       'Insights de gastos asistidos por IA (Cerebras)',
       'Planificación de sueldo, gastos fijos, plata libre de fin de semana e inversiones',
-      'Sincronización entre dispositivos con Supabase',
-      'PWA instalable con wrapper Android TWA (listo para Play Store)',
+      'PWA instalable de verdad: service worker propio, web app manifest, shell offline',
+      'Distribución nativa en Android vía wrapper TWA (listo para Play Store)',
+      'Aislamiento de datos por usuario con Row Level Security de Supabase',
+      'Notificaciones push para alertas de presupuesto y gastos',
+      'Gráficos interactivos para visualizar gastos e inversiones',
       'No requiere conectar el banco'
     ],
     liveUrl: 'https://app.monthly.com.ar',
@@ -1048,14 +1062,16 @@ export const projectsEs: Project[] = [
   {
     id: '15',
     title: 'Focus Digital Insight — Extensión de Chrome',
-    description: 'Extensión de Chrome (Manifest V3) que analiza cualquier página en tiempo real detectando señales de SEO, stack tecnológico y scripts de tracking, usando un motor de detección compilado de Rust a WebAssembly.',
+    description: 'Extensión de Chrome (Manifest V3) que analiza cualquier página en tiempo real detectando señales de SEO, stack tecnológico y scripts de tracking. El motor de detección está escrito en Rust y compilado a WebAssembly vía wasm-bindgen, corriendo dentro de un content script inyectado en la pestaña activa y coordinado por un service worker en background — la misma arquitectura que se espera de una extensión de producción, no un script pegado con cinta. Reconoce un rango amplio de CMSs y frameworks (WordPress, Shopify, React, y más) directamente desde señales de la página, y está publicada y en vivo en la Chrome Web Store.',
     image: '/proyects/focusdigitalinsight.png',
-    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'Chrome Extension API'],
+    technologies: ['TypeScript', 'Rust', 'WebAssembly', 'wasm-bindgen', 'Chrome Extension API', 'Manifest V3'],
     features: [
       'Auditoría SEO en tiempo real de la pestaña activa',
-      'Motor de detección de stack tecnológico compilado de Rust a WASM',
+      'Motor de detección escrito en Rust, compilado a WebAssembly vía wasm-bindgen',
+      'Arquitectura de content script + service worker en background (Manifest V3)',
+      'Fingerprinting de múltiples CMSs y frameworks (WordPress, Shopify, React, y más)',
       'Detección de scripts y píxeles de tracking',
-      'Arquitectura de extensión Chrome Manifest V3'
+      'Publicada y en vivo en la Chrome Web Store'
     ],
     liveUrl: 'https://chromewebstore.google.com/detail/focus-digital-insight/gcmhelkoendjknbjogjpkmmhiamedfnm',
     category: 'library'
@@ -1576,6 +1592,7 @@ export const translations = {
       title: 'Featured Projects',
       features: 'Key Features',
       live: 'Live Demo',
+      chromeStore: 'View on Chrome Web Store',
       code: 'Source Code',
       categories: {
         all: 'All',
@@ -1668,6 +1685,7 @@ export const translations = {
       title: 'Proyectos Destacados',
       features: 'Características Principales',
       live: 'Demo en Vivo',
+      chromeStore: 'Ver en Chrome Web Store',
       code: 'Código Fuente',
       categories: {
         all: 'Todos',

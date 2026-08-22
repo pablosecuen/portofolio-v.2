@@ -3,7 +3,7 @@ import { GlassCard } from '@/components/GlassCard';
 import { Button } from '@/components/ui/button';
 import { useStaggeredAnimation } from '@/hooks/useScrollAnimation';
 import { projects, projectsEs } from '@/data/portfolio';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+import { ExternalLink, Github, Eye, Chrome } from 'lucide-react';
 import { useLanguage } from "@/contexts/useLanguage";
 
 const categories = ['all', 'web', 'mobile', 'fullstack', 'library'];
@@ -127,8 +127,12 @@ export function Projects() {
                       asChild
                     >
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <Eye className="h-4 w-4 mr-2" aria-hidden="true" />
-                        {t.projects.live}
+                        {project.liveUrl.includes('chromewebstore.google.com') ? (
+                          <Chrome className="h-4 w-4 mr-2" aria-hidden="true" />
+                        ) : (
+                          <Eye className="h-4 w-4 mr-2" aria-hidden="true" />
+                        )}
+                        {project.liveUrl.includes('chromewebstore.google.com') ? t.projects.chromeStore : t.projects.live}
                         <span className="sr-only">{` (${project.title})`}</span>
                       </a>
                     </Button>
