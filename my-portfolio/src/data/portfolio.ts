@@ -797,7 +797,22 @@ export const projects: Project[] = [
       'Monorepo architecture for shared packages',
       'Preparing for Shopify App Store submission'
     ],
-    liveUrl: 'https://marginlab.vercel.app',
+    category: 'fullstack'
+  },
+  {
+    id: '26',
+    title: 'Freebies - Shopify BOGO & Promotions Engine',
+    description: 'Internal Shopify Plus app built to replace a paid BOGOS.io subscription with a fully custom promotions engine — free gift with purchase, BOGO/Buy X Get Y, and bundle offers, with discount logic written in Rust and compiled to Shopify Functions.',
+    image: '/proyects/freebies.svg',
+    technologies: ['Shopify Functions (Rust)', 'React Router', 'PostgreSQL', 'Drizzle ORM', 'Redis', 'Shopify Polaris', 'Sentry'],
+    features: [
+      'Free gift with purchase, BOGO/Buy X Get Y, and auto-add gift logic',
+      'Mix & match and classic bundle builder',
+      'Volume, cart, and cheapest/most-expensive-item discounts',
+      'Discount logic written in Rust, compiled to Shopify Functions (discount, cart transform, cart validation)',
+      'Checkout UI, customer account, and theme app extensions',
+      'Background product-sync worker with Redis-backed caching'
+    ],
     category: 'fullstack'
   },
   {
@@ -1284,7 +1299,22 @@ export const projectsEs: Project[] = [
       'Arquitectura monorepo con paquetes compartidos',
       'En preparación para publicación en el Shopify App Store'
     ],
-    liveUrl: 'https://marginlab.vercel.app',
+    category: 'fullstack'
+  },
+  {
+    id: '26',
+    title: 'Freebies - Motor de BOGO y Promociones para Shopify',
+    description: 'App interna para Shopify Plus construida para reemplazar una suscripción paga a BOGOS.io con un motor de promociones totalmente a medida — regalo gratis por compra, BOGO/Comprá X Llevá Y, y ofertas de bundle, con la lógica de descuentos escrita en Rust y compilada a Shopify Functions.',
+    image: '/proyects/freebies.svg',
+    technologies: ['Shopify Functions (Rust)', 'React Router', 'PostgreSQL', 'Drizzle ORM', 'Redis', 'Shopify Polaris', 'Sentry'],
+    features: [
+      'Regalo gratis por compra, BOGO/Comprá X Llevá Y, y lógica de auto-agregado de regalos',
+      'Bundle builder clásico y mix & match',
+      'Descuentos por volumen, de carrito, y sobre el ítem más barato/más caro',
+      'Lógica de descuentos escrita en Rust, compilada a Shopify Functions (discount, cart transform, cart validation)',
+      'Extensiones de checkout UI, customer account y theme app',
+      'Worker de sincronización de productos en background con cache en Redis'
+    ],
     category: 'fullstack'
   },
   {
