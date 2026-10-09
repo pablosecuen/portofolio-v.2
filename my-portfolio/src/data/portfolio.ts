@@ -338,6 +338,22 @@ export const experiencesEs: Experience[] = [
 
 export const projects: Project[] = [
   {
+    id: '27',
+    title: 'Agent Vault - Fallout-Style Monitor for AI Coding Agents',
+    description: 'A local, always-on monitor for AI coding agents (Claude Code and Codex), drawn as a faithful Fallout Shelter-style vault cross-section and built to live full-screen on a dedicated third monitor. Each project is a vault entrance, sessions, workflows and sub-agents are rooms, and agents are dwellers who walk and ride elevators to the room matching what they are doing. Private personal tool.',
+    image: '/proyects/agentvault.png',
+    technologies: ['Node.js', 'JavaScript', 'SVG', 'CSS', 'JSONL Parsing', 'Claude Code', 'Codex'],
+    features: [
+      'Agents move between rooms by activity: reading to Science Lab, editing to Weapon Workshop, commands and tests to Power Generator, web/MCP to Radio Studio, waiting to Living Quarters, done to Diner, failed to Medbay',
+      'One vault entrance per project with a tab bar (keys 1-9); workflow phases appear as construction sites that build when they start',
+      'Speech bubbles explain in plain Spanish what each agent is doing, plus a Pip-Boy-style CRT panel with state, model, tools, tokens, context and last message',
+      'Zero-dependency Node.js HTTP server with incremental JSONL tail-parsing of Claude Code transcripts and Codex rollouts, a shared scan cache, and a focus mode that only ships the open project',
+      'Vanilla JS client with keyed DOM diffing and a requestAnimationFrame movement loop',
+      'All art hand-built as SVG and CSS'
+    ],
+    category: 'fullstack'
+  },
+  {
     id: '25',
     title: 'Intent-Driven Naming - AI Agent Skill',
     description: 'An Agent Skill and conformance project for generating, auditing, and safely refactoring software identifiers according to semantic intent across languages and stacks. Instruction-only core with deterministic tooling around it to validate the package, route context efficiently, run provider-neutral evaluations, and block safety regressions across 15+ languages.',
@@ -893,6 +909,22 @@ export const projects: Project[] = [
 ];
 
 export const projectsEs: Project[] = [
+  {
+    id: '27',
+    title: 'Agent Vault - Monitor estilo Fallout para Agentes de Código IA',
+    description: 'Un monitor local y siempre encendido para agentes de código con IA (Claude Code y Codex), dibujado como un corte transversal fiel de un refugio estilo Fallout Shelter y pensado para vivir a pantalla completa en un tercer monitor dedicado. Cada proyecto es una entrada al refugio, las sesiones, workflows y sub-agentes son salas, y los agentes son habitantes que caminan y usan ascensores hacia la sala que corresponde a lo que están haciendo. Herramienta personal privada.',
+    image: '/proyects/agentvault.png',
+    technologies: ['Node.js', 'JavaScript', 'SVG', 'CSS', 'JSONL Parsing', 'Claude Code', 'Codex'],
+    features: [
+      'Los agentes se mueven entre salas según su actividad: leer al Laboratorio de Ciencias, editar al Taller de Armas, comandos y tests al Generador de Energía, web/MCP al Estudio de Radio, esperar a los Dormitorios, terminar al Comedor, fallar a la Enfermería',
+      'Una entrada al refugio por proyecto con barra de pestañas (teclas 1-9); las fases de un workflow aparecen como obras en construcción que se levantan al empezar',
+      'Globos de diálogo que explican en español simple qué hace cada agente, más un panel CRT estilo Pip-Boy con estado, modelo, herramientas, tokens, contexto y último mensaje',
+      'Servidor HTTP de Node.js sin dependencias con parseo incremental de JSONL de transcripts de Claude Code y rollouts de Codex, cache de escaneo compartido y modo foco que solo envía el proyecto abierto',
+      'Cliente en JS vanilla con diffing de DOM por keys y un loop de movimiento con requestAnimationFrame',
+      'Todo el arte hecho a mano en SVG y CSS'
+    ],
+    category: 'fullstack'
+  },
   {
     id: '25',
     title: 'Intent-Driven Naming - Skill de Agente IA',
