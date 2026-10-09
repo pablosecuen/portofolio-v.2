@@ -340,8 +340,9 @@ export const projects: Project[] = [
   {
     id: '27',
     title: 'Agent Vault - Fallout-Style Monitor for AI Coding Agents',
-    description: 'A local, always-on monitor for AI coding agents (Claude Code and Codex), drawn as a faithful Fallout Shelter-style vault cross-section and built to live full-screen on a dedicated third monitor. Each project is a vault entrance, sessions, workflows and sub-agents are rooms, and agents are dwellers who walk and ride elevators to the room matching what they are doing. Private personal tool.',
+    description: 'A local, always-on monitor for AI coding agents (Claude Code and Codex), drawn as a faithful Fallout Shelter-style vault cross-section and built to live full-screen on a dedicated third monitor. Each project is a vault entrance, sessions, workflows and sub-agents are rooms, and agents are dwellers who walk and ride elevators to the room matching what they are doing. The live demo runs simulated projects and agents in a loop.',
     image: '/proyects/agentvault.png',
+    liveUrl: 'https://agent-vault-demo.vercel.app',
     technologies: ['Node.js', 'JavaScript', 'SVG', 'CSS', 'JSONL Parsing', 'Claude Code', 'Codex'],
     features: [
       'Agents move between rooms by activity: reading to Science Lab, editing to Weapon Workshop, commands and tests to Power Generator, web/MCP to Radio Studio, waiting to Living Quarters, done to Diner, failed to Medbay',
@@ -912,8 +913,9 @@ export const projectsEs: Project[] = [
   {
     id: '27',
     title: 'Agent Vault - Monitor estilo Fallout para Agentes de Código IA',
-    description: 'Un monitor local y siempre encendido para agentes de código con IA (Claude Code y Codex), dibujado como un corte transversal fiel de un refugio estilo Fallout Shelter y pensado para vivir a pantalla completa en un tercer monitor dedicado. Cada proyecto es una entrada al refugio, las sesiones, workflows y sub-agentes son salas, y los agentes son habitantes que caminan y usan ascensores hacia la sala que corresponde a lo que están haciendo. Herramienta personal privada.',
+    description: 'Un monitor local y siempre encendido para agentes de código con IA (Claude Code y Codex), dibujado como un corte transversal fiel de un refugio estilo Fallout Shelter y pensado para vivir a pantalla completa en un tercer monitor dedicado. Cada proyecto es una entrada al refugio, las sesiones, workflows y sub-agentes son salas, y los agentes son habitantes que caminan y usan ascensores hacia la sala que corresponde a lo que están haciendo. La demo online corre proyectos y agentes simulados en loop.',
     image: '/proyects/agentvault.png',
+    liveUrl: 'https://agent-vault-demo.vercel.app',
     technologies: ['Node.js', 'JavaScript', 'SVG', 'CSS', 'JSONL Parsing', 'Claude Code', 'Codex'],
     features: [
       'Los agentes se mueven entre salas según su actividad: leer al Laboratorio de Ciencias, editar al Taller de Armas, comandos y tests al Generador de Energía, web/MCP al Estudio de Radio, esperar a los Dormitorios, terminar al Comedor, fallar a la Enfermería',
