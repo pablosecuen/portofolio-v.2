@@ -825,7 +825,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
     features: [
       'Free gifts, BOGO, classic and mix & match bundles, multipack, volume tiers, frequently bought together (manual or learned from orders) and one-click post-purchase upsells',
-      'Discount, cart transform, delivery and cart validation logic in Rust Shopify Functions, kept under 40% of the instruction limit with byte-identical parity fixtures',
+      'Discount logic in Rust Shopify Functions, optimized to run well within Shopify'''s per-checkout compute limit',
       'Experiment Engine: price, template, content, checkout, discount, shipping and offer tests, holdouts, multivariate tests and an optional bandit mode, with honest statistical verdicts',
       'Integrations: Shopify Flow triggers, Klaviyo, GA4 server-side events, a headless API and a read-only results API with per-store tokens',
       'Storefront runtime with strict size budgets, lazy chunks, no layout shift and Lighthouse checks in CI',
@@ -1345,7 +1345,7 @@ export const projectsEs: Project[] = [
     technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
     features: [
       'Regalos, BOGO, bundles clásicos y mix & match, multipack, descuentos por volumen, comprados juntos (manual o aprendido de las órdenes) y upsell post-compra de un clic',
-      'Lógica de descuento, cart transform, envío y validación de carrito en Shopify Functions en Rust, debajo del 40% del límite de instrucciones y con fixtures de paridad idénticos',
+      'Lógica de descuentos en Shopify Functions en Rust, optimizada para correr con amplio margen dentro del límite de cómputo de Shopify en cada checkout',
       'Experiment Engine: tests de precio, template, contenido, checkout, descuento, envío y ofertas, holdouts, tests multivariantes y modo bandit opcional, con veredictos estadísticos honestos',
       'Integraciones: triggers de Shopify Flow, Klaviyo, eventos server-side a GA4, API headless y API de resultados de solo lectura con tokens por tienda',
       'Runtime de storefront con límites de tamaño estrictos, chunks lazy, sin saltos de layout y chequeos de Lighthouse en CI',
