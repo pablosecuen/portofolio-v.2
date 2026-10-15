@@ -338,6 +338,23 @@ export const experiencesEs: Experience[] = [
 
 export const projects: Project[] = [
   {
+    id: '26',
+    title: 'Freebies Engine & Experiment Engine - Shopify SaaS',
+    description: 'A commercial SaaS with two public Shopify apps. Freebies Engine runs gifts, bundles, upsells, discount codes and post-purchase offers, and shows what each offer earns. Experiment Engine A/B tests prices, pages, checkout blocks and offers so merchants keep the version that earns more per visitor. Standalone web app with its own accounts and teams, Shopify Billing, and all discount logic in Rust Shopify Functions. In prelaunch, heading to the Shopify App Store.',
+    image: '/proyects/freebiesengine.png',
+    liveUrl: 'https://margin-labs-freebies.vercel.app',
+    technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
+    features: [
+      'Free gifts, BOGO, classic and mix & match bundles, multipack, volume tiers, frequently bought together (manual or learned from orders) and one-click post-purchase upsells',
+      "Discount logic in Rust Shopify Functions, optimized to run well within Shopify's per-checkout compute limit",
+      'Experiment Engine: price, template, content, checkout, discount, shipping and offer tests, holdouts, multivariate tests and an optional bandit mode, with honest statistical verdicts',
+      'Integrations: Shopify Flow triggers, Klaviyo, GA4 server-side events, a headless API and a read-only results API with per-store tokens',
+      'Storefront runtime with strict size budgets, lazy chunks, no layout shift and Lighthouse checks in CI',
+      'GDPR webhooks, data retention, signed app proxy and webhooks, multi-store teams with roles, and a fast pre-push gate mirroring CI'
+    ],
+    category: 'fullstack'
+  },
+  {
     id: '27',
     title: 'Agent Vault - Fallout-Style Monitor for AI Coding Agents',
     description: 'A local, always-on monitor for AI coding agents (Claude Code and Codex), drawn as a faithful Fallout Shelter-style vault cross-section and built to live full-screen on a dedicated third monitor. Each project is a vault entrance, sessions, workflows and sub-agents are rooms, and agents are dwellers who walk and ride elevators to the room matching what they are doing. The live demo runs simulated projects and agents in a loop.',
@@ -817,23 +834,6 @@ export const projects: Project[] = [
     category: 'fullstack'
   },
   {
-    id: '26',
-    title: 'Freebies Engine & Experiment Engine - Shopify SaaS by Log Studio Lab',
-    description: 'A commercial SaaS with two public Shopify apps. Freebies Engine runs gifts, bundles, upsells, discount codes and post-purchase offers, and shows what each offer earns. Experiment Engine A/B tests prices, pages, checkout blocks and offers so merchants keep the version that earns more per visitor. Standalone web app with its own accounts and teams, Shopify Billing, and all discount logic in Rust Shopify Functions. In prelaunch, heading to the Shopify App Store.',
-    image: '/proyects/freebiesengine.png',
-    liveUrl: 'https://margin-labs-freebies.vercel.app',
-    technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
-    features: [
-      'Free gifts, BOGO, classic and mix & match bundles, multipack, volume tiers, frequently bought together (manual or learned from orders) and one-click post-purchase upsells',
-      "Discount logic in Rust Shopify Functions, optimized to run well within Shopify's per-checkout compute limit",
-      'Experiment Engine: price, template, content, checkout, discount, shipping and offer tests, holdouts, multivariate tests and an optional bandit mode, with honest statistical verdicts',
-      'Integrations: Shopify Flow triggers, Klaviyo, GA4 server-side events, a headless API and a read-only results API with per-store tokens',
-      'Storefront runtime with strict size budgets, lazy chunks, no layout shift and Lighthouse checks in CI',
-      'GDPR webhooks, data retention, signed app proxy and webhooks, multi-store teams with roles, and a fast pre-push gate mirroring CI'
-    ],
-    category: 'fullstack'
-  },
-  {
     id: '16',
     title: 'Seamless Chex - ACH Payments Marketing Site',
     description: 'Migrated the marketing site for Seamless Chex, an ACH payment processing platform, from Webflow to Astro for faster load times and easier long-term maintenance.',
@@ -911,6 +911,23 @@ export const projects: Project[] = [
 ];
 
 export const projectsEs: Project[] = [
+  {
+    id: '26',
+    title: 'Freebies Engine y Experiment Engine - SaaS para Shopify',
+    description: 'Un SaaS comercial con dos apps públicas de Shopify. Freebies Engine maneja regalos, bundles, upsells, códigos de descuento y ofertas post-compra, y muestra cuánto gana cada oferta. Experiment Engine hace tests A/B de precios, páginas, bloques de checkout y ofertas para quedarse con la versión que más gana por visitante. App web propia con cuentas y equipos, Shopify Billing y toda la lógica de descuentos en Shopify Functions en Rust. En prelanzamiento, camino a la Shopify App Store.',
+    image: '/proyects/freebiesengine.png',
+    liveUrl: 'https://margin-labs-freebies.vercel.app',
+    technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
+    features: [
+      'Regalos, BOGO, bundles clásicos y mix & match, multipack, descuentos por volumen, comprados juntos (manual o aprendido de las órdenes) y upsell post-compra de un clic',
+      'Lógica de descuentos en Shopify Functions en Rust, optimizada para correr con amplio margen dentro del límite de cómputo de Shopify en cada checkout',
+      'Experiment Engine: tests de precio, template, contenido, checkout, descuento, envío y ofertas, holdouts, tests multivariantes y modo bandit opcional, con veredictos estadísticos honestos',
+      'Integraciones: triggers de Shopify Flow, Klaviyo, eventos server-side a GA4, API headless y API de resultados de solo lectura con tokens por tienda',
+      'Runtime de storefront con límites de tamaño estrictos, chunks lazy, sin saltos de layout y chequeos de Lighthouse en CI',
+      'Webhooks de GDPR, retención de datos, app proxy y webhooks firmados, equipos multi-tienda con roles y un gate pre-push que replica el CI'
+    ],
+    category: 'fullstack'
+  },
   {
     id: '27',
     title: 'Agent Vault - Monitor estilo Fallout para Agentes de Código IA',
@@ -1333,23 +1350,6 @@ export const projectsEs: Project[] = [
       'Dashboard de analítica de rentabilidad para comercios',
       'Arquitectura monorepo con paquetes compartidos',
       'En preparación para publicación en el Shopify App Store'
-    ],
-    category: 'fullstack'
-  },
-  {
-    id: '26',
-    title: 'Freebies Engine y Experiment Engine - SaaS para Shopify de Log Studio Lab',
-    description: 'Un SaaS comercial con dos apps públicas de Shopify. Freebies Engine maneja regalos, bundles, upsells, códigos de descuento y ofertas post-compra, y muestra cuánto gana cada oferta. Experiment Engine hace tests A/B de precios, páginas, bloques de checkout y ofertas para quedarse con la versión que más gana por visitante. App web propia con cuentas y equipos, Shopify Billing y toda la lógica de descuentos en Shopify Functions en Rust. En prelanzamiento, camino a la Shopify App Store.',
-    image: '/proyects/freebiesengine.png',
-    liveUrl: 'https://margin-labs-freebies.vercel.app',
-    technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
-    features: [
-      'Regalos, BOGO, bundles clásicos y mix & match, multipack, descuentos por volumen, comprados juntos (manual o aprendido de las órdenes) y upsell post-compra de un clic',
-      'Lógica de descuentos en Shopify Functions en Rust, optimizada para correr con amplio margen dentro del límite de cómputo de Shopify en cada checkout',
-      'Experiment Engine: tests de precio, template, contenido, checkout, descuento, envío y ofertas, holdouts, tests multivariantes y modo bandit opcional, con veredictos estadísticos honestos',
-      'Integraciones: triggers de Shopify Flow, Klaviyo, eventos server-side a GA4, API headless y API de resultados de solo lectura con tokens por tienda',
-      'Runtime de storefront con límites de tamaño estrictos, chunks lazy, sin saltos de layout y chequeos de Lighthouse en CI',
-      'Webhooks de GDPR, retención de datos, app proxy y webhooks firmados, equipos multi-tienda con roles y un gate pre-push que replica el CI'
     ],
     category: 'fullstack'
   },
