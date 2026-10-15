@@ -825,7 +825,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'TypeScript', 'Shopify Functions (Rust)', 'PostgreSQL', 'Drizzle ORM', 'Clerk', 'Preact', 'Shopify Billing API', 'Vercel', 'Vitest', 'Playwright', 'GitHub Actions'],
     features: [
       'Free gifts, BOGO, classic and mix & match bundles, multipack, volume tiers, frequently bought together (manual or learned from orders) and one-click post-purchase upsells',
-      'Discount logic in Rust Shopify Functions, optimized to run well within Shopify'''s per-checkout compute limit',
+      "Discount logic in Rust Shopify Functions, optimized to run well within Shopify's per-checkout compute limit",
       'Experiment Engine: price, template, content, checkout, discount, shipping and offer tests, holdouts, multivariate tests and an optional bandit mode, with honest statistical verdicts',
       'Integrations: Shopify Flow triggers, Klaviyo, GA4 server-side events, a headless API and a read-only results API with per-store tokens',
       'Storefront runtime with strict size budgets, lazy chunks, no layout shift and Lighthouse checks in CI',
